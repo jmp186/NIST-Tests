@@ -1,0 +1,44 @@
+<?xml version='1.0'?>
+<xml-stylesheet type="text/xsl" href=""?>
+<glossary>
+    <term id="XML">
+        <name>eXtensible Markup Language</name>
+        <acronym>XML</acronym>
+        <links xmlns:xlink="http://www.w3.org/1999/xlink">
+            <link xlink:type"simple" xlink:href="http://www.w3schools.com/xml/"> XML Tutorial by W3Schools</link>
+        </links>
+        <definition>
+            Extensible Markup Language (XML) is a markup language
+            that defines a set of rules for encoding documents in a format
+            that is both human-readable and machine-readable. It is defined
+            by the W3C's XML 1.0 Specification and by several other related
+            specifications, all of which are free open standards.
+        </definition>
+    </term>
+    <term id="XSL">
+        <name>eXtensible StyleSheet Language</name>
+        <acronym>XSL</acronym>
+        <links xmlns:xlink="http://www.w3.org/1999/xlink">
+            <link xlink:type"simple" xlink:href="http://www.w3schools.com/xsl/xsl_languages.asp">
+                W3 Schools' XSL Page
+            </link>
+        </links>
+        <definition>
+        XSL is a family of recommendations for defining XML document transformation
+        and presentation. It consists of three parts: XSL Transformations (XSLT) a
+        language for transforming XML; The XML Path Language (XPath)
+        </definition>
+    </term>
+    <term id="NIST">
+        <name>National Institute of Standards and Technology</name>
+        <acronym>NIST</acronym>
+        <links xmlns:xlink="http://www.w3.org/1999/xlink">
+            <link xlink:type"simple" xlink:href="http://www.nist.gov">
+                National Institute of Standards and Technology Homepage
+            </link>
+        </links>
+        <definition>Think of how to word this...</definition>
+    </term>
+</glossary>
+
+
