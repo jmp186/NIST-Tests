@@ -16,12 +16,14 @@
             Search Term: <input type="text" name="term" value="<input/>"/>
         </form>
         <button onclick="myFunction()">Submit</button>
-        <script>
-            function myFunction() {
-                var x = document.createElement("INPUT");
-                x.setAttribute("id", "search");
-            }
-        </script>
+            <xsl:for-each select="glossary/term[name='National Institute of Standards and Technology']">
+                <tr>
+                    <td><xsl:value-of select="name"/></td>
+                    <td><xsl:value-of select="acronym"</td>
+                    <td><xsl:value-of select="definition"</td>
+                    <td><xsl:value-of select="link"</td>
+                </tr>
+
     </body>
     </html>
  </xsl:template>

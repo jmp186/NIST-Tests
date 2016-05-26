@@ -11,16 +11,38 @@
     </head>
 
     <body>
-        <h1>Glossary Search</h1>
-        <input></input>
-        <term id="XML"></term>
-        <button type="button" onclick="myFunction()">search</button>
-        <script>
-            function myFunction()  {
-            document.getElementById("XML").innerHTML = "<xsl:value-of select=""
-            }
-        </script>
-    </body>
-        </html>
+        <h1>Calnet Glossary Search</h1>
+        <div class="container-fluid">
+        <form role="form">
+          <div class="form-group">
+              <label for="term">Search Glossary:</label>
+              <input type="text" class="form-control" id="term" placeholder="Enter Term"/>
+                 <button type="submit" class="btn btn-default">
+                     <span class="glyphicon glyphicon-search"></span>
+                 </button>
+          </div>
+        </form>
+        </div>
+
+        <div class="container-fluid">
+            <output>
+                <script>
+                var NIST =
+                if (NIST = NIST)
+                <xsl:for-each select="glossary/term[name='National Institute of Standards and Technology']">
+                <tr>
+                    <td><xsl:value-of select="name"/></td>
+                    <td><xsl:value-of select="acronym"</td>
+                    <td><xsl:value-of select="definition"</td>
+                    <td><xsl:value-of select="link"</td>
+                </tr>
+                </xsl:for-each>
+                </script>
+            </output>
+        </div>
+
+
+
+   </body>
+  </html>
  </xsl:template>
-</xsl:stylesheet>
