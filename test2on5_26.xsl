@@ -12,9 +12,11 @@
 
 <body>
    <script>
-       var data = <xsl:for-each select="glossary/term[name='National Institute of Standards and Technology']">
-                    <xsl:value-of select="name"/>
-                  </xsl:for-each>
+       var data;
+       $("button").click(function() {
+       data=$("input").text;
+       alert(data);
+       });
    </script>
     <h1>Glossary Search</h1>
 

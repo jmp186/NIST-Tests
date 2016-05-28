@@ -1,13 +1,13 @@
 <?xml version='1.0'?>
-<?xml-stylesheet type="text/xsl" href="./test2on5_26.xsl"?>
+<?xml-stylesheet type="text/xsl" href="./test5_27.xsl"?>
 
 <glossary>
 
     <term id="XML">
         <name>eXtensible Markup Language</name>
         <acronym>XML</acronym>
-        <links xmlns:xlink="http://www.w3.org/1999/xlink">
-            <link xlink:type="simple" xlink:href="http://www.w3schools.com/xml/"> XML Tutorial by W3Schools</link>
+        <links>
+            <link type="simple" href="http://www.w3schools.com/xml/"> XML Tutorial by W3Schools</link>
         </links>
         <definition>
             Extensible Markup Language (XML) is a markup language
@@ -21,8 +21,8 @@
     <term id="XSL">
         <name>eXtensible StyleSheet Language</name>
         <acronym>XSL</acronym>
-        <links xmlns:xlink="http://www.w3.org/1999/xlink">
-            <link xlink:type="simple" xlink:href="http://www.w3schools.com/xsl/xsl_languages.asp">
+        <links>
+            <link type="simple" href="http://www.w3schools.com/xsl/xsl_languages.asp">
                 W3 Schools' XSL Page
             </link>
         </links>
@@ -36,8 +36,8 @@
     <term id="NIST">
         <name>National Institute of Standards and Technology</name>
         <acronym>NIST</acronym>
-        <links xmlns:xlink="http://www.w3.org/1999/xlink">
-            <link xlink:type="simple" xlink:href="http://www.nist.gov">
+        <links>
+            <link type="simple" href="http://www.nist.gov">
                 National Institute of Standards and Technology Homepage
             </link>
         </links>
