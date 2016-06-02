@@ -1,5 +1,5 @@
 <?xml version='1.0'?>
-<?xml-stylesheet type="text/xsl" href="./test5_27.xsl"?>
+<?xml-stylesheet type="text/xsl" href="./GlossaryStyleSheet_2016_05_27.xsl"?>
 
 <glossary>
 
@@ -44,4 +44,146 @@
         <definition>Think of how to word this...</definition>
     </term>
 
+    <term id="ASCII">
+        <name>American Standard Code for Information Interchange</name>
+        <acronym>ASCII</acronym>
+        <links>
+            <link type="simple" href="https://en.wikipedia.org/wiki/ASCII">
+                ASCII Wikipedia Page
+            </link>
+        </links>
+        <definition>Character encoding standard that represents text in computers,
+            telecommunications equipment, and other devices.</definition>
+    </term>
+
+    <term id="S parameter">
+        <name>Scattering Parameter</name>
+        <acronym>S Parameter</acronym>
+        <links>
+            <link type="simple" href="https://en.wikipedia.org/wiki/Scattering_parameters">
+               Scattering Parameter Wikipedia Page
+            </link>
+        </links>
+        <definition>
+            Element of a scattering matrix or S-matrix that describes the electrical
+            behavior of linear electrical networks when undergoing various steady state
+            stimuli by electrical signals.
+        </definition>
+    </term>
+
+    <term id="thermistor">
+        <name>Thermistor</name>
+        <acronym></acronym>
+        <links>
+            <link type="simple" href="https://en.wikipedia.org/wiki/Thermistor">
+                Thermistor Wikipedia Page
+            </link>
+        </links>
+        <definition>A thermistor is a resistor whose resistance is dependent on temperature.</definition>
+    </term>
+
+    <term id="calorimeter">
+        <name>Calorimeter</name>
+        <acronym></acronym>
+        <links>
+            <link type="simple" href="https://en.wikipedia.org/wiki/Calorimeter_(particle_physics)">
+                Calorimeter Wikipedia Page
+            </link>
+        </links>
+        <definition></definition>
+    </term>
+
+    <term id="NBS">
+        <name>National Bureau of Standards</name>
+        <acronym>NBS</acronym>
+        <links>
+            <link type="simple" href="http://www.nist.gov">
+                National Institute of Standards and Technology Homepage
+            </link></links>
+        <definition>
+            The National Institute of Standards and Technology (NIST) was known as the Bureau of Standards (NBS) from 1901-1988.
+        </definition>
+    </term>
+
+    <term id="IMS">
+        <name>Innovations in Measurement Science</name>
+        <acronym>IMS</acronym>
+        <links>
+            <link type="simple" href=""></link></links>
+        <definition></definition>
+    </term>
+
+    <term id="MUF">
+        <name>Microwave Uncertainty Framework</name>
+        <acronym>MUF</acronym>
+        <links>
+            <link type="simple" href="http://www.nist.gov/ctl/rf-technology/related-software.cfm"></link></links>
+        <definition>
+            Microwave Uncertainty Framework (MUF) provides a "drag-and-drop" toolkit for managing
+            the calculation of uncertainties in VNA and other measurements.
+        </definition>
+    </term>
+
+    <term id="">
+        <name></name>
+        <acronym></acronym>
+        <links><link type="simple" href=""></link></links>
+        <definition></definition>
+    </term>
+
+    <term id="">
+        <name></name>
+        <acronym></acronym>
+        <links><link type="simple" href=""></link></links>
+        <definition></definition>
+    </term>
+
+    <term id="">
+        <name></name>
+        <acronym></acronym>
+        <links><link type="simple" href=""></link></links>
+        <definition></definition>
+    </term>
+
+    <term id="">
+        <name></name>
+        <acronym></acronym>
+        <links><link type="simple" href=""></link></links>
+        <definition></definition>
+    </term>
+
+    <term id="">
+        <name></name>
+        <acronym></acronym>
+        <links><link type="simple" href=""></link></links>
+        <definition></definition>
+    </term>
+
+    <term id="">
+        <name></name>
+        <acronym></acronym>
+        <links><link type="simple" href=""></link></links>
+        <definition></definition>
+    </term>
+
+    <term id="">
+        <name></name>
+        <acronym></acronym>
+        <links><link type="simple" href=""></link></links>
+        <definition></definition>
+    </term>
+
+    <term id="">
+        <name></name>
+        <acronym></acronym>
+        <links><link type="simple" href=""></link></links>
+        <definition></definition>
+    </term>
+
+    <term id="">
+        <name></name>
+        <acronym></acronym>
+        <links><link type="simple" href=""></link></links>
+        <definition></definition>
+    </term>
 </glossary>
