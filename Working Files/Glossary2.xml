@@ -90,7 +90,7 @@
                 Calorimeter Wikipedia Page
             </link>
         </links>
-        <definition></definition>
+        <definition>A calorimeter is an experimental apparatus that measures the energy of particles.</definition>
     </term>
 
     <term id="NBS">
@@ -109,8 +109,22 @@
         <name>Innovations in Measurement Science</name>
         <acronym>IMS</acronym>
         <links>
-            <link type="simple" href=""></link></links>
-        <definition></definition>
+            <link type="simple" href="http://www.nist.gov/public_affairs/factsheet/measurement2009.cfm">
+             NIST Innovations in Measurement Science Page
+            </link>
+        </links>
+        <definition>
+            As new science and technology areas emerge, NIST must quickly develop the measurement methods needed to
+            support them.  The Innovations in Measurement Science Program is one of NIST’s primary mechanisms for
+            keeping pace with the measurement requirements needed for innovation in U.S. industry.
+            <br></br>
+            Established in 1979, the program supports high-risk, leading-edge research projects that anticipate
+            industry needs and develop measurement science for the next generation of technology. At some point
+            in their careers, all three of NIST’s Nobel laureates have had their research funded by this program.
+            Current NIST expertise in quantum information science, fuel cell science, three dimensional chemical
+            imaging, and many other areas important to national priorities were launched with “measurement innovations”
+            funding.
+        </definition>
     </term>
 
     <term id="MUF">
@@ -118,7 +132,7 @@
         <acronym>MUF</acronym>
         <links>
             <link type="simple" href="http://www.nist.gov/ctl/rf-technology/related-software.cfm">
-
+                Microwave Uncertainty Framework Page
             </link>
         </links>
         <definition>
