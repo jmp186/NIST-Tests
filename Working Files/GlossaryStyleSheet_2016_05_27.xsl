@@ -50,11 +50,15 @@
         <script>
             var selectterm;
             var data = $("button").click(function() {
-            data=document.getElementById("searchterm").value;
-            selectterm=document.getElementById(data).innerHTML
-            document.getElementById("output").innerHTML=selectterm;
-            console.log(data);
+            data=document.getElementById("selectterm").value;
+            // 1) search by acronym
+            // ...
+            // 2) search by acronym
+            selectterm=$("li:contains('Acronym: "+data+" ')").parent();
+            console.log(selectterm.html());
+            $("div[id='output']").append(selectterm.html());
             });
+            // 2) search by name
         </script>
         </body>
 

@@ -117,73 +117,169 @@
         <name>Microwave Uncertainty Framework</name>
         <acronym>MUF</acronym>
         <links>
-            <link type="simple" href="http://www.nist.gov/ctl/rf-technology/related-software.cfm"></link></links>
+            <link type="simple" href="http://www.nist.gov/ctl/rf-technology/related-software.cfm">
+
+            </link>
+        </links>
         <definition>
             Microwave Uncertainty Framework (MUF) provides a "drag-and-drop" toolkit for managing
-            the calculation of uncertainties in VNA and other measurements.
+            the calculation of uncertainties in Vector Network Analyzer (VNA) and other measurements.
+        </definition>
+    </term>
+
+    <term id="Monte Carlo method">
+        <name>Monte Carlo method</name>
+        <acronym></acronym>
+        <links>
+            <link type="simple" href="https://en.wikipedia.org/wiki/Monte_Carlo_method">
+                Monte Carlo method Wikipedia Page
+            </link>
+        </links>
+        <definition>
+            There is no consensus on how to define Monte Carlo methods.  Within Calnet it is...
+        </definition>
+    </term>
+
+    <term id="VBA">
+        <name>Visual Basic for Applications</name>
+        <acronym>VBA</acronym>
+        <links>
+            <link type="simple" href="https://en.wikipedia.org/wiki/Visual_Basic_for_Applications">
+                Visual Basic for Applications Wikipedia Page
+            </link>
+        </links>
+        <definition>
+            Visual Basic for Applications (VBA) enables
         </definition>
     </term>
 
     <term id="">
         <name></name>
         <acronym></acronym>
-        <links><link type="simple" href=""></link></links>
-        <definition></definition>
+        <links>
+            <link type="simple" href="">
+
+            </link>
+        </links>
+        <definition>
+
+        </definition>
     </term>
 
     <term id="">
         <name></name>
         <acronym></acronym>
-        <links><link type="simple" href=""></link></links>
-        <definition></definition>
+        <links>
+            <link type="simple" href="">
+
+            </link>
+        </links>
+        <definition>
+
+        </definition>
     </term>
 
     <term id="">
         <name></name>
         <acronym></acronym>
-        <links><link type="simple" href=""></link></links>
-        <definition></definition>
+        <links>
+            <link type="simple" href="">
+
+            </link>
+        </links>
+        <definition>
+
+        </definition>
     </term>
 
     <term id="">
         <name></name>
         <acronym></acronym>
-        <links><link type="simple" href=""></link></links>
-        <definition></definition>
+        <links>
+            <link type="simple" href="">
+
+            </link>
+        </links>
+        <definition>
+
+        </definition>
     </term>
 
     <term id="">
         <name></name>
         <acronym></acronym>
-        <links><link type="simple" href=""></link></links>
-        <definition></definition>
+        <links>
+            <link type="simple" href="">
+
+            </link>
+        </links>
+        <definition>
+
+        </definition>
     </term>
 
     <term id="">
         <name></name>
         <acronym></acronym>
-        <links><link type="simple" href=""></link></links>
-        <definition></definition>
+        <links>
+            <link type="simple" href="">
+
+            </link>
+        </links>
+        <definition>
+
+        </definition>
     </term>
 
     <term id="">
         <name></name>
         <acronym></acronym>
-        <links><link type="simple" href=""></link></links>
-        <definition></definition>
+        <links>
+            <link type="simple" href="">
+
+            </link>
+        </links>
+        <definition>
+
+        </definition>
     </term>
 
     <term id="">
         <name></name>
         <acronym></acronym>
-        <links><link type="simple" href=""></link></links>
-        <definition></definition>
+        <links>
+            <link type="simple" href="">
+
+            </link>
+        </links>
+        <definition>
+
+        </definition>
     </term>
 
     <term id="">
         <name></name>
         <acronym></acronym>
-        <links><link type="simple" href=""></link></links>
-        <definition></definition>
+        <links>
+            <link type="simple" href="">
+
+            </link>
+        </links>
+        <definition>
+
+        </definition>
+    </term>
+
+    <term id="">
+        <name></name>
+        <acronym></acronym>
+        <links>
+            <link type="simple" href="">
+
+            </link>
+        </links>
+        <definition>
+
+        </definition>
     </term>
 </glossary>
