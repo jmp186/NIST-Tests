@@ -48,19 +48,20 @@
 </div>
  <div id="output"></div>
         <script>
-            var selectterm;
+            var acronymresult;
+            <!--var nameresult;-->
             var input = $("button").click(function() {
             input=document.getElementById("searchterm").value;
             <!--// 1) search by acronym-->
-            selectterm=$("acronym:contains("+input+")").parent();
+            acronymresult=$("li:contains('Acronym: "+input+")').parent();
             console.log(selectterm.html());
-            $("div[id='output']").append(selectterm.html());
-            );
-            <!--// 2) search by name-->
-            selectterm=$("name:contains("+input+")").parent();
-            console.log(selectterm.html());
-            $("div[id='output']").append(selectterm.html());
+            $("div[id='output']").append(acronymresult.html());
             });
+            <!--// 2) search by name-->
+            <!--nameresult=$("name:contains("+input+")").parent();-->
+            <!--console.log(selectterm.html());-->
+            <!--$("div[id='output']").append(nameresult.html());-->
+            <!--});-->
         </script>
         </body>
 
