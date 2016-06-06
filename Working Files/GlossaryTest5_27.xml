@@ -1,24 +1,23 @@
 <?xml version='1.0'?>
-<?xml-stylesheet type="text/xsl" href="./GlossaryStyleSheet_2016_05_27.xsl"?>
+<?xml-stylesheet type="text/xsl" href="./TrialStyleSheet_2016_06_06.xsl"?>
 
 <glossary>
 
     <term id="XML">
-        <name>
-            eXtensible Markup Language
-        </name>
-        <acronym>
-            XML
-        </acronym>
-        <link type="simple" href="http://www.w3schools.com/xml/">
-            XML Tutorial by W3Schools
-        </link>
         <definition>
-            Extensible Markup Language (XML) is a markup language
-            that defines a set of rules for encoding documents in a format
-            that is both human-readable and machine-readable. It is defined
-            by the W3C's XML 1.0 Specification and by several other related
+            <link type="simple" href="http://www.w3schools.com/xml/">
+                <name>
+                    Extensible Markup Language
+                </name>
+            </link>
+            <acronym>
+            XML
+            </acronym>
+            is a markup language that defines a set of rules for encoding documents
+            in a format that is both human-readable and machine-readable. It is
+            defined by the W3C's XML 1.0 Specification and by several other related
             specifications, all of which are free open standards.
         </definition>
     </term>
+
 </glossary>
