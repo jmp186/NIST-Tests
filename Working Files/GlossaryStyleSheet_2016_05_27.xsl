@@ -50,7 +50,7 @@
         <script>
             var selectterm;
             var data = $("button").click(function() {
-            data=document.getElementById("selectterm").value;
+            data=document.getElementById("searchterm").value;
             // 1) search by acronym
             // ...
             // 2) search by acronym

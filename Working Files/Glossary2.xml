@@ -73,7 +73,7 @@
 
     <term id="thermistor">
         <name>Thermistor</name>
-        <acronym></acronym>
+        <acronym>thermistor</acronym>
         <links>
             <link type="simple" href="https://en.wikipedia.org/wiki/Thermistor">
                 Thermistor Wikipedia Page
@@ -84,7 +84,7 @@
 
     <term id="calorimeter">
         <name>Calorimeter</name>
-        <acronym></acronym>
+        <acronym>calorimeter</acronym>
         <links>
             <link type="simple" href="https://en.wikipedia.org/wiki/Calorimeter_(particle_physics)">
                 Calorimeter Wikipedia Page
@@ -129,7 +129,7 @@
 
     <term id="Monte Carlo method">
         <name>Monte Carlo method</name>
-        <acronym></acronym>
+        <acronym>monte carlo method</acronym>
         <links>
             <link type="simple" href="https://en.wikipedia.org/wiki/Monte_Carlo_method">
                 Monte Carlo method Wikipedia Page
