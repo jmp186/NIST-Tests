@@ -1,59 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:template match="/">
-    <html lang="en">
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-            <style>
-                span {color:red; font-weight:bold; text-transform:uppercase;}
-                #content {display:none}
-            </style>
+        <html lang="en">
+            <head>
+                <meta charset="utf-8"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1"/>
+                <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+                <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+                <style>
+                    span {color:red; font-weight:bold; text-transform:uppercase;}
+                    #content {display:none}
+                </style>
 
-        </head>
+            </head>
 
-        <body>
-            <div id="content">
+            <body>
+                <div id="content">
                     <xsl:for-each select="//term">
-                        <ul><xsl:attribute name="id"><xsl:value-of select="@id"/></xsl:attribute>
-                        <li><a><xsl:attribute name="href"><xsl:value-of select="links/link/@href"/></xsl:attribute><span></span></a><xsl:value-of select="name"/></li>
-                        <li>Acronym: <xsl:value-of select="acronym"/></li>
-                        <li>Definition: <xsl:value-of select="definition"/></li>
-                        <li>Related Links: <xsl:value-of select="link"/></li>
+                        <ul>
+                            <xsl:attribute name="id"><xsl:value-of select="@id"/></xsl:attribute>
+                            <li><a><xsl:attribute name="href"><xsl:value-of select="links/link/@href"/></xsl:attribute></a><xsl:value-of select="name"/></li>
+                            <li>Acronym:<xsl:value-of select="acronym"/></li>
+                            <li>Name:<xsl:value-of select="name"/></li>
+                            <li>Definition:<xsl:value-of select="definition"/></li>
+                            <li>Related Links:<xsl:value-of select="link"/></li>
                         </ul>
                     </xsl:for-each>
-            </div>
+                </div>
 
-<div class="container">
-            <h1>Glossary Search</h1>
+                <div class="container">
+                    <h1>Glossary Search</h1>
 
-    <input type="text" class="form-control" id="searchterm" placeholder="Enter Term"/>
-            <button class="btn-primary">
-                Search
-            </button>
-</div>
- <div class="container" id="output"></div>
-        <script>
-            var acronymresult;
-            <!--var nameresult;-->
-            var input = $("button").click(function() {
-            input=document.getElementById("searchterm").value;
-            <!--// 1) search by acronym-->
-            acronymresult=$("li:contains('Acronym:"+input+")').parent();
-            console.log(input.html());
-            $("div[id='output']").append(acronymresult.html());
-            });
-            <!--// 2) search by name-->
-            <!--nameresult=$("name:contains("+input+")").parent();-->
-            <!--console.log(selectterm.html());-->
-            <!--$("div[id='output']").append(nameresult.html());-->
-            <!--});-->
-        </script>
-        </body>
+                    <input type="text" class="form-control" id="input" placeholder="Enter Term"/>
+                    <button class="btn-primary">
+                        Search
+                    </button>
+                </div>
+                <div id="output"></div>
+                <script>
+                    var nameResult = null;
+                    var acronymResult = null;
+                    var input = $("button").click(function() {
+                    input=document.getElementById("input").value;
 
-    </html>
+                    <!--// 1) search by acronym-->
+                    acronymResult = $("li:contains(Acronym:"+input+")").parent();
+                    console.log(acronymResult);
+
+                    nameResult = $("li:contains(Name:"+input+")").parent();
+                    console.log(nameResult);
+
+                    if (acronymResult){
+                      $("div[id='output']").append(acronymResult.html());
+                    }
+                    if (nameResult) {
+                       console.log("appending nameResult")
+                      $("div[id='output']").append(nameResult.html());
+                    }
+                    });
+                </script>
+            </body>
+
+        </html>
     </xsl:template>
 </xsl:stylesheet>
