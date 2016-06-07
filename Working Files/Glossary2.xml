@@ -27,9 +27,9 @@
             </link>
         </links>
         <definition>
-        XSL is a family of recommendations for defining XML document transformation
-        and presentation. It consists of three parts: XSL Transformations (XSLT) a
-        language for transforming XML; The XML Path Language (XPath)
+            XSL is a family of recommendations for defining XML document transformation
+            and presentation. It consists of three parts: XSL Transformations (XSLT) a
+            language for transforming XML; The XML Path Language (XPath)
         </definition>
     </term>
 
@@ -41,7 +41,9 @@
                 National Institute of Standards and Technology Homepage
             </link>
         </links>
-        <definition>Think of how to word this...</definition>
+        <definition>
+            Think of how to word this...
+        </definition>
     </term>
 
     <term id="ASCII">
@@ -52,8 +54,10 @@
                 ASCII Wikipedia Page
             </link>
         </links>
-        <definition>Character encoding standard that represents text in computers,
-            telecommunications equipment, and other devices.</definition>
+        <definition>
+            Character encoding standard that represents text in computers,
+            telecommunications equipment, and other devices.
+        </definition>
     </term>
 
     <term id="S parameter">
@@ -79,7 +83,9 @@
                 Thermistor Wikipedia Page
             </link>
         </links>
-        <definition>A thermistor is a resistor whose resistance is dependent on temperature.</definition>
+        <definition>
+            A thermistor is a resistor whose resistance is dependent on temperature.
+        </definition>
     </term>
 
     <term id="calorimeter">
@@ -90,7 +96,9 @@
                 Calorimeter Wikipedia Page
             </link>
         </links>
-        <definition>A calorimeter is an experimental apparatus that measures the energy of particles.</definition>
+        <definition>
+            A calorimeter is an experimental apparatus that measures the energy of particles.
+        </definition>
     </term>
 
     <term id="NBS">
