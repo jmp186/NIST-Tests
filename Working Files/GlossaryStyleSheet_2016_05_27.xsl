@@ -18,23 +18,12 @@
         <body>
             <div id="content">
                     <xsl:for-each select="//term">
-                        <ul>
-                            <xsl:attribute name="id">
-                                <xsl:value-of select="@id"/>
-                            </xsl:attribute>
-                        <li>
-                        <a>
-                            <xsl:attribute name="href">
-                                <xsl:value-of select="links/link/@href"/>
-                            </xsl:attribute>
-                            <span></span>
-                        </a>
-                                <xsl:value-of select="name"/>
-                    </li>
-                    <li>Acronym: <xsl:value-of select="acronym"/></li>
-                    <li>Definition: <xsl:value-of select="definition"/></li>
-                    <li>Related Links: <xsl:value-of select="link"/></li>
-                    </ul>
+                        <ul><xsl:attribute name="id"><xsl:value-of select="@id"/></xsl:attribute>
+                        <li><a><xsl:attribute name="href"><xsl:value-of select="links/link/@href"/></xsl:attribute><span></span></a><xsl:value-of select="name"/></li>
+                        <li>Acronym: <xsl:value-of select="acronym"/></li>
+                        <li>Definition: <xsl:value-of select="definition"/></li>
+                        <li>Related Links: <xsl:value-of select="link"/></li>
+                        </ul>
                     </xsl:for-each>
             </div>
 
@@ -53,8 +42,8 @@
             var input = $("button").click(function() {
             input=document.getElementById("searchterm").value;
             <!--// 1) search by acronym-->
-            acronymresult=$("li:contains('Acronym: "+input+")').parent();
-            console.log(selectterm.html());
+            acronymresult=$("li:contains('Acronym:"+input+")').parent();
+            console.log(input.html());
             $("div[id='output']").append(acronymresult.html());
             });
             <!--// 2) search by name-->
