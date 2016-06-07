@@ -7,11 +7,11 @@
         <definition>
             <link type="simple" href="http://www.w3schools.com/xml/">
                 <name>
-                    Extensible Markup Language
+                    EXtensible Markup Language
                 </name>
             </link>
             <acronym>
-            XML
+            (XML)
             </acronym>
             is a markup language that defines a set of rules for encoding documents
             in a format that is both human-readable and machine-readable. It is
