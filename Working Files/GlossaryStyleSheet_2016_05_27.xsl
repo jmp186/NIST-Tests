@@ -46,7 +46,7 @@
                 Search
             </button>
 </div>
- <div id="output"></div>
+ <div class="container" id="output"></div>
         <script>
             var acronymresult;
             <!--var nameresult;-->

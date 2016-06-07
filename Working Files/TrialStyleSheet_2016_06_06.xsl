@@ -16,7 +16,7 @@
         </head>
 
         <body>
-            <div id="content">
+            <div class="container" id="content">
                     <xsl:for-each select="//term">
                         <h1>
                             <xsl:attribute name="id">
@@ -46,7 +46,7 @@
                 Search
             </button>
 </div>
- <div id="output"></div>
+ <div class="container" id="output"></div>
         <script>
             var selectterm;
             var data = $("button").click(function() {
