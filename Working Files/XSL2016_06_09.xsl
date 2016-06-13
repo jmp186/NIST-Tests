@@ -6,13 +6,11 @@
                 <meta charset="utf-8"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+                <link rel="stylesheet" href="jquery-ui.min.css"></link>
+                <script src="external/jquery/jquery.js"></script>
+                <script src="jquery-ui.min.js"></script>
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
                 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-                <style>
-                    span {color:red; font-weight:bold; text-transform:uppercase;}
-                    #content {display:none}
-                </style>
-
             </head>
 
             <body>
@@ -39,6 +37,24 @@
                 </div>
                 <div id="output"></div>
                 <script>
+                    $(function() {
+                    var availableTerms = [
+                    <xsl:for-each select="acronym"/>
+                    <xsl:for-each select="name"/>
+                    ];
+                    $( "#term").autocomplete({
+                        source: availableTerms
+                    });
+                    });
+                </script>
+
+                <div class="ui-widget">
+                    <label for="term">Search </label>
+                    <input id="term"/>
+                 </div>
+
+
+                <script>
                     var nameResult = null;
                     var acronymResult = null;
                     var input = $("button").click(function()
@@ -60,49 +76,7 @@
                     <!--}-->
                     <!--});-->
                 </script>
-                <script>
-                    <!--http://jqueryui.com/autocomplete/#categories-->
-                    $.widget( "custom.catcomplete", $.ui.autocomplete, {
-                    _create: function() {
-                    this._super();
-                    this.widget().menu( "option", "items", "> :not(.ui-autocomplete-category)" );
-                    },
-                    _renderMenu: function( ul, items ) {
-                    var that = this,
-                    currentCategory = "";
-                    $.each( items, function( index, item ) {
-                    var li;
-                    if ( item.category != currentCategory ) {
-                    ul.append( "<li class='ui-autocomplete-category'>" + item.category + "</li>" );
-                    currentCategory = item.category;
-                    }
-                    li = that._renderItemData( ul, item );
-                    if ( item.category ) {
-                    li.attr( "aria-label", item.category + " : " + item.label );
-                    }
-                    });
-                    }
-                    });
-                </script>
-                <script>
-                    $(function() {
-                    var nameResult = null;
-                    var acronymResult = null;
-                    var input = $("button").click(function()
-                    input=document.getElementById("input").value;
 
-                    <!--// 1) search by acronym-->
-                    acronymResult = $("li:contains(Acronym:"+input+")").parent();
-                    console.log(acronymResult);
-
-                    nameResult = $("li:contains(Name:"+input+")").parent();
-                    console.log(nameResult);{ label: "anders", category: "" },
-
-                    $( "#search" ).catcomplete({
-                    delay: 0,
-                    source: input
-                    });
-                    });
             </body>
 
         </html>
