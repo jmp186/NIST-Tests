@@ -1,5 +1,5 @@
 <?xml version='1.0'?>
-<?xml-stylesheet type="text/xsl" href="./XSL2016_06_09.xsl"?>
+<?xml-stylesheet type="text/xsl" href="./GlossaryStyleSheet_2016_05_27.xsl"?>
 
 <glossary>
 
@@ -16,6 +16,7 @@
             by the W3C's XML 1.0 Specification and by several other related
             specifications, all of which are free open standards.
         </definition>
+        <img src="./xmlimg.svg">XML Image</img>
     </term>
 
     <term id="XSL">
