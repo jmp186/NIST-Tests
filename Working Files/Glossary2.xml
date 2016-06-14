@@ -30,7 +30,8 @@
         <definition>
             XSL is a family of recommendations for defining XML document transformation
             and presentation. It consists of three parts: XSL Transformations (XSLT) a
-            language for transforming XML; The XML Path Language (XPath)
+            language for transforming XML; XPath, a language for navigating in XML documents; XSL-FO, a language for
+            formatting XML documents (discontinued in 2013); and XQuery, a language for querying XML documents.
         </definition>
     </term>
 
