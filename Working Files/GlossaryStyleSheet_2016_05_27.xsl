@@ -8,7 +8,8 @@
                 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
                 <link rel="stylesheet" href="jquery-ui.min.css"></link>
                 <script src="external/jquery/jquery.js"></script>
-                <script src="jquery-ui.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+                <script src="jquery-ui.min.js"></script>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
                 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
                 <style>
 
@@ -25,7 +26,7 @@
                             <li>Acronym:<xsl:value-of select="acronym"/></li>
                             <li>Name:<xsl:value-of select="name"/></li>
                             <li>Definition:<xsl:value-of select="definition"/></li>
-                            <li>Image:<xsl:value-of select="img/@src"/></li>
+                            <!--<li>Image:<xsl:value-of select="img/@src"/></li>-->
                             <li>Related Links:<xsl:value-of select="link"/></li>
                         </ul>
                     </xsl:for-each>
