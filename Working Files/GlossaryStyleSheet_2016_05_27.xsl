@@ -6,13 +6,13 @@
                 <meta charset="utf-8"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
-                <link rel="stylesheet" href="jquery-ui.min.css"></link>
-                <script src="external/jquery/jquery.js"></script>
-                <script src="jquery-ui.min.js"></script>
+                <!--<link rel="stylesheet" href="jquery-ui.min.css"></link>-->
+                <!--<script src="external/jquery/jquery.js"></script>-->
+                <!--<script src="jquery-ui.min.js"></script>-->
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
                 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
                 <style>
-
+                    #content {display:none}
                 </style>
 
             </head>
@@ -22,11 +22,11 @@
                     <xsl:for-each select="//term">
                         <ul>
                             <xsl:attribute name="id"><xsl:value-of select="@id"/></xsl:attribute>
-                            <li><a><xsl:attribute name="href"><xsl:value-of select="links/link/@href"/></xsl:attribute></a><xsl:value-of select="name"/></li>
+                            <li><a><xsl:attribute name="href"><xsl:value-of select="links/link/@href"/></xsl:attribute><xsl:value-of select="name"/></a></li>
                             <li>Acronym:<xsl:value-of select="acronym"/></li>
                             <li>Name:<xsl:value-of select="name"/></li>
                             <li>Definition:<xsl:value-of select="definition"/></li>
-                            <!--<li>Image:<xsl:value-of select="img/@src"/></li>-->
+                            <li><xsl:element name="img" ><xsl:attribute name="src"><xsl:value-of select="img/@src"/></xsl:attribute></xsl:element></li>
                             <li>Related Links:<xsl:value-of select="link"/></li>
                         </ul>
                     </xsl:for-each>
