@@ -20,7 +20,7 @@
             <body>
                 <div id="content">
                     <xsl:for-each select="//term">
-                        <ul>
+                        <ul class="outputList">
                             <xsl:attribute name="id"><xsl:value-of select="@id"/></xsl:attribute>
                             <li><a><xsl:attribute name="href"><xsl:value-of select="links/link/@href"/></xsl:attribute><xsl:value-of select="name"/></a></li>
                             <li>Acronym:<xsl:value-of select="acronym"/></li>
@@ -56,14 +56,16 @@
                     console.log(nameResult);
 
                     <!--if statement to choose whether it produces results based on acronym or term name-->
+                    <!--look up javascript switch-->
                     if (acronymResult){
                       $("div[id='output']").append(acronymResult.html());
                     }
                     if (nameResult) {
-                       console.log("appending nameResult")
+                       console.log("appending nameResult");
                       $("div[id='output']").append(nameResult.html());
                     }
                     });
+                    <!--need else statement here to do a Google or something search-->
                 </script>
                 <!--<script>-->
                     <!--function myFunction() {-->
