@@ -51,9 +51,11 @@
                     acronymResult = $("li:contains(Acronym:"+input+")").parent();
                     console.log(acronymResult);
 
+                    <!--// 2) search by term name-->
                     nameResult = $("li:contains(Name:"+input+")").parent();
                     console.log(nameResult);
 
+                    <!--if statement to choose whether it produces results based on acronym or term name-->
                     if (acronymResult){
                       $("div[id='output']").append(acronymResult.html());
                     }
@@ -63,6 +65,13 @@
                     }
                     });
                 </script>
+                <!--<script>-->
+                    <!--function myFunction() {-->
+                    <!--var str = input-->
+                    <!--var res = str.toLowerCase();-->
+                    <!--document.getElementById("input").innerHTML = res;-->
+                    <!--}-->
+                <!--</script>-->
             </body>
 
         </html>
