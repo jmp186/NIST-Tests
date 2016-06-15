@@ -41,3 +41,5 @@
                     source: input
                     });
                     });
+
+                $("ul.outputList > li").remove();
