@@ -27,15 +27,15 @@
                                     <xsl:attribute name="href">
                                         <xsl:value-of select="links/link/@href"/>
                                     </xsl:attribute>
-                                    <xsl:value-of select="name"/>
+                                  <span id="name"><xsl:value-of select="name"/></span>
                                 </a>
                             </li>
-                            <li>Acronym:<xsl:value-of select="acronym"/></li>
+                            <li id="acronym"><xsl:value-of select="acronym"/></li>
                             <li>Definition:<xsl:value-of select="definition"/></li>
                             <li>
-                                    <xsl:copy-of select="img"/>
+                                    <xsl:copy-of select="img/*"/>
                             </li>
-                            <li>Related Links:<xsl:value-of select="link"/></li>
+                            <!--todo: this is here for a space holder for related topics/links <li>Related Links:<xsl:value-of select="link"/></li>-->
                         </ul>
                     </xsl:for-each>
                 </div>
@@ -52,15 +52,16 @@
                 <script>
                     var nameResult = null;
                     var acronymResult = null;
+
                     var input = $("button").click(function() {
                     input=document.getElementById("input").value;
 
                     <!--// 1) search by acronym-->
-                    acronymResult = $("li:contains(Acronym:"+input+")").parent();
+                    acronymResult = $("li#acronym:contains("+input+")").parent();
                     console.log(acronymResult);
 
                     <!--// 2) search by term name-->
-                    nameResult = $("li:contains(Name:"+input+")").parent();
+                    nameResult = $("span#name:contains("+input+")").parent().parent().parent();
                     console.log(nameResult);
 
                     if (acronymResult){
@@ -72,7 +73,7 @@
                     }
                     });
                 </script>
-                <!--<script>-->
+                <!--todo: clear function<script>-->
                     <!--function myFunction() {-->
                     <!--var str = input-->
                     <!--var res = str.toLowerCase();-->
