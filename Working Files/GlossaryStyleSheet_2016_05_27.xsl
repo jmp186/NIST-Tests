@@ -31,7 +31,6 @@
                                 </a>
                             </li>
                             <li>Acronym:<xsl:value-of select="acronym"/></li>
-                            <li>Name:<xsl:value-of select="name"/></li>
                             <li>Definition:<xsl:value-of select="definition"/></li>
                             <li>
                                     <xsl:copy-of select="img"/>
@@ -49,7 +48,7 @@
                         Search
                     </button>
                 </div>
-                <div id="output"></div>
+                <div id="output" class="container"></div>
                 <script>
                     var nameResult = null;
                     var acronymResult = null;
