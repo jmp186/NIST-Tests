@@ -16,8 +16,8 @@
             by the W3C's XML 1.0 Specification and by several other related
             specifications, all of which are free open standards.
         </definition>
-        <img>
-        </img>
+        <visual>
+        </visual>
     </term>
 
     <term id="XSL">
@@ -34,8 +34,8 @@
             language for transforming XML; XPath, a language for navigating in XML documents; XSL-FO, a language for
             formatting XML documents (discontinued in 2013); and XQuery, a language for querying XML documents.
         </definition>
-        <img>
-        </img>
+        <visual>
+        </visual>
     </term>
 
     <term id="NIST">
@@ -51,25 +51,28 @@
             States Department of Commerce. Its mission is to promote innovation and industrial competitiveness.
             Known as National Bureau of Standards from 1901-1988.
         </definition>
-        <img>
-           <svg
-                   xmlns="http://www.w3.org/2000/svg"
-                   width="645.28674"
-                   height="170.20813">
-                <defs id="defs4" />
-                <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1" transform="translate(-169.7133,-417.375)">
+        <visual>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.0"
+            id="svg2"
+            height="170.20813"
+            width="645.28674">
+            <defs id="defs4" />
+            <g
+                transform="translate(-169.7133,-417.375)"
+                    id="layer1">
                 <path
-                    style="opacity:1;fill:black;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-                    d="M 214.71326,417.58314 C 189.87327,417.58314 169.71326,437.74314 169.71326,462.58314 L 170.06016,587.58313 L 210.06016,587.58313 L 209.71326,504.42689 L 209.71326,462.58314 C 209.71327,459.99564 211.693,457.83934 214.21326,457.58314 C 214.38128,457.56606 214.54076,457.58314 214.71326,457.58314 C 216.09326,457.58314 217.33951,458.14689 218.24451,459.05189 L 323.1875,574.1875 C 331.33251,582.33251 342.58,587.375 355,587.375 C 379.83999,587.375 400.00001,567.21501 400,542.375 L 400,417.375 L 360,417.375 L 360,497.65625 L 360,542.375 C 360,542.43944 360.00242,542.49865 360,542.5625 C 359.89877,545.23345 357.69556,547.375 355,547.375 C 353.62,547.37501 352.37375,546.81125 351.46875,545.90625 L 246.52576,430.77064 C 238.38077,422.62565 227.13325,417.58314 214.71326,417.58314 z "
                     id="rect1904"
-                    sodipodi:nodetypes="ccccccssccscccccssccc" />
+                    d="M 214.71326,417.58314 C 189.87327,417.58314 169.71326,437.74314 169.71326,462.58314 L 170.06016,587.58313 L 210.06016,587.58313 L 209.71326,504.42689 L 209.71326,462.58314 C 209.71327,459.99564 211.693,457.83934 214.21326,457.58314 C 214.38128,457.56606 214.54076,457.58314 214.71326,457.58314 C 216.09326,457.58314 217.33951,458.14689 218.24451,459.05189 L 323.1875,574.1875 C 331.33251,582.33251 342.58,587.375 355,587.375 C 379.83999,587.375 400.00001,567.21501 400,542.375 L 400,417.375 L 360,417.375 L 360,497.65625 L 360,542.375 C 360,542.43944 360.00242,542.49865 360,542.5625 C 359.89877,545.23345 357.69556,547.375 355,547.375 C 353.62,547.37501 352.37375,546.81125 351.46875,545.90625 L 246.52576,430.77064 C 238.38077,422.62565 227.13325,417.58314 214.71326,417.58314 z "
+                    style="opacity:1;fill:black;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
                 <path
-                    style="opacity:1;fill:black;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+                    id="rect2795"
                     d="M 420,417.375 L 420,542.375 C 420,567.21499 440.16,587.375 465,587.375 L 635,587.375 C 662.81443,586.06201 684.99998,563.10628 685,534.96875 C 685,506.83116 662.81451,483.84416 635,482.53125 L 635,482.375 L 525,482.375 C 519.43711,482.06191 515.00001,476.58438 515,469.875 C 515,463.16559 519.43709,457.68807 525,457.375 L 705,457.375 L 705,587.375 L 745,587.375 L 745,457.375 L 815,457.375 L 815,417.375 L 525,417.375 L 525,417.53125 C 497.18549,418.84416 475,441.83116 475,469.96875 C 475.00002,498.10628 497.18557,521.06201 525,522.375 L 635,522.375 C 640.56291,522.68807 645,528.16559 645,534.875 C 644.99999,541.58438 640.56289,547.06191 635,547.375 L 509.71875,547.375 L 465,547.375 C 462.24008,547.37499 460,545.13507 460,542.375 L 460,497.65625 L 460,417.375 L 420,417.375 z "
-                    id="rect2795" />
-                </g>
-            </svg>
-        </img>
+                    style="opacity:1;fill:black;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+            </g>
+          </svg>
+        </visual>
     </term>
 
     <term id="ASCII">
@@ -84,7 +87,7 @@
             is a character encoding standard that represents text in computers,
             telecommunications equipment, and other devices.
         </definition>
-        <img>
+        <visual>
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -629,7 +632,7 @@
                     x="0"
                     y="860" />
             </svg>
-        </img>
+        </visual>
     </term>
 
     <term id="S parameter">
@@ -645,6 +648,8 @@
             behavior of linear electrical networks when undergoing various steady state
             stimuli by electrical signals.
         </definition>
+        <visual>
+        </visual>
     </term>
 
     <term id="thermistor">
@@ -658,7 +663,7 @@
         <definition>
             is a resistor whose resistance is dependent on temperature.
         </definition>
-        <img>
+        <visual>
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -1139,7 +1144,7 @@ mV4NMk/VXirlrupFhKbt+YNDfIyneRJw2K+9SzcC1oGnftCVhiZG/BCLLf/Z
      height="157.2"
      width="174.3" />
 </svg>
-        </img>
+        </visual>
     </term>
 
     <term id="calorimeter">
@@ -1153,6 +1158,8 @@ mV4NMk/VXirlrupFhKbt+YNDfIyneRJw2K+9SzcC1oGnftCVhiZG/BCLLf/Z
         <definition>
             A calorimeter is an experimental apparatus that measures the energy of particles.
         </definition>
+        <visual>
+        </visual>
     </term>
 
     <term id="NBS">
@@ -1187,6 +1194,8 @@ mV4NMk/VXirlrupFhKbt+YNDfIyneRJw2K+9SzcC1oGnftCVhiZG/BCLLf/Z
             imaging, and many other areas important to national priorities were launched with “measurement innovations”
             funding.
         </definition>
+        <visual>
+        </visual>
     </term>
 
     <term id="MUF">
@@ -1201,6 +1210,8 @@ mV4NMk/VXirlrupFhKbt+YNDfIyneRJw2K+9SzcC1oGnftCVhiZG/BCLLf/Z
             Microwave Uncertainty Framework (MUF) provides a "drag-and-drop" toolkit for managing
             the calculation of uncertainties in Vector Network Analyzer (VNA) and other measurements.
         </definition>
+        <visual>
+        </visual>
     </term>
 
     <term id="Monte Carlo method">
@@ -1214,6 +1225,8 @@ mV4NMk/VXirlrupFhKbt+YNDfIyneRJw2K+9SzcC1oGnftCVhiZG/BCLLf/Z
         <definition>
             There is no consensus on how to define Monte Carlo methods.  Within Calnet it is...
         </definition>
+        <visual>
+        </visual>
     </term>
 
     <term id="VBA">
@@ -1227,5 +1240,7 @@ mV4NMk/VXirlrupFhKbt+YNDfIyneRJw2K+9SzcC1oGnftCVhiZG/BCLLf/Z
         <definition>
             Visual Basic for Applications (VBA) enables
         </definition>
+        <visual>
+        </visual>
     </term>
 </glossary>
