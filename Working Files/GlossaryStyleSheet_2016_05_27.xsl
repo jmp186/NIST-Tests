@@ -31,9 +31,9 @@
                                 </a>
                             </li>
                             <li id="acronym"><xsl:value-of select="acronym"/></li>
-                            <li>Definition:<xsl:value-of select="definition"/></li>
+                            <li id="definition"><xsl:value-of select="definition"/></li>
                             <li>
-                                    <xsl:copy-of select="img/*"/>
+                                    <xsl:copy-of select="visual/*"/>
                             </li>
                             <!--todo: this is here for a space holder for related topics/links <li>Related Links:<xsl:value-of select="link"/></li>-->
                         </ul>
