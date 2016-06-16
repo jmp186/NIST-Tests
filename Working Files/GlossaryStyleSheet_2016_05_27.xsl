@@ -20,13 +20,21 @@
             <body>
                 <div id="content">
                     <xsl:for-each select="//term">
-                        <ul class="outputList">
+                        <ul>
                             <xsl:attribute name="id"><xsl:value-of select="@id"/></xsl:attribute>
-                            <li><a><xsl:attribute name="href"><xsl:value-of select="links/link/@href"/></xsl:attribute><xsl:value-of select="name"/></a></li>
+                            <li>
+                                <a>
+                                    <xsl:attribute name="href">
+                                        <xsl:value-of select="links/link/@href"/>
+                                    </xsl:attribute>
+                                    <xsl:value-of select="name"/>
+                                </a>
+                            </li>
                             <li>Acronym:<xsl:value-of select="acronym"/></li>
-                            <li>Name:<xsl:value-of select="name"/></li>
                             <li>Definition:<xsl:value-of select="definition"/></li>
-                            <li><xsl:element name="img" ><xsl:attribute name="src"><xsl:value-of select="img/@src"/></xsl:attribute></xsl:element></li>
+                            <li>
+                                    <xsl:copy-of select="img"/>
+                            </li>
                             <li>Related Links:<xsl:value-of select="link"/></li>
                         </ul>
                     </xsl:for-each>
@@ -40,7 +48,7 @@
                         Search
                     </button>
                 </div>
-                <div id="output"></div>
+                <div id="output" class="container"></div>
                 <script>
                     var nameResult = null;
                     var acronymResult = null;
@@ -55,17 +63,14 @@
                     nameResult = $("li:contains(Name:"+input+")").parent();
                     console.log(nameResult);
 
-                    <!--if statement to choose whether it produces results based on acronym or term name-->
-                    <!--look up javascript switch-->
                     if (acronymResult){
                       $("div[id='output']").append(acronymResult.html());
                     }
                     if (nameResult) {
-                       console.log("appending nameResult");
+                       console.log("appending nameResult")
                       $("div[id='output']").append(nameResult.html());
                     }
                     });
-                    <!--need else statement here to do a Google or something search-->
                 </script>
                 <!--<script>-->
                     <!--function myFunction() {-->
