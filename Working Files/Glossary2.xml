@@ -3,23 +3,6 @@
 
 <glossary>
 
-    <term id="XML">
-        <name>eXtensible Markup Language</name>
-        <acronym>XML</acronym>
-        <links>
-            <link type="simple" href="http://www.w3schools.com/xml/"> XML Tutorial by W3Schools</link>
-        </links>
-        <definition>
-            Extensible Markup Language (XML) is a markup language
-            that defines a set of rules for encoding documents in a format
-            that is both human-readable and machine-readable. It is defined
-            by the W3C's XML 1.0 Specification and by several other related
-            specifications, all of which are free open standards.
-        </definition>
-        <visual>
-        </visual>
-    </term>
-
     <term id="XSL">
         <name>eXtensible StyleSheet Language</name>
         <acronym>XSL</acronym>
@@ -33,6 +16,23 @@
             and presentation. It consists of three parts: XSL Transformations (XSLT) a
             language for transforming XML; XPath, a language for navigating in XML documents; XSL-FO, a language for
             formatting XML documents (discontinued in 2013); and XQuery, a language for querying XML documents.
+        </definition>
+        <visual>
+        </visual>
+    </term>
+
+    <term id="XML">
+        <name>eXtensible Markup Language</name>
+        <acronym>XML</acronym>
+        <links>
+            <link type="simple" href="http://www.w3schools.com/xml/"> XML Tutorial by W3Schools</link>
+        </links>
+        <definition>
+            Extensible Markup Language (XML) is a markup language
+            that defines a set of rules for encoding documents in a format
+            that is both human-readable and machine-readable. It is defined
+            by the W3C's XML 1.0 Specification and by several other related
+            specifications, all of which are free open standards.
         </definition>
         <visual>
         </visual>

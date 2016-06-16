@@ -53,15 +53,16 @@
                     var nameResult = null;
                     var acronymResult = null;
 
-                    var input = $("button").click(function() {
+                    var input = null;
+                    $("button").click(function() {
                     input=document.getElementById("input").value;
 
                     <!--// 1) search by acronym-->
-                    acronymResult = $("li#acronym:contains("+input+")").parent();
+                    acronymResult = $("li[id='acronym']:contains("+input+")").parent();
                     console.log(acronymResult);
 
                     <!--// 2) search by term name-->
-                    nameResult = $("span#name:contains("+input+")").parent().parent().parent();
+                    nameResult = $("span[id='name']:contains("+input+")").parent().parent().parent();
                     console.log(nameResult);
 
                     if (acronymResult){
