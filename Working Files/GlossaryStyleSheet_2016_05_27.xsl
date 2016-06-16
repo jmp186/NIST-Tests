@@ -34,7 +34,7 @@
                             <li>Name:<xsl:value-of select="name"/></li>
                             <li>Definition:<xsl:value-of select="definition"/></li>
                             <li>
-                                    <xsl:value-of select="img"/>
+                                    <xsl:copy-of select="img"/>
                             </li>
                             <li>Related Links:<xsl:value-of select="link"/></li>
                         </ul>
