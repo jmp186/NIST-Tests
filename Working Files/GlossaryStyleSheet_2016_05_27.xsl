@@ -43,7 +43,7 @@
                 <div class="container">
                     <h1>Glossary Search</h1>
 
-                    <input type="button" class="form-control" id="input" placeholder="Enter Term"/>
+                    <input type="text" class="form-control" id="input" placeholder="Enter Term"/>
                     <button class="btn-primary">
                         Search
                     </button>
@@ -56,9 +56,9 @@
                     var input = null;
                     $(document).ready(function()
                     {
-                    $(document).bind('keypress', function(e) {
+                    $('#button').keypress(function(e) {
                         if(e.keyCode==13){
-                        $('#input').trigger('click');
+                        $('#button').trigger('click');
                     }
                     });
                     $("button").click(function(){
