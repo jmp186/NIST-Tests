@@ -61,3 +61,9 @@
                     <!--$("button").click(function() {-->
                     <!--$("div[id='output']".empty();-->
                     <!--});-->
+
+                <script>
+                    var results = ("div[id='output']")
+                    $("button").click(function() {
+                    $("results").replaceWith(
+                </script>
