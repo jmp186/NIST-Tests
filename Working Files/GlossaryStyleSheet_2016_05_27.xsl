@@ -87,11 +87,6 @@
                 </script>
 
 
-                <script>
-                    var results = ("div[id='output']")
-                    $("button").click(function() {
-                    $("results").replaceWith(
-                </script>
 
 
             </body>
