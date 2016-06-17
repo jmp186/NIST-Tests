@@ -54,11 +54,10 @@
                     var acronymResult = null;
                     <!--search function-->
                     var input = null;
-                    $(document).ready(function()
-                    {
-                    $('#button').keypress(function(e) {
+                    $('#input').keypress(function(e) {
                         if(e.keyCode==13){
-                        $('#button').trigger('click');
+                        console.log("pressed");
+                        $('button').trigger('click');
                     }
                     });
                     $("button").click(function(){
@@ -73,7 +72,12 @@
                     console.log(nameResult);
 
                     <!--clear function-->
-
+                    if (acronymResult!=null) {
+                        $("div[id='output']").empty();
+                    }
+                    if (nameResult!=null) {
+                        $("div[id='output']").empty();
+                    }
                     <!--display results if statements-->
                     if (acronymResult){
                       $("div[id='output']").append(acronymResult.html());
