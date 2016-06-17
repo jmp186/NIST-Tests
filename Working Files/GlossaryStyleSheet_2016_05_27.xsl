@@ -43,7 +43,7 @@
                 <div class="container">
                     <h1>Glossary Search</h1>
 
-                    <input type="text" class="form-control" id="input" placeholder="Enter Term"/>
+                    <input type="button" class="form-control" id="input" placeholder="Enter Term"/>
                     <button class="btn-primary">
                         Search
                     </button>
@@ -52,9 +52,16 @@
                 <script>
                     var nameResult = null;
                     var acronymResult = null;
-
+                    <!--search function-->
                     var input = null;
-                    $("button").click(function() {
+                    $(document).ready(function()
+                    {
+                    $(document).bind('keypress', function(e) {
+                        if(e.keyCode==13){
+                        $('#input').trigger('click');
+                    }
+                    });
+                    $("button").click(function(){
                     input=document.getElementById("input").value;
 
                     <!--// 1) search by acronym-->
@@ -65,22 +72,20 @@
                     nameResult = $("span[id='name']:contains("+input+")").parent().parent().parent();
                     console.log(nameResult);
 
+                    <!--clear function-->
+
+                    <!--display results if statements-->
                     if (acronymResult){
                       $("div[id='output']").append(acronymResult.html());
                     }
+
                     if (nameResult) {
                        console.log("appending nameResult")
                       $("div[id='output']").append(nameResult.html());
                     }
                     });
                 </script>
-                <!--todo: clear function<script>-->
-                    <!--function myFunction() {-->
-                    <!--var str = input-->
-                    <!--var res = str.toLowerCase();-->
-                    <!--document.getElementById("input").innerHTML = res;-->
-                    <!--}-->
-                <!--</script>-->
+
             </body>
 
         </html>
