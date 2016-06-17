@@ -1,11 +1,11 @@
  <!--clear function-->
-                    <!--trial 1 - didn't work-->
-                    <!--if (acronymResult = null) {-->
-                        <!--$("div[id='output']").empty();-->
-                    <!--}-->
-                    <!--if (nameResult = null) {-->
-                        <!--$("div[id='output']").empty();-->
-                    <!--}-->
+                    trial 1 - didn't work
+                    if (acronymResult==null) {
+                        $("div[id='output']").empty();
+                    }
+                    if (nameResult==null) {
+                        $("div[id='output']").empty();
+                    }
 
                     <!--trial 2 - doesn't work-->
                     <!--$("button").click(function clearResults() {-->
