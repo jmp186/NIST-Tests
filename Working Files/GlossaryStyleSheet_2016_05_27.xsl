@@ -74,13 +74,12 @@
                     }
                     });
                 </script>
-                <!--todo: clear function<script>-->
-                    <!--function myFunction() {-->
-                    <!--var str = input-->
-                    <!--var res = str.toLowerCase();-->
-                    <!--document.getElementById("input").innerHTML = res;-->
-                    <!--}-->
-                <!--</script>-->
+                <script>
+                    var results = ("div[id='output']")
+                    $("button").click(function() {
+                    $("results").replaceWith(
+                </script>
+
             </body>
 
         </html>

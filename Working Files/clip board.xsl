@@ -43,3 +43,21 @@
                     });
 
                 $("ul.outputList > li").remove();
+
+          <!--http://tutorialzine.com/2010/09/google-powered-site-search-ajax-jquery/-->
+                    <!--if not (acronymResult) or (nameResult) {
+                    console.log("appending googleSearch")
+                    $(div[id='output']).googleSearch(-->
+
+                  <!--todo: clear function<script>-->
+                    <!--function myFunction() {-->
+                    <!--var str = input-->
+                    <!--var res = str.toLowerCase();-->
+                    <!--document.getElementById("input").innerHTML = res;-->
+                    <!--}-->
+                <!--</script>-->
+
+                 <!--http://www.mkyong.com/jquery/jquery-empty-and-remove-example/-->
+                    <!--$("button").click(function() {-->
+                    <!--$("div[id='output']".empty();-->
+                    <!--});-->
