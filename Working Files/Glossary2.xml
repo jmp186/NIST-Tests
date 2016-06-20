@@ -28,11 +28,9 @@
             <link type="simple" href="http://www.w3schools.com/xml/"> XML Tutorial by W3Schools</link>
         </links>
         <definition>
-            Extensible Markup Language (XML) is a markup language
-            that defines a set of rules for encoding documents in a format
-            that is both human-readable and machine-readable. It is defined
-            by the W3C's XML 1.0 Specification and by several other related
-            specifications, all of which are free open standards.
+            is a markup language that defines a set of rules for encoding documents in a format
+            that is both human-readable and machine-readable. It is defined by the W3C's XML 1.0
+            Specification and by several other related specifications, all of which are free open standards.
         </definition>
         <visual>
         </visual>
