@@ -5,7 +5,7 @@
             <head>
                 <meta charset="utf-8"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-                <link rel="stylesheet" type="text/css" href=".GlossaryCSS.css"/>
+                <link rel="stylesheet" type="text/css" href="./GlossaryCSS.css"/>
                 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
                 <!--<link rel="stylesheet" href="jquery-ui.min.css"></link>-->
                 <!--<script src="external/jquery/jquery.js"></script>-->
