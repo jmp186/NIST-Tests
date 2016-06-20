@@ -2,6 +2,7 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:template match="/">
         <html lang="en">
+
             <head>
                 <meta charset="utf-8"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -18,12 +19,37 @@
             </head>
 
             <body>
+                    <div class="row">
+                    <h1>Glossary Search</h1>
+                    </div>
+                    <div class="row">
+                    <input type="text" class="form-control" id="input" placeholder="Enter Term"/>
+                    </div>
+                    <div class="row">
+                    <button class="btn-primary" id="buttn">
+                        Search
+                    </button>
+                    </div>
+
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="well bs-sidebar affix" id="sidebar">
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="#">Glossary Search</a></li>
+                                <li><a href="#">List of Glossary Terms</a></li>
+                                <!--todo: more side nav items-->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
                 <div id="content">
                     <xsl:for-each select="//term">
                         <ul>
                             <xsl:attribute name="id"><xsl:value-of select="@id"/></xsl:attribute>
                             <li>
-                                <a>
+                                <a id="lnx">
                                     <xsl:attribute name="href">
                                         <xsl:value-of select="links/link/@href"/>
                                     </xsl:attribute>
@@ -33,22 +59,17 @@
                             <li id="acronym"><q lang="no"><xsl:value-of select="acronym"/></q></li>
                             <li id="definition"><xsl:value-of select="definition"/></li>
                             <li>
-                                    <xsl:copy-of select="visual/*"/>
+                                    <xsl:copy-of select="image/*"/>
                             </li>
                             <!--todo: this is here for a space holder for related topics/links <li>Related Links:<xsl:value-of select="link"/></li>-->
                         </ul>
                     </xsl:for-each>
                 </div>
 
-                <div class="container">
-                    <h1>Glossary Search</h1>
-
-                    <input type="text" class="form-control" id="input" placeholder="Enter Term"/>
-                    <button class="btn-primary">
-                        Search
-                    </button>
+                <div id="output" class="row">
+                    <div class="col-sm-9"/>
                 </div>
-                <div id="output" class="container"></div>
+
                 <script>
                     var nameResult = null;
                     var acronymResult = null;
@@ -58,8 +79,9 @@
                         if(e.keyCode==13){
                         console.log("pressed");
                         $('button').trigger('click');
-                    }
+                        }
                     });
+
                     $("button").click(function(){
                     input=document.getElementById("input").value;
 
