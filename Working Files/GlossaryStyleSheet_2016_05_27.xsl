@@ -5,6 +5,7 @@
             <head>
                 <meta charset="utf-8"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
+                <link rel="stylesheet" type="text/css" href=".GlossaryCSS.css"/>
                 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
                 <!--<link rel="stylesheet" href="jquery-ui.min.css"></link>-->
                 <!--<script src="external/jquery/jquery.js"></script>-->
@@ -12,9 +13,8 @@
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
                 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
                 <style>
-                    #content {display:none}
+                #content {display: none}
                 </style>
-
             </head>
 
             <body>
@@ -30,7 +30,7 @@
                                   <span id="name"><xsl:value-of select="name"/></span>
                                 </a>
                             </li>
-                            <li id="acronym"><xsl:value-of select="acronym"/></li>
+                            <li id="acronym"><q lang="no"><xsl:value-of select="acronym"/></q></li>
                             <li id="definition"><xsl:value-of select="definition"/></li>
                             <li>
                                     <xsl:copy-of select="visual/*"/>
