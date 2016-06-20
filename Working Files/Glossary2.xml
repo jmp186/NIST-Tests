@@ -17,8 +17,8 @@
             language for transforming XML; XPath, a language for navigating in XML documents; XSL-FO, a language for
             formatting XML documents (discontinued in 2013); and XQuery, a language for querying XML documents.
         </definition>
-        <visual>
-        </visual>
+        <image>
+        </image>
     </term>
 
     <term id="XML">
@@ -32,8 +32,8 @@
             that is both human-readable and machine-readable. It is defined by the W3C's XML 1.0
             Specification and by several other related specifications, all of which are free open standards.
         </definition>
-        <visual>
-        </visual>
+        <image>
+        </image>
     </term>
 
     <term id="NIST">
@@ -49,7 +49,7 @@
             States Department of Commerce. Its mission is to promote innovation and industrial competitiveness.
             Known as National Bureau of Standards from 1901-1988.
         </definition>
-        <visual>
+        <image>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             version="1.0"
@@ -70,7 +70,7 @@
                     style="opacity:1;fill:black;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
             </g>
           </svg>
-        </visual>
+        </image>
     </term>
 
     <term id="ASCII">
@@ -85,8 +85,9 @@
             is a character encoding standard that represents text in computers,
             telecommunications equipment, and other devices.
         </definition>
-        <visual>
-        </visual>
+        <image>
+            <png src="./png/US-ASCII_code_chart.png"/>
+        </image>
     </term>
 
     <term id="S parameter">
@@ -102,8 +103,8 @@
             behavior of linear electrical networks when undergoing various steady state
             stimuli by electrical signals.
         </definition>
-        <visual>
-        </visual>
+        <image>
+        </image>
     </term>
 
     <term id="thermistor">
@@ -117,8 +118,8 @@
         <definition>
             is a resistor whose resistance is dependent on temperature.
         </definition>
-        <visual>
-        </visual>
+        <image>
+        </image>
     </term>
 
     <term id="calorimeter">
@@ -132,8 +133,8 @@
         <definition>
             A calorimeter is an experimental apparatus that measures the energy of particles.
         </definition>
-        <visual>
-        </visual>
+        <image>
+        </image>
     </term>
 
     <term id="NBS">
@@ -146,6 +147,8 @@
         <definition>
             The National Institute of Standards and Technology (NIST) was known as the Bureau of Standards (NBS) from 1901-1988.
         </definition>
+        <image>
+        </image>
     </term>
 
     <term id="IMS">
@@ -168,8 +171,8 @@
             imaging, and many other areas important to national priorities were launched with “measurement innovations”
             funding.
         </definition>
-        <visual>
-        </visual>
+        <image>
+        </image>
     </term>
 
     <term id="MUF">
@@ -184,8 +187,8 @@
             Microwave Uncertainty Framework (MUF) provides a "drag-and-drop" toolkit for managing
             the calculation of uncertainties in Vector Network Analyzer (VNA) and other measurements.
         </definition>
-        <visual>
-        </visual>
+        <image>
+        </image>
     </term>
 
     <term id="Monte Carlo method">
@@ -199,8 +202,8 @@
         <definition>
             There is no consensus on how to define Monte Carlo methods.  Within Calnet it is...
         </definition>
-        <visual>
-        </visual>
+        <image>
+        </image>
     </term>
 
     <term id="VBA">
@@ -214,7 +217,7 @@
         <definition>
             Visual Basic for Applications (VBA) enables
         </definition>
-        <visual>
-        </visual>
+        <image>
+        </image>
     </term>
 </glossary>
