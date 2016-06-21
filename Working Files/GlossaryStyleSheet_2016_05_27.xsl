@@ -19,29 +19,36 @@
             </head>
 
             <body>
-                    <div class="row">
-                    <h1>Glossary Search</h1>
-                    </div>
-                    <div class="row">
-                    <input type="text" class="form-control" id="input" placeholder="Enter Term"/>
-                    </div>
-                    <div class="row">
-                    <button class="btn-primary" id="buttn">
-                        Search
-                    </button>
-                    </div>
+                  <div class="container">
+                      <div class="row">
+                          <h1>Glossary Search</h1>
+                      </div>
+                      <div class="row">
+                          <div class="col-sm-3">
+                              <div class="well bs-sidebar affix" id="sidebar">
+                                  <ul class="nav nav-pills nav-stacked">
+                                      <li><a href="#">Glossary Search</a></li>
+                                      <li><a href="#">List of Terms</a></li>
+                                      <!--todo: more side nav items-->
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="col-sm-8">
+                              <input type="text" class="form-control" id="input" placeholder="Enter Term"/>
+                          </div>
+                          <div class="col-sm-1">
+                              <button class="btn btn-primary" id="buttn">
+                                  <span class="glyphicon glyphicon-search"></span>
+                                  Search
+                              </button>
+                          </div>
+                          <div id="padding" class="row">
+                              <div id="blankspace" class="col-sm-3"/>
+                              <div id="output" class="col-sm-8"/>
+                          </div>
+                      </div>
+                  </div>
 
-                <div class="row">
-                    <div class="col-sm-3">
-                        <div class="well bs-sidebar affix" id="sidebar">
-                            <ul class="nav nav-pills nav-stacked">
-                                <li><a href="#">Glossary Search</a></li>
-                                <li><a href="#">List of Glossary Terms</a></li>
-                                <!--todo: more side nav items-->
-                            </ul>
-                        </div>
-                    </div>
-                </div>
 
 
                 <div id="content">
@@ -58,7 +65,7 @@
                             </li>
                             <li id="acronym"><q lang="no"><xsl:value-of select="acronym"/></q></li>
                             <li id="definition"><xsl:value-of select="definition"/></li>
-                            <li>
+                            <li id="image">
                                     <xsl:copy-of select="image/*"/>
                             </li>
                             <!--todo: this is here for a space holder for related topics/links <li>Related Links:<xsl:value-of select="link"/></li>-->
@@ -66,9 +73,11 @@
                     </xsl:for-each>
                 </div>
 
-                <div id="output" class="row">
-                    <div class="col-sm-9"/>
-                </div>
+                <!--<div class="container">-->
+                <!--<div class="row">-->
+                <!--<div id="output" class="col-sm-9"/>-->
+                <!--</div>-->
+                <!--</div>-->
 
                 <script>
                     var nameResult = null;
