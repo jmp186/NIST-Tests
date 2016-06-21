@@ -1,0 +1,90 @@
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+<script>
+function loadXMLDoc(filename)
+{
+if (window.ActiveXObject)
+  {
+  xhttp = new ActiveXObject("Msxml2.XMLHTTP");
+  }
+else
+  {
+  xhttp = new XMLHttpRequest();
+  }
+ xhttp.open("GET", filename, false);
+try {xhttp.responseType = "msxml-document"} catch(err) {} // Helping IE11
+xhttp.send("");
+return xhttp.responseXML;
+ }
+
+function displayResult()
+{
+// This is where you load the files, is there a way to select from file system? Dropzone does this
+    console.log(document.getElementById('xml').files[0].name);
+    var xmlFilePath=document.getElementById('xml').files[0].name;
+    var xslFilePath=document.getElementById('xsl').files[0].name;
+
+    xml = loadXMLDoc(xmlFilePath);
+    xsl = loadXMLDoc(xslFilePath);
+    var output=null;
+// code for IE
+if (window.ActiveXObject || xhttp.responseType == "msxml-document")
+  {
+  ex = xml.transformNode(xsl);
+  document.getElementById("example").innerHTML = ex;
+  console.log(ex);
+  output= document.getElementById("example").innerHTML;
+  }
+// code for Chrome, Firefox, Opera, etc.
+else if (document.implementation && document.implementation.createDocument)
+  {
+  xsltProcessor = new XSLTProcessor();
+  xsltProcessor.importStylesheet(xsl);
+  resultDocument = xsltProcessor.transformToFragment(xml, document);
+  document.getElementById("example").appendChild(resultDocument);
+  output=document.getElementById("example").innerHTML;
+  console.log(output);
+  }
+  var fileName=xmlFilePath;
+  console.log("The File Name is:"+String(fileName));
+  var outputName=String(fileName).replace('xml','html');
+  document.getElementById("xmlText").innerHTML=fileName;
+  downloadOutput(output,'download',outputName);
+  //var outputString=new XMLSerializer().serializeToString(output);
+  //var outputBlob=new Blob([output], {type: 'text/plain'});
+  //var downloadTag=document.getElementById('download');
+  //console.log(output);
+  //downloadTag.setAttribute('href',window.URL.createObjectURL(outputBlob));
+  //downloadTag.setAttribute('download', outputName);
+  //downloadTag.dataset.downloadurl = ['text/plain', downloadTag.download, downloadTag.href].join(':');
+ }
+
+ function downloadOutput(textOutput,downloadAnchorId,outputName){
+  var outputBlob=new Blob([textOutput], {type: 'text/plain'});
+  var downloadTag=document.getElementById(downloadAnchorId);
+  console.log(textOutput);
+  downloadTag.setAttribute('href',window.URL.createObjectURL(outputBlob));
+  downloadTag.setAttribute(downloadAnchorId, outputName);
+  downloadTag.dataset.downloadurl = ['text/plain', downloadTag.download, downloadTag.href].join(':');
+  }
+
+</script>
+    <style>
+        #xmlFileInput {border:3px;margin:1px;border-style:solid;padding:10px;}
+        #xslFileInput {border:3px;margin:1px;border-style:solid;padding:10px;}
+    </style>
+</head>
+<body >
+<div id="xmlFileInput" ><h3>XML FILE</h3><input type="file"  id="xml"/></div>
+<div id="xslFileInput"><h3>XSL FILE</h3><input type="file"  id="xsl"/></div>
+
+<input type="button" id="transform" onclick="displayResult()" value="Transform XML"/>
+<a id="download" >Download Transformed Fragment</a>
+<br/>
+<!--<a id="downloadHTML" >Download Full HTML Document Fragment</a>-->
+<div id="xmlText"></div>
+<div id="example" ></div>
+
+
+</body>
+</html>
