@@ -6,48 +6,47 @@
             <head>
                 <meta charset="utf-8"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-                <link rel="stylesheet" type="text/css" href="./GlossaryCSS.css"/>
                 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+                <link rel="stylesheet" type="text/css" href="./GlossaryCSS.css"/>
                 <!--<link rel="stylesheet" href="jquery-ui.min.css"></link>-->
                 <!--<script src="external/jquery/jquery.js"></script>-->
                 <!--<script src="jquery-ui.min.js"></script>-->
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-                <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-                <style>
-                #content {display: none}
-                </style>
+                <!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
             </head>
 
             <body>
                   <div class="container">
                       <div class="row">
-                          <h1>Glossary Search</h1>
+                          <h1 class="col-md-12"></h1>
                       </div>
-                      <div class="row">
-                          <div class="col-sm-3">
-                              <div class="well bs-sidebar affix" id="sidebar">
-                                  <ul class="nav nav-pills nav-stacked">
-                                      <li><a href="#">Glossary Search</a></li>
-                                      <li><a href="#">List of Terms</a></li>
+                      <div>
+                                  <ul id="sidebarnav">
+                                      <li><button id="sb"><a href="./Glossary2.xml">Glossary Search</a></button></li>
+                                      <li><button id="sb"><a id="outputHTML">HTML</a></button></li>
+                                      <li><button id="sb"><a href="#">List of Terms</a></button></li>
                                       <!--todo: more side nav items-->
                                   </ul>
-                              </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-2"></div>
+                          <div class="col-md-9">
+                              <input type="text" class="form-control" id="input" placeholder="Search Glossary Terms"/>
                           </div>
-                          <div class="col-sm-8">
-                              <input type="text" class="form-control" id="input" placeholder="Enter Term"/>
-                          </div>
-                          <div class="col-sm-1">
+                          <div class="col-md-1">
                               <button class="btn btn-primary" id="buttn">
-                                  <span class="glyphicon glyphicon-search"></span>
-                                  Search
+                                  <span id="glyph" class="glyphicon glyphicon-search"></span>
                               </button>
                           </div>
+                      </div>
+                      <div class="container">
                           <div id="padding" class="row">
-                              <div id="blankspace" class="col-sm-3"/>
-                              <div id="output" class="col-sm-8"/>
+                              <div id="blankspace" class="col-md-2"/>
+                              <div id="output" class="col-md-9"/>
                           </div>
                       </div>
                   </div>
+
 
 
 
@@ -65,8 +64,15 @@
                             </li>
                             <li id="acronym"><q lang="no"><xsl:value-of select="acronym"/></q></li>
                             <li id="definition"><xsl:value-of select="definition"/></li>
+                            <li id="embedimage">
+                                    <xsl:copy-of select="embedimage/*"/>
+                            </li>
                             <li id="image">
-                                    <xsl:copy-of select="image/*"/>
+                                <xsl:element name="image" >
+                                    <xsl:attribute name="src">
+                                        <xsl:value-of select="image/pic/@src"/>
+                                    </xsl:attribute>
+                                </xsl:element>
                             </li>
                             <!--todo: this is here for a space holder for related topics/links <li>Related Links:<xsl:value-of select="link"/></li>-->
                         </ul>
@@ -87,11 +93,11 @@
                     $('#input').keypress(function(e) {
                         if(e.keyCode==13){
                         console.log("pressed");
-                        $('button').trigger('click');
+                        $('#buttn').trigger('click');
                         }
                     });
 
-                    $("button").click(function(){
+                    $("#buttn").click(function(){
                     input=document.getElementById("input").value;
 
                     <!--// 1) search by acronym-->
