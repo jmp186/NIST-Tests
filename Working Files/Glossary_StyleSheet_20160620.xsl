@@ -89,6 +89,7 @@
                 <script>
                     var nameResult = null;
                     var acronymResult = null;
+
                     <!--search function-->
                     var input = null;
                     $('#input').keypress(function(e) {
