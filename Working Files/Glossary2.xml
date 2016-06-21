@@ -49,12 +49,12 @@
             States Department of Commerce. Its mission is to promote innovation and industrial competitiveness.
             Known as National Bureau of Standards from 1901-1988.
         </definition>
-        <image>
+        <embedimage>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             version="1.0"
             id="svg2"
-            height="170.20813"
+            height="170.20"
             width="645.28674">
             <defs id="defs4" />
             <g
@@ -70,7 +70,7 @@
                     style="opacity:1;fill:black;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
             </g>
           </svg>
-        </image>
+        </embedimage>
     </term>
 
     <term id="ASCII">
@@ -86,7 +86,7 @@
             telecommunications equipment, and other devices.
         </definition>
         <image>
-            <png src="./png/US-ASCII_code_chart.png"/>
+            <pic src="./png/US-ASCII_code_chart.png"/>
         </image>
     </term>
 
