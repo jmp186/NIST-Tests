@@ -67,3 +67,59 @@
                     $("button").click(function() {
                     $("results").replaceWith(
                 </script>
+
+                <script>
+                    function loadXMLDoc(filename)
+                    {
+                    if (window.ActiveXObject("Msxml2.XMLHTTP");
+                    }
+                    else
+                    {
+                    xhttp = new XMLHttpRequest();
+                    }
+                    xhttp.open("GET", filename, false);
+                    try {xhttp.responseType = "msxml-document"} catch(err) {}
+                    <!--helping IE11-->
+                    xhttp.send("");
+                    return xhttp.responseXML;
+                    }
+
+                    function displayResult()
+                    {
+                    <!--this is where you load the files-->
+                    console.log(document.getElementById('xml').files[0].name);
+                    var xmlFilePath=document.getElementById('xml').files[0].name;
+                    var xslFilePath=document.getElementById('xsl').files[0].name;
+
+                    xml = loadXMLDoc(./Glossary2.xml);
+                    xsl = loadXMLDoc(./GlossaryStyleSheet_2016_05_27.xsl);
+                    var output = null;
+                    <!--code for IE-->
+                    if (window.ActiveXObject || xhttp.responseType == "msxml-document")
+                        {
+                        ex = xml.transformNode(xsl);
+                        document.getElementById("example").innerHTML = ex;
+                        console.log(ex);
+                        output = document.getElementById("example").innerHTML;
+                        }
+                    <!--code for Chrome, FF, Opera, Etc-->
+                    else if (document.implementation && document.implementation.createDocument)
+                        {
+                        xsltProcessor = new XSLTProcessor();
+                        xsltProcessor.importStylesheet(xsl);
+                        resultDocument = xsltProcessor.transformToFragment(xml, document);
+                        document.getElementById("example").appendChild(resultDocument);
+                        output=document.getElementById("example").innerHTML;
+                        console.log(output);
+                        }
+
+                    function downloadOutput(textOutput,downloadAnchorId,outputName)
+                        {
+                        var outputBlob=new Blob([textOutput], {type: 'text/plain'});
+                        var downloadTag=document.getElementById(downloadAnchorId);
+                        console.log(textOutput);
+                        downloadTag.setAttribute('href',window.URL.creatObjectURL(outputBlob));
+                        downloadTag.setAttribute(downloadAnchorId, outputName);
+                        downloadTag.dataset.downloadurl = ['text/plain', downloadTag.download, downloadTag.href].join(':');
+                        }
+                </script>
