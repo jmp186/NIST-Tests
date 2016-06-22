@@ -16,7 +16,33 @@
             </head>
 
             <body>
-                  <div class="container">
+                  <nav class="navbar navbar-inverse navbar-fixed-top" id="navbar">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="/"><span class="badge">Calnet</span></a>
+                        </div>
+                        <ul class="nav navbar-nav">
+                            <li><a href="/Test_App">Home</a> </li>
+                            <li><a href="/Test_App/Files">Repository</a> </li>
+                            <li><a href="/Test_App/Canvas">Canvas</a> </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="/accounts/user_info/"><span class="glyphicon glyphicon-user"></span> Logged in: Test_Site</a></li>
+                            <li><a href="/accounts/logout/"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                        </ul>
+
+                        <form class="navbar-form navbar-right" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search"/>
+                            </div>
+                            <button type="submit" class="btn btn-default">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </form>
+                    </div>
+                  </nav>
+
+                <div class="container" id="undertopnav">
                       <div class="row">
                           <h1 class="col-md-12"></h1>
                       </div>
@@ -29,9 +55,9 @@
                                   </ul>
                       </div>
                       <div class="row">
-                          <div class="col-md-2"></div>
+                          <div id="title" class="col-md-2">Glossary Search</div>
                           <div class="col-md-9">
-                              <input type="text" class="form-control" id="input" placeholder="Search Glossary Terms"/>
+                              <input type="text" class="form-control" id="input" placeholder="Search by Term or Acronym"/>
                           </div>
                           <div class="col-md-1">
                               <button class="btn btn-primary" id="buttn">
@@ -55,7 +81,7 @@
                         <ul>
                             <xsl:attribute name="id"><xsl:value-of select="@id"/></xsl:attribute>
                             <li>
-                                <a id="lnx">
+                                <a class="simple">
                                     <xsl:attribute name="href">
                                         <xsl:value-of select="links/link/@href"/>
                                     </xsl:attribute>
@@ -79,17 +105,12 @@
                     </xsl:for-each>
                 </div>
 
-                <!--<div class="container">-->
-                <!--<div class="row">-->
-                <!--<div id="output" class="col-sm-9"/>-->
-                <!--</div>-->
-                <!--</div>-->
-
                 <script>
                     var nameResult = null;
                     var acronymResult = null;
-                    <!--search function-->
                     var input = null;
+                    <!--search function-->
+
                     $('#input').keypress(function(e) {
                         if(e.keyCode==13){
                         console.log("pressed");
@@ -99,6 +120,11 @@
 
                     $("#buttn").click(function(){
                     input=document.getElementById("input").value;
+                    if (input==null | input=="")
+                    console.log("typeof " (input))
+                     $("div[id='output']").empty();
+                    console.log("variable input is " + String(input))
+
 
                     <!--// 1) search by acronym-->
                     acronymResult = $("li[id='acronym']:contains("+input+")").parent();
@@ -124,6 +150,7 @@
                        console.log("appending nameResult")
                       $("div[id='output']").append(nameResult.html());
                     }
+
                     });
                 </script>
 
