@@ -45,8 +45,8 @@
                 <div class="container">
                       <div class="col-xs-2">
                                   <ul id="sidebarnav">
-                                      <li><button class="sidebutton"><a href="./Glossary2.xml"><span>Glossary Search</span></a></button></li>
-                                      <li><button class="sidebutton"><a id="outputHTML"><span>HTML</span></a></button></li>
+                                      <li><button class="sidebutton"><a href="./Glossary2.xml"><span class="sidebutton">Glossary Search</span></a></button></li>
+                                      <li><button class="sidebutton"><a id="outputHTML"><span class="sidebutton">HTML</span></a></button></li>
                                       <li><button class="sidebutton"><a href="#"><span class="sidebutton">List of Terms</span></a></button></li>
                                       <!--todo: more side nav items-->
                                   </ul>
@@ -68,8 +68,8 @@
                       <div class="container">
                           <div id="results" class="row">
                               <blockquote>
-                              <div id="blankspace" class="col-xs-4"/>
-                                  <div id="output" class="col-xs-7"/>
+                              <div id="blankspace" class="col-xs-2"/>
+                                  <div id="output" class="col-xs-9"/>
                           </blockquote>
                           </div>
                       </div>
@@ -83,7 +83,7 @@
                         <ul>
                             <xsl:attribute name="id"><xsl:value-of select="@id"/></xsl:attribute>
                             <li>
-                                <a class="simple">
+                                <a id="simple">
                                     <xsl:attribute name="href">
                                         <xsl:value-of select="links/link/@href"/>
                                     </xsl:attribute>
@@ -95,7 +95,7 @@
                             <li id="embedimage">
                                     <xsl:copy-of select="embedimage/*"/>
                             </li>
-                            <li id="image">
+                            <li>
                                 <xsl:element name="image" >
                                     <xsl:attribute name="src">
                                         <xsl:value-of select="image/pic/@src"/>
