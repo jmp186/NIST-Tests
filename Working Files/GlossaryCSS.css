@@ -104,14 +104,13 @@ li {
     margin-left: 20px;
     }
 
-#embedimage {
-    padding: 10px;
-    }
 
-#image {
+
+#embedimage {
     margin-top: 10px;
-    height: 50px;
-    width: 50px;
+    width: 50%
+    height: auto;
+
     }
 
 a.simple:link {
