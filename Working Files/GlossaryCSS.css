@@ -7,13 +7,14 @@
 
 #undertopnav {
     margin-top: 70px;
+    margin-bottom: 15px;
     }
 
 #title {
     padding-top: 10px;
     font-size: 20px;
     color: black;
-    text-align: left;
+    margin-left: -70px;
     }
 #glyph {
     padding: 2.25px;
@@ -26,7 +27,7 @@
     float:left;
     width: 150px;
     background-color: none;
-    padding: 5px 0 0px 0px;
+    padding: 5px 0px 0px 0px;
     z-index: 9999px !important;
     }
 
@@ -49,7 +50,7 @@
   margin: 2.5px;
 }
 
-.sidebar:hover {
+.sidebutton:hover {
   background: #3cb0fd;
   background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
   background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
@@ -99,8 +100,8 @@ li {
 
 #results {
     display: inline;
-    margin-top: 20px;
-    margin-left: 40px;
+    margin-top: 50px;
+    margin-left: 20px;
     }
 
 #embedimage {
@@ -113,22 +114,24 @@ li {
     width: 50px;
     }
 
-p.a:link {
+a.simple:link {
     color: blue
     text decoration: none;
     }
-#lnx:visited {
+
+a.simple:visited {
     color: purple
      text decoration: none}
-#lnx:hover {
-    color: purple
-    text decoration: underline
-    }
-#lnx:active {
+
+a.simple:hover {
     color: purple
     text decoration: underline
     }
 
+a.simple:active {
+    color: purple
+    text decoration: underline
+    }
 
 q:lang(no) {
     parentheses: '&#40' '&#41';
