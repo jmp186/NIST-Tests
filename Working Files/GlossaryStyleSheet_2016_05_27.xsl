@@ -42,33 +42,35 @@
                     </div>
                   </nav>
 
-                <div class="container" id="undertopnav">
-                      <div class="row">
-                          <h1 class="col-md-12"></h1>
-                      </div>
-                      <div>
+                <div class="container">
+                      <div class="col-xs-2">
                                   <ul id="sidebarnav">
-                                      <li><button id="sb"><a href="./Glossary2.xml">Glossary Search</a></button></li>
-                                      <li><button id="sb"><a id="outputHTML">HTML</a></button></li>
-                                      <li><button id="sb"><a href="#">List of Terms</a></button></li>
+                                      <li><button class="sidebutton"><a href="./Glossary2.xml"><span class="sidebutton">Glossary Search</span></a></button></li>
+                                      <li><button class="sidebutton"><a id="outputHTML"><span class="sidebutton">HTML</span></a></button></li>
+                                      <li><button class="sidebutton"><a href="#"><span class="sidebutton">List of Terms</span></a></button></li>
                                       <!--todo: more side nav items-->
                                   </ul>
                       </div>
-                      <div class="row">
-                          <div id="title" class="col-md-2">Glossary Search</div>
-                          <div class="col-md-9">
-                              <input type="text" class="form-control" id="input" placeholder="Search by Term or Acronym"/>
-                          </div>
-                          <div class="col-md-1">
-                              <button class="btn btn-primary" id="buttn">
-                                  <span id="glyph" class="glyphicon glyphicon-search"></span>
-                              </button>
+                      <div class="row" id="undertopnav">
+                          <div class="container">
+                              <div id="title" class="col-xs-3">Glossary Search</div>
+                                <div class="col-xs-8">
+                                    <input type="text" class="form-control" id="input" placeholder="Search by Term or Acronym"/>
+                                </div>
+                                <div class="col-xs-1">
+                                    <button class="btn btn-primary" id="buttn">
+                                        <span id="glyph" class="glyphicon glyphicon-search"></span>
+                                    </button>
+                                </div>
                           </div>
                       </div>
+
                       <div class="container">
-                          <div id="padding" class="row">
-                              <div id="blankspace" class="col-md-2"/>
-                              <div id="output" class="col-md-9"/>
+                          <div id="results" class="row">
+                              <blockquote>
+                              <div id="blankspace" class="col-xs-2"/>
+                                  <div id="output" class="col-xs-9"/>
+                          </blockquote>
                           </div>
                       </div>
                   </div>
@@ -81,7 +83,7 @@
                         <ul>
                             <xsl:attribute name="id"><xsl:value-of select="@id"/></xsl:attribute>
                             <li>
-                                <a class="simple">
+                                <a id="simple">
                                     <xsl:attribute name="href">
                                         <xsl:value-of select="links/link/@href"/>
                                     </xsl:attribute>
@@ -93,7 +95,7 @@
                             <li id="embedimage">
                                     <xsl:copy-of select="embedimage/*"/>
                             </li>
-                            <li id="image">
+                            <li>
                                 <xsl:element name="image" >
                                     <xsl:attribute name="src">
                                         <xsl:value-of select="image/pic/@src"/>
