@@ -99,9 +99,10 @@ li {
     }
 
 #results {
-    display: inline;
+    display: block;
+    text-align: justify;
     margin-top: 50px;
-    margin-left: 20px;
+    margin-left: 50px;
     }
 
 

@@ -12,7 +12,7 @@
                 <!--<script src="external/jquery/jquery.js"></script>-->
                 <!--<script src="jquery-ui.min.js"></script>-->
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-                <!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+                <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
             </head>
 
             <body>
@@ -57,24 +57,21 @@
                           </div>
                       </div>
 
-                      <div class="col-xs-2">
-                          <div class="row">
-                          <ul id="sidebarnav">
+                        <div class="col-xs-2">
+                        <ul id="sidebarnav">
                               <li><button class="sidebutton"><a href="./Glossary2.xml"><span class="sidebutton">Glossary Search</span></a></button></li>
                               <li><button class="sidebutton"><a id="outputHTML"><span class="sidebutton">HTML</span></a></button></li>
                               <li><button class="sidebutton"><a href="#"><span class="sidebutton">List of Terms</span></a></button></li>
                               <!--todo: more side nav items-->
-                          </ul>
-                          </div>
-                      </div>
+                        </ul>
+                        </div>
+
 
 
                       <div class="container">
                           <div id="results" class="row">
-                              <blockquote>
                               <div id="blankspace" class="col-xs-2"/>
-                                  <div id="output" class="col-xs-9"/>
-                          </blockquote>
+                              <div id="output" class="col-xs-9"/>
                           </div>
                       </div>
                   </div>
@@ -86,7 +83,7 @@
                     <xsl:for-each select="//term">
                         <ul>
                             <xsl:attribute name="id"><xsl:value-of select="@id"/></xsl:attribute>
-                            <li>
+                            <li class="list">
                                 <a id="simple">
                                     <xsl:attribute name="href">
                                         <xsl:value-of select="links/link/@href"/>
@@ -94,12 +91,12 @@
                                   <span id="name"><xsl:value-of select="name"/></span>
                                 </a>
                             </li>
-                            <li id="acronym"><q lang="no"><xsl:value-of select="acronym"/></q></li>
-                            <li id="definition"><xsl:value-of select="definition"/></li>
-                            <li id="embedimage">
+                            <li id="acronym" class="list"><q lang="no"><xsl:value-of select="acronym"/></q></li>
+                            <li id="definition" class="list"><xsl:value-of select="definition"/></li>
+                            <li id="embedimage" class="leftpage">
                                     <xsl:copy-of select="embedimage/*"/>
                             </li>
-                            <li id="image">
+                            <li id="image" class="leftpage">
                                 <xsl:element name="image" >
                                     <xsl:attribute name="src">
                                         <xsl:value-of select="image/pic/@src"/>
