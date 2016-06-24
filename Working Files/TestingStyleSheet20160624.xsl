@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:template match="/">
         <html lang="en">
@@ -45,15 +45,15 @@
                 <div class="container">
                       <div class="row" id="undertopnav">
                           <div class="container">
-                              <div id="title" class="col-xs-3">Glossary Search</div>
-                                <div class="col-xs-8">
+                              <div id="title" class="col-xs-2">Glossary Search</div>
+                              <div class="col-xs-8">
                                     <input type="text" class="form-control" id="input" placeholder="Search by Term or Acronym"/>
-                                </div>
-                                <div class="col-xs-1">
+                              </div>
+                              <div class="col-xs-2">
                                     <button class="btn btn-primary" id="buttn">
                                         <span id="glyph" class="glyphicon glyphicon-search"></span>
                                     </button>
-                                </div>
+                              </div>
                           </div>
                       </div>
 
@@ -73,7 +73,7 @@
                           <div id="results" class="row">
                               <blockquote>
                               <div id="blankspace" class="col-xs-2"/>
-                                  <div id="output" class="col-xs-9"/>
+                                  <div id="output" class="col-xs-8"/>
                           </blockquote>
                           </div>
                       </div>
