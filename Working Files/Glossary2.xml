@@ -6,7 +6,8 @@
     <!--Values of the tags for each term:
        <term>: id=acronym if has one or name if there is no acronym
        <name>: proper name of the term, not shortened version
-       <acronym>: abbreviated name or acronym
+       <shortname>: abbreviated name
+       <acronym>: acronym
        <links>: the link to page with external and more information such as wikipedia or a company homepage
        <definition>: basic explanation of the term
        <image>: any image that is NOT .svg
@@ -14,6 +15,7 @@
 
     <term id="XSL">
         <name>eXtensible StyleSheet Language</name>
+        <shortname></shortname>
         <acronym>XSL</acronym>
         <links>
             <link type="simple" href="http://www.w3schools.com/xsl/xsl_languages.asp">
@@ -34,6 +36,7 @@
 
     <term id="XML">
         <name>eXtensible Markup Language</name>
+        <shortname></shortname>
         <acronym>XML</acronym>
         <links>
             <link type="simple" href="http://www.w3schools.com/xml/"> XML Tutorial by W3Schools</link>
@@ -51,6 +54,7 @@
 
     <term id="NIST">
         <name>National Institute of Standards and Technology</name>
+        <shortname></shortname>
         <acronym>NIST</acronym>
         <links>
             <link type="simple" href="http://www.nist.gov">
@@ -88,6 +92,7 @@
 
     <term id="ASCII">
         <name>American Standard Code for Information Interchange</name>
+        <shortname></shortname>
         <acronym>ASCII</acronym>
         <links>
             <link type="simple" href="https://en.wikipedia.org/wiki/ASCII">
@@ -107,6 +112,7 @@
 
     <term id="S parameter">
         <name>Scattering Parameter</name>
+        <shortname></shortname>
         <acronym>S Parameter</acronym>
         <links>
             <link type="simple" href="https://en.wikipedia.org/wiki/Scattering_parameters">
@@ -126,6 +132,7 @@
 
     <term id="thermistor">
         <name>Thermistor</name>
+        <shortname></shortname>
         <acronym>thermistor</acronym>
         <links>
             <link type="simple" href="https://en.wikipedia.org/wiki/Thermistor">
@@ -143,6 +150,7 @@
 
     <term id="calorimeter">
         <name>Calorimeter</name>
+        <shortname></shortname>
         <acronym>calorimeter</acronym>
         <links>
             <link type="simple" href="https://en.wikipedia.org/wiki/Calorimeter_(particle_physics)">
@@ -160,6 +168,7 @@
 
     <term id="NBS">
         <name>National Bureau of Standards</name>
+        <shortname></shortname>
         <acronym>NBS</acronym>
         <links>
             <link type="simple" href="http://www.nist.gov">
@@ -174,6 +183,7 @@
 
     <term id="IMS">
         <name>Innovations in Measurement Science</name>
+        <shortname></shortname>
         <acronym>IMS</acronym>
         <links>
             <link type="simple" href="http://www.nist.gov/public_affairs/factsheet/measurement2009.cfm">
@@ -200,6 +210,7 @@
 
     <term id="MUF">
         <name>Microwave Uncertainty Framework</name>
+        <shortname></shortname>
         <acronym>MUF</acronym>
         <links>
             <link type="simple" href="http://www.nist.gov/ctl/rf-technology/related-software.cfm">
@@ -218,6 +229,7 @@
 
     <term id="Monte Carlo method">
         <name>Monte Carlo method</name>
+        <shortname></shortname>
         <acronym>monte carlo method</acronym>
         <links>
             <link type="simple" href="https://en.wikipedia.org/wiki/Monte_Carlo_method">
@@ -235,6 +247,7 @@
 
     <term id="VBA">
         <name>Visual Basic for Applications</name>
+        <shortname></shortname>
         <acronym>VBA</acronym>
         <links>
             <link type="simple" href="https://en.wikipedia.org/wiki/Visual_Basic_for_Applications">
