@@ -1,29 +1,29 @@
 
 /*on page before and after search*/
 
+
 #content {
     display: none
     }
 
 #undertopnav {
-    margin-top: 70px;
     margin-bottom: 15px;
+
     }
 
 #title {
     padding-top: 10px;
     font-size: 20px;
     color: black;
-    margin-left: -80px;
     }
+
 #glyph {
     padding: 2.25px;
     }
 
 #sidebarnav {
-    position: fixed;
+    position: relative;
     bottom: 50%;
-    margin-left: -80px;
     float:left;
     width: 150px;
     background-color: none;
@@ -61,7 +61,6 @@
 }
 
 
-
 /*before search css*/
 #input {
     margin: 5px;
@@ -89,23 +88,30 @@
   background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
   background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
   text-decoration: none;
-}
+    }
 
 /*output page css*/
 
-li {
+.side {
     list-style-type: none;
-    display: inline;
     }
 
 #results {
     display: block;
     text-align: justify;
-    margin-top: 50px;
-    margin-left: 50px;
+    overflow: auto;
     }
 
+.list {
+    list-style-type: none;
+    display: inline;
+    }
 
+.pagedown {
+    list-style-type: none;
+    display: block
+    margin-top: 15px;
+    }
 
 #embedimage {
     margin-top: 10px;
@@ -121,7 +127,8 @@ a.simple:link {
 
 a.simple:visited {
     color: purple
-     text decoration: none}
+     text decoration: none
+     }
 
 a.simple:hover {
     color: purple
