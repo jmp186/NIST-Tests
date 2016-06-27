@@ -80,12 +80,6 @@
                     </xsl:for-each>
                 </div>
 
-                <!--<div class="container">-->
-                <!--<div class="row">-->
-                <!--<div id="output" class="col-sm-9"/>-->
-                <!--</div>-->
-                <!--</div>-->
-
                 <script>
                     var nameResult = null;
                     var acronymResult = null;
