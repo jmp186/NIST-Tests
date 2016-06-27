@@ -114,7 +114,8 @@
 .pagedown {
     list-style-type: none;
     display: block
-    margin-top: 15px;
+    margin-top: 20px;
+    padding-top: 20px;
     }
 
 #embedimage {
