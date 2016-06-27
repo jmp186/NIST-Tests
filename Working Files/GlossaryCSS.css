@@ -96,7 +96,11 @@
     list-style-type: none;
     }
 
-#results {
+#resize {
+    overflow: auto;
+    }
+
+#output {
     display: block;
     text-align: justify;
     overflow: auto;
