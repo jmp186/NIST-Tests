@@ -47,8 +47,8 @@
                     <div class="container">
                         <div class="row" id="undertopnav">
                             <div class="container-fluid">
-                                <div id="title" class="col-xs-3">Glossary Search</div>
-                                <div class="col-xs-8">
+                                <div id="title" class="col-xs-4">Glossary Search</div>
+                                <div class="col-xs-7">
                                     <input type="text" class="form-control" id="input" placeholder="Search by Term or Acronym"/>
                                 </div>
                                 <div class="col-xs-1">
@@ -68,7 +68,7 @@
                                     <!--todo: more side nav items-->
                                 </ul>
                             </div>
-                            <div id="blankspace" class="col-xs-1"/>
+                            <div id="blankspace" class="col-xs-2"/>
                             <div id="output" class="col-xs-7"/>
                         </div>
                     </div>
