@@ -59,23 +59,20 @@
                             </div>
                         </div>
 
-                        <div class="col-xs-2">
-                            <ul id="sidebarnav">
-                                <li class="side"><button class="sidebutton"><a href="./Glossary2.xml"><span class="sidebutton">Glossary Search</span></a></button></li>
-                                <li class="side"><button class="sidebutton"><a id="outputHTML"><span class="sidebutton">HTML</span></a></button></li>
-                                <li class="side"><button class="sidebutton"><a href="#"><span class="sidebutton">List of Terms</span></a></button></li>
-                                <!--todo: more side nav items-->
-                            </ul>
-                        </div>
-
-
-                        <div class="row">
-                            <div id="results" class="container">
-                                <div id="blankspace" class="col-xs-3"/>
-                                <div id="output" class="col-xs-7"/>
+                        <div id="resize" class="row">
+                            <div class="col-xs-2">
+                                <ul id="sidebarnav">
+                                    <li class="side"><button class="sidebutton"><a href="./Glossary2.xml"><span class="sidebutton">Glossary Search</span></a></button></li>
+                                    <li class="side"><button class="sidebutton"><a id="outputHTML"><span class="sidebutton">HTML</span></a></button></li>
+                                    <li class="side"><button class="sidebutton"><a href="#"><span class="sidebutton">List of Terms</span></a></button></li>
+                                    <!--todo: more side nav items-->
+                                </ul>
                             </div>
+                            <div id="blankspace" class="col-xs-1"/>
+                            <div id="output" class="col-xs-7"/>
                         </div>
                     </div>
+
 
                 <div id="content">
                     <xsl:for-each select="//term">
