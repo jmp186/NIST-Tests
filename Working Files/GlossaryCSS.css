@@ -25,7 +25,6 @@
     position: relative;
     bottom: 50%;
     float:left;
-    width: 150px;
     background-color: none;
     padding: 5px 0px 0px 0px;
     z-index: 9999px !important;

@@ -60,7 +60,7 @@
                         </div>
 
                         <div id="resize" class="row">
-                            <div class="col-xs-2">
+                            <div class="col-xs-12 col-md-2">
                                 <ul id="sidebarnav">
                                     <li class="side"><button class="sidebutton"><a href="./Glossary2.xml"><span class="sidebutton">Glossary Search</span></a></button></li>
                                     <li class="side"><button class="sidebutton"><a id="outputHTML"><span class="sidebutton">HTML</span></a></button></li>
@@ -68,8 +68,8 @@
                                     <!--todo: more side nav items-->
                                 </ul>
                             </div>
-                            <div id="blankspace" class="col-xs-2"/>
-                            <div id="output" class="col-xs-7"/>
+                            <div id="blankspace" class="col-xs-12 col-md-2"/>
+                            <div id="output" class="col-xs-12 col-md-8"/>
                         </div>
                     </div>
 
