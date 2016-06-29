@@ -1,0 +1,347 @@
+<?xml version='1.0'?>
+<?xml-stylesheet type="text/xsl" href="./GlossaryStyleSheet_2016_05_27.xsl"?>
+
+<glossary>
+
+    <!--Values of the tags for each term:
+       <term>: id=acronym if has one or name if there is no acronym
+       <name>: proper name of the term, not shortened version
+       <shortname>: abbreviated name
+       <acronym>: acronym
+       <links>: the link to page with external and more information such as wikipedia or a company homepage
+       <definition>: basic explanation of the term
+       <image>: any image that is NOT .svg
+       <embedimage>: .svg images ONLY-->
+
+    <term id="XSL">
+        <name>eXtensible StyleSheet Language</name>
+        <shortname></shortname>
+        <acronym>(XSL)</acronym>
+        <links>
+            <link type="simple" href="http://www.w3schools.com/xsl/xsl_languages.asp">
+                W3 Schools' XSL Page
+            </link>
+        </links>
+        <definition>
+            is a family of recommendations for defining XML document transformation
+            and presentation. It consists of three parts: XSL Transformations (XSLT) a
+            language for transforming XML; XPath, a language for navigating in XML documents; XSL-FO, a language for
+            formatting XML documents (discontinued in 2013); and XQuery, a language for querying XML documents.
+        </definition>
+        <image>
+        </image>
+        <embedimage>
+        </embedimage>
+    </term>
+
+    <term id="XML">
+        <name>eXtensible Markup Language</name>
+        <shortname></shortname>
+        <acronym>(XML)</acronym>
+        <links>
+            <link type="simple" href="http://www.w3schools.com/xml/"> XML Tutorial by W3Schools</link>
+        </links>
+        <definition>
+            is a markup language that defines a set of rules for encoding documents in a format
+            that is both human-readable and machine-readable. It is defined by the W3C's XML 1.0
+            Specification and by several other related specifications, all of which are free open standards.
+        </definition>
+        <image>
+        </image>
+        <embedimage>
+        </embedimage>
+    </term>
+
+    <term id="NIST">
+        <name>National Institute of Standards and Technology</name>
+        <shortname></shortname>
+        <acronym>(NIST)</acronym>
+        <links>
+            <link type="simple" href="http://www.nist.gov">
+                National Institute of Standards and Technology Homepage
+            </link>
+        </links>
+        <definition>
+            is a measurement standards laboratory, and a non-regulatory agency of the United
+            States Department of Commerce. Its mission is to promote innovation and industrial competitiveness.
+            Known as National Bureau of Standards from 1901-1988.
+        </definition>
+        <image>
+        </image>
+        <embedimage>
+          <svg xmlns="http://www.w3.org/2000/svg"
+            width="189"
+            height="50"
+            id="svg2"
+            version="1.0">
+            <g
+                id="layer1"
+                transform="matrix(0.29289305,0,0,0.293758,-49.707834,-122.60725)">
+                <path
+                    style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+                    d="m 214.71326,417.58314 c -24.83999,0 -45,20.16 -45,45 l 0.3469,124.99999 40,0 -0.3469,-83.15624 0,-41.84375 c 1e-5,-2.5875 1.97974,-4.7438 4.5,-5 0.16802,-0.0171 0.3275,0 0.5,0 1.38,0 2.62625,0.56375 3.53125,1.46875 L 323.1875,574.1875 c 8.14501,8.14501 19.3925,13.1875 31.8125,13.1875 24.83999,0 45.00001,-20.15999 45,-45 l 0,-125 -40,0 0,80.28125 0,44.71875 c 0,0.0644 0.002,0.12365 0,0.1875 -0.10123,2.67095 -2.30444,4.8125 -5,4.8125 -1.38,10e-6 -2.62625,-0.56375 -3.53125,-1.46875 L 246.52576,430.77064 c -8.14499,-8.14499 -19.39251,-13.1875 -31.8125,-13.1875 z"
+                    id="rect1904" />
+                <path
+                    style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+                    d="m 420,417.375 0,125 c 0,24.83999 20.16,45 45,45 l 170,0 c 27.81443,-1.31299 49.99998,-24.26872 50,-52.40625 0,-28.13759 -22.18549,-51.12459 -50,-52.4375 l 0,-0.15625 -110,0 c -5.56289,-0.31309 -9.99999,-5.79062 -10,-12.5 0,-6.70941 4.43709,-12.18693 10,-12.5 l 180,0 0,130 40,0 0,-130 70,0 0,-40 -290,0 0,0.15625 c -27.81451,1.31291 -50,24.29991 -50,52.4375 2e-5,28.13753 22.18557,51.09326 50,52.40625 l 110,0 c 5.56291,0.31307 10,5.79059 10,12.5 -10e-6,6.70938 -4.43711,12.18691 -10,12.5 l -125.28125,0 -44.71875,0 c -2.75992,-10e-6 -5,-2.23993 -5,-5 l 0,-44.71875 0,-80.28125 -40,0 z"
+                    id="rect2795" />
+            </g>
+          </svg>
+        </embedimage>
+    </term>
+
+    <term id="ASCII">
+        <name>American Standard Code for Information Interchange</name>
+        <shortname></shortname>
+        <acronym>(ASCII)</acronym>
+        <links>
+            <link type="simple" href="https://en.wikipedia.org/wiki/ASCII">
+                ASCII Wikipedia Page
+            </link>
+        </links>
+        <definition>
+            is a character encoding standard that represents text in computers,
+            telecommunications equipment, and other devices.
+        </definition>
+        <image>
+            <pic src="./png/US-ASCII_code_chart.png"/>
+        </image>
+        <embedimage>
+        </embedimage>
+    </term>
+
+    <term id="S parameter">
+        <name>Scattering Parameter</name>
+        <shortname>(S Parameter)</shortname>
+        <acronym></acronym>
+        <links>
+            <link type="simple" href="https://en.wikipedia.org/wiki/Scattering_parameters">
+               Scattering Parameter Wikipedia Page
+            </link>
+        </links>
+        <definition>
+            is an element of a scattering matrix or S-matrix that describes the electrical
+            behavior of linear electrical networks when undergoing various steady state
+            stimuli by electrical signals.
+        </definition>
+        <image>
+        </image>
+        <embedimage>
+        </embedimage>
+    </term>
+
+    <term id="thermistor">
+        <name>Thermistor</name>
+        <shortname></shortname>
+        <acronym></acronym>
+        <links>
+            <link type="simple" href="https://en.wikipedia.org/wiki/Thermistor">
+                Thermistor Wikipedia Page
+            </link>
+        </links>
+        <definition>
+            is a resistor whose resistance is dependent on temperature.
+        </definition>
+        <image>
+        </image>
+        <embedimage>
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                id="svg3382"
+                viewBox="0 0 564.01725 304.86533"
+                height="86.039772mm"
+                width="159.17822mm">
+                <g transform="translate(-56.56924,-214.28482)" id="layer1">
+                <rect y="326.64792" x="168.57143" height="128.57143" width="325.71429" id="rect3390" style="fill:none;fill-opacity:0.5098038;stroke:#000000;stroke-width:2.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                <path id="path3392" d="m 74.285714,386.64792 94.285716,0" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+                <path id="path3394" d="m 491.42857,392.3622 111.42857,2.85715" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+                <path id="path3396" d="m 505.71429,232.3622 -280,268.57143 -120,0" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+                </g>
+            </svg>
+        </embedimage>
+    </term>
+
+    <term id="calorimeter">
+        <name>Calorimeter</name>
+        <shortname></shortname>
+        <acronym></acronym>
+        <links>
+            <link type="simple" href="https://en.wikipedia.org/wiki/Calorimeter_(particle_physics)">
+                Calorimeter Wikipedia Page
+            </link>
+        </links>
+        <definition>
+            A calorimeter is an experimental apparatus that measures the energy of particles.
+        </definition>
+        <image>
+        </image>
+        <embedimage>
+        </embedimage>
+    </term>
+
+    <term id="NBS">
+        <name>National Bureau of Standards</name>
+        <shortname></shortname>
+        <acronym>(NBS)</acronym>
+        <links>
+            <link type="simple" href="http://www.nist.gov">
+                National Institute of Standards and Technology Homepage
+            </link></links>
+        <definition>
+            The National Institute of Standards and Technology (NIST) was known as the Bureau of Standards (NBS) from 1901-1988.
+        </definition>
+        <image>
+        </image>
+    </term>
+
+    <term id="IMS">
+        <name>Innovations in Measurement Science</name>
+        <shortname></shortname>
+        <acronym>(IMS)</acronym>
+        <links>
+            <link type="simple" href="http://www.nist.gov/public_affairs/factsheet/measurement2009.cfm">
+             NIST Innovations in Measurement Science Page
+            </link>
+        </links>
+        <definition>
+            As new science and technology areas emerge, NIST must quickly develop the measurement methods needed to
+            support them.  The Innovations in Measurement Science Program is one of NIST’s primary mechanisms for
+            keeping pace with the measurement requirements needed for innovation in U.S. industry.
+            <br></br>
+            Established in 1979, the program supports high-risk, leading-edge research projects that anticipate
+            industry needs and develop measurement science for the next generation of technology. At some point
+            in their careers, all three of NIST’s Nobel laureates have had their research funded by this program.
+            Current NIST expertise in quantum information science, fuel cell science, three dimensional chemical
+            imaging, and many other areas important to national priorities were launched with “measurement innovations”
+            funding.
+        </definition>
+        <image>
+        </image>
+        <embedimage>
+        </embedimage>
+    </term>
+
+    <term id="MUF">
+        <name>Microwave Uncertainty Framework</name>
+        <shortname></shortname>
+        <acronym>(MUF)</acronym>
+        <links>
+            <link type="simple" href="http://www.nist.gov/ctl/rf-technology/related-software.cfm">
+                Microwave Uncertainty Framework Page
+            </link>
+        </links>
+        <definition>
+            Microwave Uncertainty Framework (MUF) provides a "drag-and-drop" toolkit for managing
+            the calculation of uncertainties in Vector Network Analyzer (VNA) and other measurements.
+        </definition>
+        <image>
+        </image>
+        <embedimage>
+        </embedimage>
+    </term>
+
+    <term id="Monte Carlo method">
+        <name>Monte Carlo method</name>
+        <shortname></shortname>
+        <acronym></acronym>
+        <links>
+            <link type="simple" href="https://en.wikipedia.org/wiki/Monte_Carlo_method">
+                Monte Carlo method Wikipedia Page
+            </link>
+        </links>
+        <definition>
+            There is no consensus on how to define Monte Carlo methods.  Within Calnet it is...
+        </definition>
+        <image>
+        </image>
+        <embedimage>
+        </embedimage>
+    </term>
+
+    <term id="VBA">
+        <name>Visual Basic for Applications</name>
+        <shortname></shortname>
+        <acronym>VBA</acronym>
+        <links>
+            <link type="simple" href="https://en.wikipedia.org/wiki/Visual_Basic_for_Applications">
+                Visual Basic for Applications Wikipedia Page
+            </link>
+        </links>
+        <definition>
+            Visual Basic for Applications (VBA) enables
+        </definition>
+        <image>
+        </image>
+        <embedimage>
+        </embedimage>
+    </term>
+    <term id="Thru">
+        <name>Thru</name>
+        <shortname></shortname>
+        <acronym></acronym>
+        <links>
+            <link type="simple" href="">
+
+            </link>
+        </links>
+        <definition>
+
+        </definition>
+        <image>
+        </image>
+        <embedimage>
+        </embedimage>
+    </term>
+    <term id="">
+        <name></name>
+        <shortname></shortname>
+        <acronym></acronym>
+        <links>
+            <link type="simple" href="">
+
+            </link>
+        </links>
+        <definition>
+
+        </definition>
+        <image>
+        </image>
+        <embedimage>
+        </embedimage>
+    </term>
+    <term id="">
+        <name></name>
+        <shortname></shortname>
+        <acronym></acronym>
+        <links>
+            <link type="simple" href="">
+
+            </link>
+        </links>
+        <definition>
+
+        </definition>
+        <image>
+        </image>
+        <embedimage>
+        </embedimage>
+    </term>
+    <term id="">
+        <name></name>
+        <shortname></shortname>
+        <acronym></acronym>
+        <links>
+            <link type="simple" href="">
+
+            </link>
+        </links>
+        <definition>
+
+        </definition>
+        <image>
+        </image>
+        <embedimage>
+        </embedimage>
+    </term>
+</glossary>
