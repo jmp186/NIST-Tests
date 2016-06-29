@@ -115,35 +115,21 @@
 .pagedown {
     list-style-type: none;
     display: block
-    margin-top: 20px;
-    padding-top: 20px;
-    }
-
-#embedimage {
     margin-top: 10px;
-    width: 50%
+    padding-top: 10px;
     height: auto;
-
+    width: 20%;
     }
 
-a.simple:link {
-    color: blue
-    text decoration: none;
+#imagetext {
+    margin-top: -20px;
+    font-size:x-small;
+    text-align: center;
     }
 
-a.simple:visited {
-    color: purple
-     text decoration: none
-     }
-
-a.simple:hover {
-    color: purple
-    text decoration: underline
-    }
-
-a.simple:active {
-    color: purple
-    text decoration: underline
+#image {
+    text-align: center;
+    list-style-type: none
     }
 
 

@@ -7,7 +7,7 @@
                 <meta charset="utf-8"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
-                <link rel="stylesheet" type="text/css" href="./GlossaryCSS.css"/>
+                <link rel="stylesheet" type="text/css" href="./GlossaryCSS20160629.css"/>
                 <!--<link rel="stylesheet" href="jquery-ui.min.css"></link>-->
                 <!--<script src="external/jquery/jquery.js"></script>-->
                 <!--<script src="jquery-ui.min.js"></script>-->
@@ -90,17 +90,23 @@
                                <xsl:value-of select="shortname"/>
                             </li>
                             <li id="acronym" class="list">
-                                <q lang="no"><xsl:value-of select="acronym"/></q>
+                                <xsl:value-of select="acronym"/>
                             </li>
                             <li id="definition" class="list"><xsl:value-of select="definition"/></li>
                             <li id="embedimage" class="pagedown">
                                     <xsl:copy-of select="embedimage/*"/>
+                                    <span id="imagetext">
+                                        <xsl:value-of select="embedimage"/>
+                                    </span>
                             </li>
                             <li id="image" class="pagedown">
-                                <xsl:element name="image" >
-                                    <xsl:attribute name="src">
-                                        <xsl:value-of select="image/pic/@src"/>
-                                    </xsl:attribute>
+                                <xsl:element name="image">
+                                        <xsl:attribute name="src">
+                                            <xsl:value-of select="image/pic/@src"/>
+                                        </xsl:attribute>
+                                    <span id="imagetext">
+                                        <xsl:value-of select="image"/>
+                                    </span>
                                 </xsl:element>
                             </li>
                             <!--todo: this is here for a space holder for related topics/links <li>Related Links:<xsl:value-of select="link"/></li>-->
