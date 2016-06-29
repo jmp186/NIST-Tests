@@ -78,38 +78,42 @@
                     <xsl:for-each select="//term">
                         <ul>
                             <xsl:attribute name="id"><xsl:value-of select="@id"/></xsl:attribute>
-                            <li class="list">
-                                <a id="simple">
-                                    <xsl:attribute name="href">
-                                        <xsl:value-of select="links/link/@href"/>
-                                    </xsl:attribute>
-                                  <span id="name"><xsl:value-of select="name"/></span>
-                                </a>
-                            </li>
-                            <li id="shortname" class="list">
-                               <xsl:value-of select="shortname"/>
-                            </li>
-                            <li id="acronym" class="list">
-                                <xsl:value-of select="acronym"/>
-                            </li>
-                            <li id="definition" class="list"><xsl:value-of select="definition"/></li>
-                            <li id="embedimage" class="pagedown">
-                                    <xsl:copy-of select="embedimage/*"/>
-                                    <span id="imagetext">
-                                        <xsl:value-of select="embedimage"/>
-                                    </span>
-                            </li>
-                            <li id="image" class="pagedown">
-                                <xsl:element name="image">
-                                        <xsl:attribute name="src">
-                                            <xsl:value-of select="image/pic/@src"/>
+
+                                <li class="list">
+                                    <a id="simple">
+                                        <xsl:attribute name="href">
+                                            <xsl:value-of select="links/link/@href"/>
                                         </xsl:attribute>
-                                    <span id="imagetext">
-                                        <xsl:value-of select="image"/>
+                                    <span id="name">
+                                        <xsl:value-of select="name"/>
                                     </span>
-                                </xsl:element>
-                            </li>
-                            <!--todo: this is here for a space holder for related topics/links <li>Related Links:<xsl:value-of select="link"/></li>-->
+                                    </a>
+                                </li>
+                                <li id="shortname" class="list">
+                                    <xsl:value-of select="shortname"/>
+                                </li>
+                                <li id="acronym" class="list">
+                                    <xsl:value-of select="acronym"/>
+                                </li>
+                                <li id="definition" class="list"><xsl:value-of select="definition"/></li>
+
+                                <li id="embedimage" class="pagedown">
+                                    <xsl:copy-of select="embedimage/*"/>
+                                        <span id="imagetext">
+                                            <xsl:value-of select="embedimage"/>
+                                        </span>
+                                </li>
+                                <li class="pagedown">
+                                    <xsl:element name="image">
+                                            <xsl:attribute name="src">
+                                                <xsl:value-of select="image/img/@src"/>
+                                            </xsl:attribute>
+                                        <span id="imagetext">
+                                            <xsl:value-of select="image"/>
+                                        </span>
+                                    </xsl:element>
+                                </li>
+                                <!--todo: this is here for a space holder for related topics/links <li>Related Links:<xsl:value-of select="link"/></li>-->
                         </ul>
                     </xsl:for-each>
                 </div>

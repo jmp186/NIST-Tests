@@ -115,8 +115,8 @@
 .pagedown {
     list-style-type: none;
     display: block
-    margin-top: 10px;
-    padding-top: 10px;
+    /*margin-top: 10px;
+    padding-top: 10px;*/
     height: auto;
     width: 20%;
     }
@@ -127,9 +127,11 @@
     text-align: center;
     }
 
-#image {
-    text-align: center;
-    list-style-type: none
+.pagedown img {
+    margin-top: 20px;
+    height: auto;
+    width: 350px;
+    list-style-type: none;
     }
 
 

@@ -1,32 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    xmlns="http://www.w3.org/2000/svg"
-   version="1.1"
+   width="61.973389mm"
+   height="34.621376mm"
+   viewBox="0 0 219.59072 122.67417"
    id="svg3382"
-   viewBox="0 0 564.01725 304.86533"
-   height="86.039772mm"
-   width="159.17822mm">
-  <g
-     transform="translate(-56.56924,-214.28482)"
-     id="layer1">
-    <rect
-       y="326.64792"
-       x="168.57143"
-       height="128.57143"
-       width="325.71429"
-       id="rect3390"
-       style="fill:none;fill-opacity:0.5098038;stroke:#000000;stroke-width:2.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    <path
-       id="path3392"
-       d="m 74.285714,386.64792 94.285716,0"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-    <path
-       id="path3394"
-       d="m 491.42857,392.3622 111.42857,2.85715"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-    <path
-       id="path3396"
-       d="m 505.71429,232.3622 -280,268.57143 -120,0"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+   version="1.1">
+  <g id="layer1" transform="translate(-97.271485,-326.70065)">
+    <rect style="fill:none;fill-opacity:0.5098038;stroke:#000000;stroke-width:0.95290434;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" id="rect3390" width="124.0471" height="49.047096" x="144.53944" y="364.30533" />
+    <path style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.56407613px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 114.98799,388.86812 30,0" id="path3392" />
+    <path style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 278.94443,344.77803 -90.05602,86.38026 -46.34824,0" id="path3396" />
   </g>
+  <path style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.56407607px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 171.87418,62.167466 30,0" id="path3392-3" />
 </svg>
