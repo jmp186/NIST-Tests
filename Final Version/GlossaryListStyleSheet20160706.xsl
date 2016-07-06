@@ -7,7 +7,7 @@
                 <meta charset="utf-8"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
-                <link rel="stylesheet" type="text/css" href="./GlossaryCSS20160629.css"/>
+                <link rel="stylesheet" type="text/css" href="./GlossaryListStyleSheet20160706.css"/>
                 <!--<link rel="stylesheet" href="jquery-ui.min.css"></link>-->
                 <!--<script src="external/jquery/jquery.js"></script>-->
                 <!--<script src="jquery-ui.min.js"></script>-->
@@ -48,13 +48,13 @@
                         <div class="row" id="undertopnav">
                             <div class="container-fluid">
                                 <div id="title" class="col-xs-12 col-sm-12 col-md-3 col-lg-3">Glossary Search</div>
-                                <div class="col-xs-11 col-sm-11 col-md-7 col-lg-7">
-                                    <input type="text" class="form-control" id="input" placeholder="Search by Term or Acronym"/>
-                                </div>
-                                <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
-                                    <button class="btn btn-primary" id="buttn">
-                                        <span id="glyph" class="glyphicon glyphicon-search"></span>
-                                    </button>
+                                <!--<div class="col-xs-11 col-sm-11 col-md-7 col-lg-7">-->
+                                    <!--<input type="text" class="form-control" id="input" placeholder="Search by Term or Acronym"/>-->
+                                <!--</div>-->
+                                <!--<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">-->
+                                    <!--<button class="btn btn-primary" id="buttn">-->
+                                        <!--<span id="glyph" class="glyphicon glyphicon-search"></span>-->
+                                    <!--</button>-->
                                 </div>
                             </div>
                         </div>
@@ -64,7 +64,7 @@
                                 <ul id="sidebarnav">
                                     <li class="side"><button class="sidebutton"><a href="./Glossary20160629.xml"><span class="sidebutton">Glossary Search</span></a></button></li>
                                     <li class="side"><button class="sidebutton"><a id="textOutput"><span class="sidebutton">HTML</span></a></button></li>
-                                    <li class="side"><button class="sidebutton"><a href="./GlossaryList20160706.xml"><span class="sidebutton">List of all Terms</span></a></button></li>
+                                    <li class="side"><button class="sidebutton"><a href=""><span class="sidebutton">List of all Terms</span></a></button></li>
                                     <!--todo: more side nav items-->
                                 </ul>
                             </div>
@@ -117,111 +117,6 @@
                         </ul>
                     </xsl:for-each>
                 </div>
-
-                <script>
-                    var nameResult = null;
-                    var acronymResult = null;
-                    var input = null;
-                    <!--search function-->
-
-                    $('#input').keypress(function(e) {
-                        if(e.keyCode==13){
-                        console.log("pressed");
-                        $('#buttn').trigger('click');
-                        }
-                    });
-
-                    $("#buttn").click(function(){
-                    input=document.getElementById("input").value;
-                    if (input==null | input=="")
-                    console.log("typeof " (input))
-                     $("div[id='output']").empty();
-                    console.log("variable input is " + String(input))
-
-
-                    <!--// 1) search by acronym-->
-                    acronymResult = $("li[id='acronym']:contains("+input+")").parent();
-                    console.log(acronymResult);
-
-                    <!--// 2) search by term name-->
-                    nameResult = $("span[id='name']:contains("+input+")").parent().parent().parent();
-                    console.log(nameResult);
-
-                    <!--clear function-->
-                    if (acronymResult!=null) {
-                        $("div[id='output']").empty();
-                    }
-                    if (nameResult!=null) {
-                        $("div[id='output']").empty();
-                    }
-                    <!--display results if statements-->
-                    if (acronymResult){
-                      $("div[id='output']").append(acronymResult.html());
-                    }
-
-                    if (nameResult) {
-                       console.log("appending nameResult")
-                      $("div[id='output']").append(nameResult.html());
-                    }
-
-                    });
-                </script>
-                <script>
-                    function loadXMLDoc(filename)
-                    {
-                    if (window.ActiveXObject)
-                    {
-                    xhttp = new ActiveXObject("Msxml2.XMLHTTP");
-                    }
-                    else
-                    {
-                    xhttp = new XMLHttpRequest();
-                    }
-                    xhttp.open("GET", filename, false);
-                    try {xhttp.responseType = "msxml-document"} catch(err) {} // Helping IE11
-                    xhttp.send("");
-                    return xhttp.responseXML;
-                    }
-
-                    function displayResult()
-                    {
-
-                    <!--// This is where you load the files, is there a way to select from file system? Dropzone does this-->
-                    console.log(document.getElementById('xml').files[0].name);
-                    var xmlFilePath=document.getElementById('xml').files[0].name;
-                    var xslFilePath=document.getElementById('xsl').files[0].name;
-
-                    xml = loadXMLDoc(./Glossary20160629.xml);
-                    xsl = loadXMLDoc(./GlossaryStyleSheet20160629.xsl);
-                    var output=null;
-                    <!--// code for IE-->
-                    if (window.ActiveXObject || xhttp.responseType == "msxml-document")
-                    {
-                    ex = xml.transformNode(xsl);
-                    document.getElementById("example").innerHTML = ex;
-                    console.log(ex);
-                    output= document.getElementById("example").innerHTML;
-                    }
-                    <!--// code for Chrome, Firefox, Opera, etc.-->
-                    else if (document.implementation and document.implementation.createDocument)
-                    {
-                    xsltProcessor = new XSLTProcessor();
-                    xsltProcessor.importStylesheet(xsl);
-                    resultDocument = xsltProcessor.transformToFragment(xml, document);
-                    document.getElementById("example").appendChild(resultDocument);
-                    output=document.getElementById("example").innerHTML;
-                    console.log(output);
-                    }
-
-                    function downloadOutput(textOutput,downloadAnchorId,outputName){
-                    var outputBlob=new Blob([textOutput], {type: 'text/plain'});
-                    var downloadTag=document.getElementById(downloadAnchorId);
-                    console.log(textOutput);
-                    downloadTag.setAttribute('href',window.URL.createObjectURL(outputBlob));
-                    downloadTag.setAttribute(downloadAnchorId, outputName);
-                    downloadTag.dataset.downloadurl = ['text/plain', downloadTag.download, downloadTag.href].join(':');
-                    }
-                </script>
 
             </body>
 
