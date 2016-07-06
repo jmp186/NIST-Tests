@@ -1,6 +1,7 @@
 <?xml version='1.0'?>
 <?xml-stylesheet type="text/xsl" href="./GlossaryListStyleSheet20160706.xsl"?>
 
+
 <glossary>
     <!--Values of the tags for each term:
        <term>: id=acronym if has one or name if there is no acronym
