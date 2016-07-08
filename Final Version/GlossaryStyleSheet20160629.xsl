@@ -6,13 +6,13 @@
             <head>
                 <meta charset="utf-8"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-                <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+                <link rel="stylesheet" href="./bootstrapcss.css"/>
                 <link rel="stylesheet" type="text/css" href="./GlossaryCSS20160629.css"/>
                 <!--<link rel="stylesheet" href="jquery-ui.min.css"></link>-->
                 <!--<script src="external/jquery/jquery.js"></script>-->
                 <!--<script src="jquery-ui.min.js"></script>-->
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min."></script>
-                <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+                <script src="./jquery2.js"></script>
+                <script src="./bootstrapjs.js"></script>
             </head>
 
             <body>
@@ -63,7 +63,7 @@
                             <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
                                 <ul id="sidebarnav">
                                     <li class="side"><button class="sidebutton"><a href="./Glossary20160629.xml"><span class="sidebutton">Glossary Search</span></a></button></li>
-                                    <li class="side"><button class="sidebutton"><a id="textOutput"><span class="sidebutton">HTML</span></a></button></li>
+                                    <li class="side"><button class="sidebutton"><a href="./XML_Example_20160620_001.html"><span class="sidebutton">HTML</span></a></button></li>
                                     <li class="side"><button class="sidebutton"><a href="./GlossaryList20160706.xml"><span class="sidebutton">List of all Terms</span></a></button></li>
                                     <!--todo: more side nav items-->
                                 </ul>
@@ -167,62 +167,62 @@
                     });
                 </script>
 
-                <script>
-                    function loadXMLDoc(filename)
-                    {
-                    if (window.ActiveXObject)
-                    {
-                    xhttp = new ActiveXObject("Msxml2.XMLHTTP");
-                    }
-                    else
-                    {
-                    xhttp = new XMLHttpRequest();
-                    }
-                    xhttp.open("GET", filename, false);
-                    try {xhttp.responseType = "msxml-document"} catch(err) {} // Helping IE11
-                    xhttp.send("");
-                    return xhttp.responseXML;
-                    }
-
-                    function displayResult()
-                    {
-
+                <!--<script>-->
+                    <!--function loadXMLDoc(filename)-->
+                    <!--{-->
+                    <!--if (window.ActiveXObject)-->
+                    <!--{-->
+                    <!--xhttp = new ActiveXObject("Msxml2.XMLHTTP");-->
+                    <!--}-->
+                    <!--else-->
+                    <!--{-->
+                    <!--xhttp = new XMLHttpRequest();-->
+                    <!--}-->
+                    <!--xhttp.open("GET", filename, false);-->
+                    <!--try {xhttp.responseType = "msxml-document"} catch(err) {} // Helping IE11-->
+                    <!--xhttp.send("");-->
+                    <!--return xhttp.responseXML;-->
+                    <!--}-->
+<!---->
+                    <!--function displayResult()-->
+                    <!--{-->
+<!---->
                     <!--// This is where you load the files, is there a way to select from file system? Dropzone does this-->
-                    console.log(document.getElementById('xml').files[0].name);
-                    var xmlFilePath=document.getElementById('xml').files[0].name;
-                    var xslFilePath=document.getElementById('xsl').files[0].name;
-
-                    xml = loadXMLDoc(./Glossary20160629.xml);
-                    xsl = loadXMLDoc(./GlossaryStyleSheet20160629.xsl);
-                    var output=null;
-                    <!--// code for IE-->
-                    if (window.ActiveXObject || xhttp.responseType == "msxml-document")
-                    {
-                    ex = xml.transformNode(xsl);
-                    document.getElementById("example").innerHTML = ex;
-                    console.log(ex);
-                    output= document.getElementById("example").innerHTML;
-                    }
+                    <!--console.log(document.getElementById('xml').files[0].name);-->
+                    <!--var xmlFilePath=document.getElementById('xml').files[0].name;-->
+                    <!--var xslFilePath=document.getElementById('xsl').files[0].name;-->
+<!---->
+                    <!--xml = loadXMLDoc(./Glossary20160629.xml);-->
+                    <!--xsl = loadXMLDoc(./GlossaryStyleSheet20160629.xsl);-->
+                    <!--var output=null;-->
+                    // code for IE
+                    <!--if (window.ActiveXObject || xhttp.responseType == "msxml-document")-->
+                    <!--{-->
+                    <!--ex = xml.transformNode(xsl);-->
+                    <!--document.getElementById("example").innerHTML = ex;-->
+                    <!--console.log(ex);-->
+                    <!--output= document.getElementById("example").innerHTML;-->
+                    <!--}-->
                     <!--// code for Chrome, Firefox, Opera, etc.-->
-                    else if (document.implementation and document.implementation.createDocument)
-                    {
-                    xsltProcessor = new XSLTProcessor();
-                    xsltProcessor.importStylesheet(xsl);
-                    resultDocument = xsltProcessor.transformToFragment(xml, document);
-                    document.getElementById("example").appendChild(resultDocument);
-                    output=document.getElementById("example").innerHTML;
-                    console.log(output);
-                    }
+                    <!--else if (document.implementation and document.implementation.createDocument)-->
+                    <!--{-->
+                    <!--xsltProcessor = new XSLTProcessor();-->
+                    <!--xsltProcessor.importStylesheet(xsl);-->
+                    <!--resultDocument = xsltProcessor.transformToFragment(xml, document);-->
+                    <!--document.getElementById("example").appendChild(resultDocument);-->
+                    <!--output=document.getElementById("example").innerHTML;-->
+                    <!--console.log(output);-->
+                    <!--}-->
 
-                    function downloadOutput(textOutput,downloadAnchorId,outputName){
-                    var outputBlob=new Blob([textOutput], {type: 'text/plain'});
-                    var downloadTag=document.getElementById(downloadAnchorId);
-                    console.log(textOutput);
-                    downloadTag.setAttribute('href',window.URL.createObjectURL(outputBlob));
-                    downloadTag.setAttribute(downloadAnchorId, outputName);
-                    downloadTag.dataset.downloadurl = ['text/plain', downloadTag.download, downloadTag.href].join(':');
-                    }
-                </script>
+                    <!--function downloadOutput(textOutput,downloadAnchorId,outputName){-->
+                    <!--var outputBlob=new Blob([textOutput], {type: 'text/plain'});-->
+                    <!--var downloadTag=document.getElementById(downloadAnchorId);-->
+                    <!--console.log(textOutput);-->
+                    <!--downloadTag.setAttribute('href',window.URL.createObjectURL(outputBlob));-->
+                    <!--downloadTag.setAttribute(downloadAnchorId, outputName);-->
+                    <!--downloadTag.dataset.downloadurl = ['text/plain', downloadTag.download, downloadTag.href].join(':');-->
+                    <!--}-->
+                <!--</script>-->
 
             </body>
         </html>

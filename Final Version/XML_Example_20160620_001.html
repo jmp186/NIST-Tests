@@ -24,8 +24,8 @@ function displayResult()
     var xmlFilePath=document.getElementById('xml').files[0].name;
     var xslFilePath=document.getElementById('xsl').files[0].name;
 
-    xml = loadXMLDoc(xmlFilePath);
-    xsl = loadXMLDoc(xslFilePath);
+    xml = loadXMLDoc(./Glossary20160629.xml);
+    xsl = loadXMLDoc(./GlossaryStyleSheet20160629.xsl);
     var output=null;
 // code for IE
 if (window.ActiveXObject || xhttp.responseType == "msxml-document")
