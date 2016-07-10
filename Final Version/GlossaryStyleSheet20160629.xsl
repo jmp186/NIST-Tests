@@ -63,7 +63,7 @@
                             <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
                                 <ul id="sidebarnav">
                                     <li class="side"><button class="sidebutton"><a href="./Glossary20160629.xml"><span class="sidebutton">Glossary Search</span></a></button></li>
-                                    <li class="side"><button class="sidebutton"><a href="./XML_Example_20160620_001.html"><span class="sidebutton">HTML</span></a></button></li>
+                                    <li class="side"><button class="sidebutton"><a href="./XML_Ex_20160708.html"><span class="sidebutton">HTML</span></a></button></li>
                                     <li class="side"><button class="sidebutton"><a href="./GlossaryList20160706.xml"><span class="sidebutton">List of all Terms</span></a></button></li>
                                     <!--todo: more side nav items-->
                                 </ul>

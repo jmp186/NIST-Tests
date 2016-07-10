@@ -1,32 +1,34 @@
 <html xmlns="http://www.w3.org/1999/html">
 <head>
-<script>
-function loadXMLDoc(filename)
-{
-if (window.ActiveXObject)
-  {
-  xhttp = new ActiveXObject("Msxml2.XMLHTTP");
-  }
-else
-  {
-  xhttp = new XMLHttpRequest();
-  }
- xhttp.open("GET", filename, false);
-try {xhttp.responseType = "msxml-document"} catch(err) {} // Helping IE11
-xhttp.send("");
-return xhttp.responseXML;
- }
+    <script>
+        <!--function loadXMLDoc(filename)-->
+<!--{-->
+<!--if (window.ActiveXObject)-->
+  <!--{-->
+  <!--xhttp = new ActiveXObject("Msxml2.XMLHTTP");-->
+  <!--}-->
+<!--else-->
+  <!--{-->
+  <!--xhttp = new XMLHttpRequest();-->
+  <!--}-->
+ <!--xhttp.open("GET", filename, false);-->
+<!--try {xhttp.responseType = "msxml-document"} catch(err) {} // Helping IE11-->
+<!--xhttp.send("");-->
+<!--return xhttp.responseXML;-->
+ <!--}-->
 
 function displayResult()
 {
-// This is where you load the files, is there a way to select from file system? Dropzone does this
-    console.log(document.getElementById('xml').files[0].name);
-    var xmlFilePath=document.getElementById('xml').files[0].name;
-    var xslFilePath=document.getElementById('xsl').files[0].name;
 
-    xml = loadXMLDoc(xmlFilePath);
-    xsl = loadXMLDoc(xslFilePath);
+// This is where you load the files, is there a way to select from file system? Dropzone does this
+    console.log(document.getElementById('xml'));
+    var xml=document.getElementById('xml');
+    var xsl=document.getElementById('xsl');
+
+    xml = ./Glossary20160629.xml;
+    xsl = ./GlossaryStyleSheet20160629.xsl;
     var output=null;
+
 // code for IE
 if (window.ActiveXObject || xhttp.responseType == "msxml-document")
   {
@@ -35,6 +37,7 @@ if (window.ActiveXObject || xhttp.responseType == "msxml-document")
   console.log(ex);
   output= document.getElementById("example").innerHTML;
   }
+
 // code for Chrome, Firefox, Opera, etc.
 else if (document.implementation && document.implementation.createDocument)
   {
@@ -84,6 +87,7 @@ else if (document.implementation && document.implementation.createDocument)
 <!--<a id="downloadHTML" >Download Full HTML Document Fragment</a>-->
 <div id="xmlText"></div>
 <div id="example" ></div>
+
 
 
 </body>
