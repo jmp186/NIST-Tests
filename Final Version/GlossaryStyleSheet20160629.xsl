@@ -60,9 +60,27 @@
                         <div id="resize" class="row">
                             <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
                                 <ul id="sidebarnav">
-                                    <li class="side"><button class="sidebutton"><a href="./Glossary20160629.xml"><span class="sidebutton">Glossary Search</span></a></button></li>
-                                    <li class="side"><button class="sidebutton"><a href="./XML_Example_20160620_001.html"><span class="sidebutton">HTML</span></a></button></li>
-                                    <li class="side"><button class="sidebutton" id="displaytoggle"><span class="sidebutton">List of all Terms</span></button></li>
+                                    <li class="side">
+                                        <button class="sidebutton">
+                                            <a href="./Glossary20160629.xml">
+                                                <span class="sidebutton">Glossary Search</span>
+                                            </a>
+                                        </button>
+                                    </li>
+                                    <li class="side">
+                                        <button class="sidebutton">
+                                            <a href="./XML_Example_20160620_001.html">
+                                                <span class="sidebutton">HTML</span>
+                                            </a>
+                                        </button>
+                                    </li>
+                                    <li class="side">
+                                        <button class="sidebutton" id="showAll">
+                                            <a href="#content">
+                                                <span class="sidebutton">List of all Terms</span>
+                                            </a>
+                                        </button>
+                                    </li>
                                     <!--todo: more side nav items-->
                                 </ul>
                             </div>
@@ -163,12 +181,13 @@
                     }
 
                     });
+                </script>
 
-                $('#displaytoggle').click(function() {
-                    $('#content').show();
-                 });
-
-
+                <script>
+                    // Show All Button
+                    $('#showAll').click(function(){
+                    $('#content').toggle();
+                    });
                 </script>
 
 

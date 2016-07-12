@@ -188,7 +188,8 @@
         <links>
             <link type="simple" href="http://www.nist.gov">
                 National Institute of Standards and Technology Homepage
-            </link></links>
+            </link>
+        </links>
         <definition>
             was the name of the National Institute of Standards and Technology from 1901-1988.
         </definition>
@@ -208,16 +209,13 @@
             </link>
         </links>
         <definition>
-            As new science and technology areas emerge, NIST must quickly develop the measurement methods needed to
-            support them.  The Innovations in Measurement Science Program is one of NIST’s primary mechanisms for
-            keeping pace with the measurement requirements needed for innovation in U.S. industry.
-            <br></br>
-            Established in 1979, the program supports high-risk, leading-edge research projects that anticipate
-            industry needs and develop measurement science for the next generation of technology. At some point
-            in their careers, all three of NIST’s Nobel laureates have had their research funded by this program.
-            Current NIST expertise in quantum information science, fuel cell science, three dimensional chemical
-            imaging, and many other areas important to national priorities were launched with “measurement innovations”
-            funding.
+            is one of NIST’s primary mechanisms for keeping pace with the measurement requirements needed for
+            innovation in U.S. industry. Established in 1979, the program supports high-risk, leading-edge research
+            projects that anticipate industry needs and develop measurement science for the next generation of
+            technology. At some point in their careers, all three of NIST’s Nobel laureates have had their research
+            funded by this program. Current NIST expertise in quantum information science, fuel cell science,
+            three dimensional chemical imaging, and many other areas important to national priorities were
+            launched with “measurement innovations” funding.
         </definition>
         <image>
         </image>
