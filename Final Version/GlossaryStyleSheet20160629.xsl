@@ -6,7 +6,7 @@
             <head>
                 <meta charset="utf-8"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-                <link rel="stylesheet" href="./CDN/bootstrapcss.css"/>
+                <link rel="stylesheet" href="./CDN/bootstrap.css"/>
                 <link rel="stylesheet" type="text/css" href="./GlossaryCSS20160629.css"/>
 
                 <script src="./CDN/jquery2.js"></script>
