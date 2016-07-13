@@ -114,7 +114,7 @@
             stimuli by electrical signals.
         </definition>
         <embedimage>
-           <svg xmlns="http://www.w3.org/2000/svg"  id="svg2583"  height="270.82968"  width="615.82916"  version="1.0">
+           <svg xmlns="http://www.w3.org/2000/svg"  xmlns:xlink="http://www.w3.org/1999/xlink" id="svg2583"  height="270.82968"  width="615.82916"  version="1.0">
                  <defs id="defs2585">
                     <marker style="overflow:visible" id="StopL" refX="0" refY="0" orient="auto">
                         <path transform="scale(0.8,0.8)" style="fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:#000000;stroke-width:1pt" d="M 0,5.65 L 0,-5.65" id="path3824" />
@@ -174,7 +174,7 @@
                     <path  id="path4896"  d="M 584.46778,143.54597 L 584.46778,75.237356"  style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.80000007;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
                 </g>
                 <path id="path3816"  d="M 197.38189,77.868883 L 417.93252,77.868883"  style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.99999988;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-               <path  id="path3822"  d="M 202.54833,151.50981 L 416.40916,151.50981"  style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+                <path  id="path3822"  d="M 202.54833,151.50981 L 416.40916,151.50981"  style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
                 <rect transform="matrix(0,-1,1,0,0,0)"  rx="0" ry="14.052691" y="239.88776" x="-179.79587" height="140.05365" width="123.80372" id="rect5214" style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.70000017;stroke-miterlimit:4.0999999;stroke-dasharray:none;stroke-opacity:1" />
                 <rect ry="0" y="74.91626" x="259.46274" height="85.955498" width="100.90372" id="rect7554" style="fill:#f4f2ae;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
                 <path d="M 203.39535,77.868983 C 203.39665,81.217283 200.68275,83.932283 197.33445,83.932283 C 193.98605,83.932283 191.27215,81.217283 191.27345,77.868983 C 191.27215,74.520683 193.98605,71.805583 197.33445,71.805583 C 200.68275,71.805583 203.39665,74.520683 203.39535,77.868983 L 203.39535,77.868983 z" id="path3827" style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
