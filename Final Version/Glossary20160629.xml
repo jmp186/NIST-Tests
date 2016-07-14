@@ -435,8 +435,8 @@
 
     <term id="S3">
         <name>Amazon Simple Storage Service</name>
-        <shortname>Amazon S3</shortname>
-        <acronym>S3</acronym>
+        <shortname>(Amazon S3)</shortname>
+        <acronym>(S3)</acronym>
         <links>
             <link type="simple" href="https://aws.amazon.com/s3/"/>
         </links>
@@ -485,7 +485,7 @@
     <term>
         <name>Amazon Web Services</name>
         <shortname></shortname>
-        <acronym>AWS</acronym>
+        <acronym>(AWS)</acronym>
         <links>
             <link type="simple" href="https://aws.amazon.com"/>
         </links>
@@ -624,8 +624,8 @@
 
     <term>
         <name>Regular Expression</name>
-        <shortname>Regex</shortname>
-        <acronym>Re</acronym>
+        <shortname>(Regex)</shortname>
+        <acronym>(Re)</acronym>
         <links>
             <link type="simple" href="https://en.wikipedia.org/wiki/Regular_expression"/>
         </links>
