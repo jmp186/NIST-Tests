@@ -35,7 +35,9 @@
         <shortname></shortname>
         <acronym>(XML)</acronym>
         <links>
-            <link type="simple" href="http://www.w3schools.com/xml/"> XML Tutorial by W3Schools</link>
+            <link type="simple" href="http://www.w3schools.com/xml/">
+                XML Tutorial by W3Schools
+            </link>
         </links>
         <definition>
             is a markup language that defines a set of rules for encoding documents in a format
@@ -197,13 +199,7 @@
             </link>
         </links>
         <definition>
-            is one of NIST’s primary mechanisms for keeping pace with the measurement requirements needed for
-            innovation in U.S. industry. Established in 1979, the program supports high-risk, leading-edge research
-            projects that anticipate industry needs and develop measurement science for the next generation of
-            technology. At some point in their careers, all three of NIST’s Nobel laureates have had their research
-            funded by this program. Current NIST expertise in quantum information science, fuel cell science,
-            three dimensional chemical imaging, and many other areas important to national priorities were
-            launched with “measurement innovations” funding.
+            is a program to fund new exploratory science at NIST.  It is one of NIST’s primary mechanisms for keeping pace with the measurement requirements needed for innovation in U.S. industry. Established in 1979, the program supports high-risk, leading-edge research projects that anticipate industry needs and develop measurement science for the next generation of technology. At some point in their careers, all three of NIST’s Nobel laureates have had their research funded by this program. Current NIST expertise in quantum information science, fuel cell science, three dimensional chemical imaging, and many other areas important to national priorities were launched with “measurement innovations” funding.
         </definition>
     </term>
 
@@ -236,12 +232,8 @@
             </link>
         </links>
         <definition>
-            There is no consensus on how to define Monte Carlo methods.  Within Calnet it is...
+            Simulating uncertainties using a probability distribution.  NIST usually does about 100 trials.
         </definition>
-        <image>
-        </image>
-        <embedimage>
-        </embedimage>
     </term>
 
     <term id="VB">
@@ -249,7 +241,9 @@
         <shortname></shortname>
         <acronym>(VB)</acronym>
         <links>
-            <link type="simple" href="https://en.wikipedia.org/wiki/Visual_Basic"/>
+            <link type="simple" href="https://en.wikipedia.org/wiki/Visual_Basic">
+                Visual Basic Wikipedia Page
+            </link>
         </links>
         <definition>
             is an event-driven programming language and integrated development environment (IDE) from Microsoft.  It was
@@ -357,18 +351,13 @@
         <shortname></shortname>
         <acronym></acronym>
         <links>
-            <link type="simple" href="https://en.wikipedia.org/wiki/Short_circuit"/>
+            <link type="simple" href="">
+            </link>
         </links>
         <definition>
             is an abnormal connection between two nodes of an electric circuit intended to be at different voltages.
             In an ideal short, there is no resistance or voltage drop across the short.
         </definition>
-        <image>
-        </image>
-        <embedimage>
-
-
-        </embedimage>
     </term>
 
     <term id="short">
@@ -376,7 +365,9 @@
         <shortname>(short)</shortname>
         <acronym>(s/c)</acronym>
         <links>
-            <link type="simple" href="https://en.wikipedia.org/wiki/Short_circuit"/>
+            <link type="simple" href="https://en.wikipedia.org/wiki/Short_circuit">
+                Short Circuit Wikipedia Page
+            </link>
         </links>
         <definition>
             is an abnormal connection between two nodes of an electric circuit intended to be at different voltages.
@@ -393,7 +384,9 @@
         <shortname>(.Net)</shortname>
         <acronym></acronym>
         <links>
-            <link type="simple" href="https://en.wikipedia.org/wiki/.NET_Framework"/>
+            <link type="simple" href="https://en.wikipedia.org/wiki/.NET_Framework">
+                .Net Framework Wikipedia Page
+            </link>
         </links>
         <definition>
             is a software framework developed by Microsoft that runs primarily on MS Windows.
@@ -409,7 +402,9 @@
         <shortname></shortname>
         <acronym>(EC2)</acronym>
         <links>
-            <link type="simple" href="https://aws.amazon.com/ec2/"/>
+            <link type="simple" href="https://aws.amazon.com/ec2/">
+                Amazon Elastic Compute Cloud Page
+            </link>
         </links>
         <definition>
             forms a central part of Amazon.com's cloud-computing platform, Amazon Web Services (AWS), by allowing users
@@ -438,7 +433,9 @@
         <shortname>(Amazon S3)</shortname>
         <acronym>(S3)</acronym>
         <links>
-            <link type="simple" href="https://aws.amazon.com/s3/"/>
+            <link type="simple" href="https://aws.amazon.com/s3/">
+                Amazon Simple Storage Service Page
+            </link>
         </links>
         <definition>is an online file storage web serviceoffered by Amazon Web Services. Amazon S3 provides storage
             through web services interfaces (REST, SOAP, and BitTorrent).
@@ -482,12 +479,14 @@
         </embedimage>
     </term>
 
-    <term>
+    <term id="AWS">
         <name>Amazon Web Services</name>
         <shortname></shortname>
         <acronym>(AWS)</acronym>
         <links>
-            <link type="simple" href="https://aws.amazon.com"/>
+            <link type="simple" href="https://aws.amazon.com">
+                Amazon Web Services Homepage
+            </link>
         </links>
         <definition>
             is a subsidiary of Amazon.com, which offers a suite of cloud computing services that make up an
@@ -549,7 +548,9 @@
         <shortname></shortname>
         <acronym>(SQL)</acronym>
         <links>
-            <link type="simple" href="https://en.wikipedia.org/wiki/SQL"/>
+            <link type="simple" href="https://en.wikipedia.org/wiki/SQL">
+                SQL Wikipedia Page
+            </link>
         </links>
         <definition>
             is a special-purpose programming language designed for managing data held in a relational database
@@ -622,16 +623,593 @@
         </embedimage>
     </term>
 
-    <term>
+    <term id="Regex">
         <name>Regular Expression</name>
         <shortname>(Regex)</shortname>
         <acronym>(Re)</acronym>
         <links>
-            <link type="simple" href="https://en.wikipedia.org/wiki/Regular_expression"/>
+            <link type="simple" href="https://en.wikipedia.org/wiki/Regular_expression">
+                Regular Expression Wikipedia Page
+            </link>
         </links>
         <definition>
             is a sequence of characters that define a search pattern, mainly for use in pattern matching with strings,
             or string matching, i.e. "find and replace"-like operations.
         </definition>
     </term>
+
+    <term id="agilent">
+        <name>Aglient Technologies</name>
+        <shortname>(Agilent)</shortname>
+        <acronym></acronym>
+        <links>
+            <link type="simple" href="hhttps://en.wikipedia.org/wiki/Keysight">
+                Keysight Wikipedia Page
+            </link>
+        </links>
+        <definition>
+            provides tools for the entire laboratory work flow.  These tools include analytical instruments software, services and consumables.  The electronic measurement division was spun off in 2014 to create Keysight Technologies.
+        </definition>
+        <image>
+            <img src="./png/agilent_logo.png"/>
+        </image>
+    </term>
+
+    <term id="statistical">
+        <name>StatistiCAL</name>
+        <shortname></shortname>
+        <acronym></acronym>
+        <links>
+            <link type="simple" href="http://www.nist.gov/ctl/rf-technology/related-software.cfm">
+                NIST RF Technology Software Page
+            </link>
+        </links>
+        <definition>
+            is Vector Network Analysis (VNA) software based on an algorithm developed at the U.S. National Institute of Standards and Technology (NIST) and the Physikalisch-Technische Bundesanstalt (PTB) of Germany, which is able to estimate the uncertainty of its own results due to random errors. The algorithm features a high degree of robustness, allowing it to find solutions even with poor initial estimates.
+        </definition>
+        <image>
+            <img src="./other image formats/StatistiCAL_1.jpg"/>
+        </image>
+    </term>
+
+    <term id="calibration">
+        <name>Calibration</name>
+        <shortname></shortname>
+        <acronym></acronym>
+        <links>
+            <link type="simple" href="https://en.wikipedia.org/wiki/Calibration">
+                Calibration Wikipedia Page
+            </link>
+        </links>
+        <definition>
+            is the setting or correcting of a measuring device or base level, usually by adjusting it to match or conform to a dependably known and unvarying measure.
+        </definition>
+    </term>
+
+    <term id="DUT">
+        <name>Device Under Test</name>
+        <shortname></shortname>
+        <acronym>(DUT)</acronym>
+        <links>
+            <link type="simple" href="https://en.wikipedia.org/wiki/Device_under_test">
+                DUT Wikipedia Page
+            </link>
+        </links>
+        <definition>
+            is a manufactured product that is undergoing testing for performance and proficiency.
+        </definition>
+        <image>
+            <img src=""/>
+        </image>
+        <embedimage>
+
+        </embedimage>
+    </term>
+
+    <term id="load">
+        <name>Electrical Load</name>
+        <shortname>(Load)</shortname>
+        <acronym></acronym>
+        <links>
+            <link type="simple" href="https://en.wikipedia.org/wiki/Electrical_load">
+                Load Wikipedia Page
+            </link>
+        </links>
+        <definition>
+            is an electrical component that consumes power.
+        </definition>
+        <image>
+            <img src=""/>
+        </image>
+        <embedimage>
+
+        </embedimage>
+    </term>
+
+    <term id="HFSS">
+        <name>High Frequency Structural Simulator</name>
+        <shortname></shortname>
+        <acronym>(HFSS)</acronym>
+        <links>
+            <link type="simple" href="http://www.ansys.com/Products/Electronics/ANSYS-HFSS">
+                ANSYS HFSS Page
+            </link>
+        </links>
+        <definition>
+            is a commercial finite element method solver for electromagnetic structures from Ansys.  It is used for the design of antennas and complex radio frequency (RF) electronic circuit elements.  These RF circuit elements include filters, transmission lines, and packaging.
+        </definition>
+        <image>
+            Design image of Multi-layer PCB
+            <img src="./png/HFSS.png"/>
+        </image>
+    </term>
+
+    <term id="HTML">
+        <name>Hyper Text Markup Language</name>
+        <shortname></shortname>
+        <acronym>(HTML)</acronym>
+        <links>
+            <link type="simple" href="http://www.w3schools.com/html/default.asp">
+                W3School's HTML Page
+            </link>
+        </links>
+        <definition>
+            HTML is a markup language for describing web documents (web pages). HTML stands for Hyper Text Markup Language. A markup language is a set of markup tags. HTML documents are described by HTML tags. Each HTML tag describes different document content.
+        </definition>
+        <image>
+            <img src="./png/HTML.png"/>
+            HTML Example
+        </image>
+    </term>
+
+    <term id="KM">
+        <name>Knowledge Management</name>
+        <shortname></shortname>
+        <acronym>(KM)</acronym>
+        <links>
+            <link type="simple" href="http://www.nist.gov/nvl/upload/iflapaper.pdf">
+            NIST Publications Knowledge Management Program Paper
+            </link>
+        </links>
+        <definition>
+            is the process of finding, selecting, organizing, condensing and presenting information in a way that improves one’s comprehension in a specific area of interest. KM delivers the right knowledge to the right person in the right context at the lowest possible cost, allowing for a more effective workplace.
+            <!--paraphrased from Jo Ann Remshard, What is KM—Knowledge Management—Really? Information Services Directions, Volume 3, Issue 10, February 2005.-->
+        </definition>
+    </term>
+
+    <term id="odo">
+        <name>odo</name>
+        <shortname></shortname>
+        <acronym></acronym>
+        <links>
+            <link type="simple" href="http://odo.pydata.org/en/latest/">
+                Python's odo Page
+            </link>
+        </links>
+        <definition>
+            takes two arguments, a source and a target for a data transfer and migrates the data from the source to the target. Odo migrates data between many formats. These inlude in-memory structures like list, pd.DataFrame, and np.ndarray and also data outside of Python like CSV/JSON/HDF5 files, SQL databases, data on remote machines, and the Hadoop File System.
+        </definition>
+        <image>
+            <img src="./png/odo.png"/>
+            Network Conversion Mapping Image
+        </image>
+    </term>
+
+    <term id="ODRPACK">
+        <name>Orthogonal Distance Regression Package</name>
+        <shortname></shortname>
+        <acronym>(ODRPACK)</acronym>
+        <links>
+            <link type="simple" href="http://www.nist.gov/ctl/rf-technology/related-software.cfm">
+            NIST Related-Software Page
+            </link>
+        </links>
+        <definition>
+            is a FORTRAN-77 library for performing ODR with possibly non-linear fitting functions. It uses a modified trust-region Levenberg-Marquardt-type algorithm to estimate the function parameters. The fitting functions are provided by Python functions operating on NumPy arrays. The required derivatives may be provided by Python functions as well, or may be estimated numerically. ODRPACK can do explicit or implicit ODR fits, or it can do OLS. Input and output variables may be multi-dimensional. Weights can be provided to account for different variances of the observations, and even covariances between dimensions of the variables.
+        </definition>
+    </term>
+
+    <term id="SASLang">
+        <name>Statistical Analysis System Language</name>
+        <shortname>SAS Language</shortname>
+        <acronym></acronym>
+        <links>
+            <link type="simple" href="https://en.wikipedia.org/wiki/SAS_language">
+                SAS Language Wikipedia Page
+            </link>
+        </links>
+        <definition>
+            is a computer programming language used for statistical analysis, originated by a project at the North Carolina State University. It can read in data from common spreadsheets and databases and output the results of statistical analyses in tables, graphs, and as rich text format (RTF), hypertext markup language (HTML) and portable document format (PDF) documents. The SAS language runs under compilers that can be used on variety of operating systems (OS) such as Windows, Linux, and Unix.
+        </definition>
+    </term>
+
+    <term id="SAS">
+        <name>Statistical Analysis System</name>
+        <shortname></shortname>
+        <acronym>SAS</acronym>
+        <links>
+            <link type="simple" href="https://en.wikipedia.org/wiki/SAS_(software)">
+                SAS Wikipedia Page
+            </link>
+        </links>
+        <definition>
+            is a software suite that can mine, alter, manage and retrieve data from a variety of sources and perform statistical analysis on it. SAS provides a graphical point-and-click user interface for non-technical users and more advanced options through the SAS programming language. In order to use Statistical Analysis System, Data should be in an Excel table format or SAS format. SAS programs have a DATA step, which retrieves and manipulates data, usually creating a SAS data set, and a PROC step, which analyzes the data.
+        </definition>
+        <image>
+            <img src="./png/SASLogo.png"/>
+            SAS Logo
+        </image>
+    </term>
+
+    <term id="T-Matrix">
+        <name>T-Matrix</name>
+        <shortname></shortname>
+        <acronym></acronym>
+        <links>
+            <link type="simple" href="https://en.wikipedia.org/wiki/T-matrix_method">
+                T-Matrix Wikipedia Page
+            </link>
+        </links>
+        <definition>
+            is a computational technique of light scattering by nonspherical particles originally formulated by P. C. Waterman in 1965. In the method, matrix elements are obtained by matching boundary conditions for solutions of Maxwell equations. The technique is also known as null field method and extended boundary technique method (EBCM).
+        </definition>
+    </term>
+
+    <term id="TS">
+        <name>Touchstone Format</name>
+        <shortname></shortname>
+        <acronym>(TS)</acronym>
+        <links>
+            <link type="simple" href="http://cp.literature.agilent.com/litweb/pdf/genesys200801/sim/linear_sim/sparams/touchstone_file_format.htm">
+                Agilent Touchstone Format Literature Link
+            </link>
+        </links>
+        <definition>
+            is an American Standard Code for Information Interchange (ASCII) text file used for documenting the n-port network parameter data and noise data of linear active devices, passive filters, passive devices, or interconnect networks. An example of the format of the S-parameter section is given in the article about S-parameters. In addition to S-parameters, other representations such as Y-parameters and Z-parameters can be recorded.
+        </definition>
+    </term>
+
+    <term id="VNA">
+        <name>Vector Network Analyzer</name>
+        <shortname></shortname>
+        <acronym>(VNA)</acronym>
+        <links>
+            <link type="simple" href="https://en.wikipedia.org/wiki/Network_analyzer_(electrical)">
+                Network Analyzer Wikipedia Page
+            </link>
+        </links>
+        <definition>
+            is a test system that measures the performance of radio frequency and microwave devices in terms of network scattering parameters, or S parameters.
+        </definition>
+        <image>
+            <img src="./png/KeysightVNA.png"/>
+            Keysight VNA
+        </image>
+        <embedimage>
+             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 250" height="250" width="400" version="1.1" id="svg2">
+                <defs id="defs6" />
+                <image y="0" x="0" id="image10" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAwwAAAIcCAAAAAB+tXaIAAAABGdBTUEAALGOfPtRkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAABl0RVh0U29mdHdhcmUATWljcm9zb2Z0IE9mZmljZX/tNXEAABzpSURBVHja7d0/iPNOesDx58gv3N4ffmfeI8SE4/AdhJgQgosUroIJhCxXbRHChhRxc7DNwVaJSeMuLl2FhUvhciHNVmEJBFy6NKlcunTp0qVie60/I43+WJbkmdH3gXdf25Ll0TPzsTTSWBKPIIhzCCkgCDAQBBgIAgwEAQaCAANBgIEgwEAQYCAIMBAEGAgCDAQBBuvyKl8RPg9eIfVgaBuGxP9C6sHQbgyXB+KBAQxgAAMY2o7B7yF4wT/6DGBoKQblFfHYMoABDEHfGQxgAAMYwAAG9TUwgKFtefVPtgUd6ABD0IGOTCLAUCwGUjIGtnwgAYa6yyi2fCABBjAQYAADAQYwEGAAAwEGMBAtwKCcV4odQ4+dYVJGq8VmdBaDqKsevBZmJshKfOye8mJkwCtnJmzAoA41kJCIcrpJf2K2fBl3y+XbdLpcrk3EoKREdBhiuTkDCP+LDPHTLIgwC0O0eprHsHl76nRHo5fpdDQayHCyNBpDIjNXYYhtUAgwROLw1uu/fOzDF1az0cPLtnIM82mxWNyAQc2lxBo/GCzBEG30ylh9ib9UbZ9hP+slG/4JyHhdMYZewWEYo+QHalLiafoMGRiiSRMw2IdB7UAr0yvbMnz2Jzv9jIvB5FAphudRLAbHhq+J13IYIh4iGRIvsWUAg/kYgl2B6NGQsNp1x0NuxrAfP+7SZ50NVlViSMQye2sW7fSqB4jSMHheIQyxHU7CYAxKW9d0EKvDsB4uMufdjBZmYIitscS3FfoONBjsxaD+dks0XepYtd+KYTva5Mx8GC8MwKBLSUoPK/438Vtpf+sLBhsxKF9lkR0mT/+blyvKuB1t82cPNRiBIfLjHol3FMIcaDAkdzLBYDSGZsu4H62DF/evq1wNd9xNIsBQbxmfPoLXPvvzoXroKIzDYAMGwm0M789Bcz8fUpoN1ilNdgQGwmkM+35wTHX6dWB/0015x/N73Rh2X+cXTqef38EAhqbL
+                +DoPXultv/5//NS/Y9c71IzBe/LPPnc2YABDw2U89IINg78b5H08pbzlq3dRJ4ZPH8OnZdkkHMAQ
+                afjB4aIIEDW+Zq61z3C5nszctmwStWDQXA4rOjgp8TOflCPnsSF8aWV8DvbND53gMNLrXF+0Q3df
+                M4ZF/7wyL9Z9tRD1YIg9EO14BN2Q5YgSScyW8jkPgYC3sAWu0y7bdaZTG4b9rDt8756Gqx7AAIY8
+                DFljMaIj9DWDvvWfswuPHA0jp9vSjq5OZvVh2L48PB+LMBHp7avLJgEGdXHpGFZD/+mmH5k2f9WX
+                7bz1qAXD51Nnsj3zfHhYV5hNwm4MsZ/siP6n7fo+gyRbv6SU5vxqeMZN6SdcDqIm4vPR80ZlL5ma
+                npT/OW4N3vxPfP7QZ6REdGmJtmOItQHvii2DDkNaYc4vL8b+02flCNKf/W/02cTfgzoffa16y7Cb
+                fotCOVSXTTYp7mDwUm8+kIoh8UvfHAynr3pdKPtJ4aHW84akWgyb8cP4P2sajgEGpzDobksjqUeT
+                4hgkF0PacaN9N/IFHZ6LmE0qxvAx6k53tY1NAoNbGNJ/kSJ5E2O/jdR+zr6TUorIj3kiw1rPHYvK
+                MJyuxrE4oQMDGAphiF3z7fIjnstD/5XUk255GLxuysnmYGyG0ps+j1qqCMNu0vEHQYEBDCaUMe1k
+                s9cPRsqd940iLCrBsDp2FYJPAAMYTChj6snmkEDI4qtbXQGGzbA724dPwQAGI8rYT7kWQHBuOrLD
+                9HWSugoMC2UKGMBgRBnfXlKm+zv0YVf6crranl+6gQEM15VxmHIJgI/R/iwg6D4fhmswEE5j2AxS
+                rgCw6H94+8kw1mMAA+EuBm86TZlj9/TYnwXPtv0DGIimayH9KlfKpbMSF9dVr6wVOwmRUcboCTY1
+                PsOzEOGVxmzB8DntzHe0Rbsx+GePk7do0Py0R3v90fhve/LKmK5BY8ESDNt+R+SHP/93GqPNGOLX
+                1NWNNcq4f5P2UV4Zn2c5hVpFrkBpBYbDL7+2id//ntZoPwYvFYNXFINXGMNh8pi5QzEbbm9fuUYx
+                /Pa7yx7iT/Y0RycxxG7CUQRDkT7DKT77H6kl2g4nVaxc8L5F/H5V/yyiu43V/IYP/JX/A5+ffdAc
+                XcCg3H/Ji3rQY0j+GKjoluEY+6f+Qjvf+rm3qmTlgvcV/a1cDwxgyMSQ3WeI/4JBrijjZtydrWOv
+                7d5Hg/eKVi543+uoWDzf8IH/+uBfmm9Pc7Qeg2gwFOhAx37IIFeVcTcZdJ7my+WXjeX7S7/7vKxs
+                5Ro9XXD4i0sH+r9ojRZj0B9LjT1NuzGN/rJJV5Rx/3H83j43o/7o+W1T5co1e+5s/5sf/0A63z5o
+                jFZj8HR3ngmnJG5P4ynX2AtvjhjMVqQD3cDKNf2B/X+cLg+0RcsxGF5GSzB8dJEABjCcYzCnHYIB
+                DKfQbRiUS7ElRrQQYHAUg2bD4Df/+KAvAQMYXMag3TD4f9VT+8KWAQxOY9D1GGLXKsy+Yj/RJgyd
+                spfz7VjwgfpDSdGhXWAAQ0si9VCSP3hL2T+iusDgbmSdYwADGFoV+g2DgAEMrYuUDYPut7JUFxjc
+                jrQeg+YqClQXGJwORiWBgbgEo5LAQHi78ZYNAxiIU2xFxls2DGAgzhiOsSERYCC+MMhpZ4kAAxjO
+                MScXYADDOV7oQoMBDOdRru9kAgxgOFkY0IEGA3HGwC4SGIgzBnaRwECcYvPfmbtI2zUpAkMr4jD9
+                7vufyW/3adMXnd7gYcI+FBhaYOEvf3LqPX/3i5S7rryMj0wOsyEawOB8PP/oco5hoJ28GKv/E2Bw
+                NvY/DO5OstZNH/ivcr8GMLgen8GFaH660Ew+PPiPRkuS5RyGrhDR+IPgKkva1t7bXiyQKTW6LmBg
+                46NGP6hdbRd5crm572pIqhpuR2BoPLZ//GXh21I7+TD4PP23HjJWAwzux6bf+eF3nV8uUybvHgcv
+                k1HQjybA4HSs5rOs+1at32ZLkgQGggADQYCBIMBAEGAgCDAQBBiIq7ISXIKbsBDDoOx4k0Fra1Zy
+                6qSVGu7cjqT+pchdtRtqwQODee0IDCbWOxjAQL2DAQzUO4kBAxjICxjAgAUwpE3z728pwYNwFvFf
+                zHhgWxty5ivi9oorWIHtwRDc4TX2IH7vV/3Ty9FIRzBEfVuyHrdUnOZ212C4FYNwrhsMDmHwbtoy
+                gOFuGG6sODCo0/wdg4I5DXY9wXBvDRVUHBgS0yIdK6/wF4ytHWjnPNxScR4d6OQ00ew45W9tpdqV
+                IUo1gCoqDgxqqkrktFguiboY3Fxxxb7NwFCsH8Zukp0Y4gN0wXB5FNvjDHYq6UAbruHWiot0HsBA
+                EGa0IzAQYGhsKf/XBQNhRTuqfSnbn/90DQbChnZU91L2/flHdwsGwoJ2VPNSDqNXz5v392AgzG9H
+                NS/l+en093V0AANhfDuqdymTy82Mn57BQBjfjmpdyltv//XgMHwFA2F6O6pzKZ+drf9w35uDgTC8
+                HdW4lHVnFT7Zdj/AQJjdjupbSqzYyiqBgTCwHdW2lH1/rr4Q2diBgTCxHdW1lPOBYTWCbhAYCCPb
+                UV1L+TowrIZ/gAwMhJHtqKalaMp7WrNHMBDmtqN6lqLbknmnbd4LGAhj21EtS9H2cU6xH8zAQJja
+                jupYykp79Osc2947GAhD21HVS9l+eNvOR/qc6+7SWy/BQBjYjqpeylxmKWfML/HZnT+8uIqh9A36
+                uEGkCe2o6qU85VbQs0jPVQxiygf6156w7B66d25HFS/l0Dmm/+mQMevkVEFbMNT6gRK5IJGV1+m/
+                TzuqeCnLYwl7s136nPu3/nGWBRjAYF47qngpU3n+zJt5NX4YW4kh/yqIhmG4e4qVq0IHVwpL33e7
+                czuqeCl/sisy+/5vbMQg4Z644RiMuRpz/BqS4mVvroKX//Yu7ajipUg98xuFQYzfMiQvDH9XDJ6k
+                3KjHtHZkIgbtxvX+cCS/gZmBQYpevbR5DDmJAkPK1HgX8N4HCcXLv9q3IRhi+QOD9RjUjev9b19o
+                DYborWfvm7JUDLkdaDDkpPDOW/wi+x6GYbj7PXSvrUkwWIIh8ddUDAaFdhufUWgwWIFB6TuD4fpv
+                kEJnAcEABncxaI4LZu27gSEfgzU3qQKDSe3IIQyJ7SoYwNBCDGaedAMDGCxYCTCAAQxgAINxGDpl
+                f7bYAUMdHziw9Iehd25HFVef3OVTwZD+sp2pvk87AkPxyP++BQMYblqJgTUXhshvYldkMzxkFhxJ
+                lpyxRJG3RH815sePIo/viKH0FUIGYChdgua/8iTeLpNx7cLEKzjqSVUTPJNcq/b06Us0CjAYgSHq
+                IvGycqIke2ECBjC4jSH8K3Vg8MAABvswiAcGMDSLYbVsIspsGSrFIInBKQUwNJKaNRhKL+6h4kuO
+                fhs1EXfH4KV8UiaGRlLzi2rrc9RrEYYqStDWDrTy0NXdJGtaLxiKbRmKYFAvrVUYg3ZMDhjAYCsG
+                dZx6kZWS5Huj+xY/MOOkGxhahyHzpJs0VsyKh2NErwBS4NKoYLjfCm0NwpA5h70Ygr+FLo1aoEjr
+                v8rpKoMh5S2j7MT9emIJhrsUKRqdkoOb1XPcuZdGzS/SYbhuqO04hyEvhqtS79Nt/MsUNb+J2f7j
+                njiGMh+jzDudmtJ2nMOwGRxKYQj+1n3pVjCo866HBzDU9ZbZ5CYMtV+61XoM/jZUyn9KZOZrdpLA
+                cPVbIjtK5THU13Dd2DJ4N2UqMvc1O0lguPotkR0lMNSPocxl7cPZr9pJAsP1bwl3lEp0oMFQeHHl
+                b5AY3rHzqp0kMJR4S7CjJNd/AhiKL67IpVGzl3HdThIYSrxl/cubMdR36VaumxQW6fDnh9rXpfXD
+                Ma4/T6Db+IOh9iJJ/esChhsw1H3pVjCA4abFlb2KmokX4wNDs1fFcw6DA/UPBjfaAhjAAAYwgAEM
+                YAADGMAABjCAAQxgAAMYwAAGMIABDGAAAxjAAAYwGBSlhyK4eINIMLQbAwEGMBBguEcCfkozsyN6
+                9X8EWwaamR0xBgMYCFvbAhgIMICBAAMYCDCAgQADGAgwgIEAAxgIMICBAAMYCDCAgQADGAgwgIEA
+                AxjAAAYwOIBhUPannQMwgMExDMIKgwEMYAADGMAABjCAAQxgqAuDhPey9h9lPIg+Cj87uJ+dXH07
+                WzCAwSAMwcPk/QM1d/aN3N9UlEXITSUBAxisxuC/XRILAwMYTMSwXy53zWBoMINgAMN15d6/v4xE
+                OqNRV2Q4XuzyMag9BC/6SnKmCwNJ3AybPgMYzMKwnw86z29L/+lqMe72pzsthliPWP8gOZMewz31
+                gwEMmnLvpr3XdfzFzfHFrQaDpxwYSn8Qm+nyGhjAYDSGWW+61813mPcmBx2G2KGglAeSjYEONBiM
+                w7AZqi1edTJY6TB4ebtJmuZ+OcPgcWgVDKZiWCjNPRGb4VyHQe1AB9NzOtAeJ93AYDCGt+dDztyv
+                U7f0gwEM+nIvClytfToFAxjcx/D5GL66WeVqAAMYnMWwHob7SLNBekf6+R0MYHAcwzDYGJwPKc3S
+                +tK7/h4MYHAaw/zVf2XfOzPYDNb6d1zmBAMYHMWw6wW7RW8vcR6x+FICBjA4imE2CV7x95ciPtT4
+                0hI5OaB5dJlDktlJnFRQH9R+ogEMYMgpd3/jv7Dp+4/8rnI89t2Dp5w11pyMljQMEn8tcYJaGllh
+                MIAhpdyrYfDCZOY/ih5rVeKsJDq+QiJtWvn5Qj6GxCLAAIb7YggFHHrhYO1uyk973p/TMHjJcdpg
+                AINdGJ4+/OcfT+G0kIga60ESgxf0GDIxJHaHwAAGwzCEh1FDFtHugxr7jgaD7+EGDHSgwWAAhs7+
+                8lQ9hDRMOfF2ml2DIfFD58QM0fau3TJIQysMBjCklTso/Xwanfgv/xB9tnvzH/W2JTvQkvI3nJkh
+                3GC4M4Zgy7BXJm7+NPosPBfhbxmuPbSqPE05tMpuEhjuiyE8zaDGaBl5EswU9BnyT7pddotE7Q8o
+                2wCJzN9AJsEAhuxyP37qp54Pol4iPBdx7lgzHAMMbmJ4edNPPXT3weNwnvPZODCAwU0MqSebX+eB
+                i85BYQEGMLiJIfVk8zq4W1X4o9CvzQUYwOAohrSTzeHpuPCcw1dHAgxgcBTDOu1+hf6vGiJno79O
+                UoMBDI5iiHQO1Nj19uf/X4Lpl9FLYACDqxgO/a1+hvf+55HE49jvPvvDWsEABlcxpB9Q2j0+znrh
+                eQi/dwEGMDiLIXJ9sHh8Rq4bExxUAgMY3MWQocFLWgADGFzG4E0neXO/jZ1aYTCAIbXck9Eua979
+                04tjKwwGMKSWe9n/SJ9VnQgGMLiN4fjlP0rhsHxSNxtgAIPjGE6Nvr9IXj3sfRhHAgYwOI/B8zbj
+                h+HkMwSxnI7keeXwCoMBDBnlXs0eH6Q/OsZAZDRdOr/CYABDZrk3y2OsW7TCYAADKwwGMIABDGAA
+                AxjAAAYwgAEMYAADGMAAhoLRkZLRAQMYHMPQupUCA+2GlQIDGFgpMICBlQIDGFgpMICBlQIDGFgp
+                MICBlQIDGMAABjB43uf38v2ykQ/6jaya+JS/X3kNBhgcwrA8DaD41oCGfzt+UOc/3PgUMLiJoX8e
+                GTSo/XM2306f823jwqeAwdQEdIWoPLpgsDIBNxbmn/7wWPff/bb2FTrvjklnacenNJZ+MJhUG/tf
+                /Vh+/OtD/Wv01w8iD39nyaeAoZUYPO9N3rwG4vC77+V3B0s+BQwtxdBcZ12s+RQwgAEMYAADGMAA
+                BjAkYzWdynS6MmadwFBDvYGhWOweRORhBwbLEnBVvYGhYLwek/pqXVtoPYar6g0MBeP4FVP4CwYM
+                5iTgmnoDQ9F4Lf4FAwaDEvB684YBDInYdXYGrRMYaqg3MBSOtZVtoR0YBmVHXw4MWR0DMVSUUzA0
+                nYB6L+fbTgwV5RQMYAADGMAABjCAAQxgAAMYwAAGMIABDGAAAxjAAAYwgAEMYAADGMAABjCAAQxg
+                AAMYwAAGMIABDGAAQzswXEbXh1MFDDdjKJJUMBiIIfxP0isXDNdhKJBUMIABDGCwAcPpj5QvKRiu
+                SioYzMbgidxQUjBclVQwGIgh6OuBoToMBZIKBgMxRF5nN6kqDAWSCgYzMfjb88zKBcN1GPKSCgZD
+                MUSqDAxVYchJKhjulYBtDobIxpyTblVhyE4qGO6VgGlv4TEcozEM178RDA1iEDlyAINxGLZgaCwB
+                vVHk6p698hXXdHTL5q3beFFvqf1FbwqGJr/hznHcMsh4a8+WQcpOlGaKUMEHypGCiI+hB4YGMYy3
+                NvUZ2oChF9m8jBpoA2C4xHJ7W8WBoXoM27GEWwYweA1HcFLU39uNjLuP/i8SKx8YasBw7D2PwXB3
+                DJ5yWij+NCQDhitmK/QNE+lxn//fLsFgAwZhy3DtbLlJFSW/96t9MORj8NJeBAMY3McQ3X6DoRYM
+                KakHg3EYlKkiYKgCQ+Y3DBiswJDxzQaGazBkfsN4YkDtg+Hao0lgqABDelLBAIYWYdAerzai9sGQ
+                14GW+M4sGCrHIGbUPhgYjtEQhvRvGNF954ABDA5icLT2wQAGMIABDGAAAxjAAAYwgAEMYAADGMAA
+                BjCAAQxgAAMYwAAGMIABDGAAAxjAAAYwgAEMRaNT9nqiHTCAwTEM9iTbHgz1fsGAAQwWYWhn/YAB
+                DNQPGMBA/YABDNQPGMAABjCAAQxgAAMYwAAGMIABDGAAAxjAAAYwgAEMYAADGMBQ4+psl3mxAYOV
+                GD67oxvjj9zC8F3uuNNebkpewGAlhp0sb4yDWxiqiDEYrMRgVmkcwWBPTsEABnIKBjCQUzCAgZyC
+                AQzkFAxgIKdguCpW06lMpyswgAEMuwcRediBocKw6gsGDJF4PWJ4Nac4LmCw6gsGDGrNGVRvbuwm
+                2fQFAwa15gyqNzcw2PQFAwal5joG1ZsjHWiLvmDAoMTapMK4gcGiL5j2YRiUvUjuAAz2JxUM1Xyg
+                WSU1C4M1SQUDGEgqGMBAUsEABpIKBjCAAQyu1VvmoJ6siXcZDQQGMNQYmYN6sibeZTQQGMBQZ2QO
+                6smaeI/RQGAAQ52ROagna+I9RgOBAQy1RuagnqyJdxgNBAYw1BqZg3qyJt5hNBAY3MFwGSgTTpWm
+                Slp6UI9Zg4HMSioYbqq38D9JLZQ0VRqbWoORSQUDGMAAhmrr7fRHmitpOzA0nFQwVFVvnkiDJW0J
+                hmaTCoab6i3o64HBgaSC4aZ6i7zObpL1SQXDrfXmb89TCwUGW5IKhpvrLVJlYLA6qWC4vd4iG/PG
+                zg8pCw3PUkV2t5Ud769Hos4Ym02Ss90RQ5GkbsHQNIbtjR8odRRHkp8gyUP0se9XSbwh41Gs3OLV
+                0fxuSeqiNwVD0ximvYVJGL6Kk4ch2QOVbAzaN8Q+o/rmVz6pi54IGJrHIHJqf8ZgOBfnegxeAoP2
+                pXQMdTS/srnZNj00y+zW+9BsLnrb8hjqKE45DNE+Q/haMQy9GlZjVD6pY2l0y9Cz9au8+i2DjLcm
+                bRmOxcnrQGdvGbykh+gbtB3obR3N74akHsvTIAZT1vv+GI4UTNpNOhVHtJ8Q6zlnYohNiL1BNGtR
+                Q/O7KanbJRiajuX29nqrvDjpGNSD86U70KJbi8qbnz3X3wFDWvkluWOiHOKvf8UzMOhP4V59aLXx
+                8wyZSY3vt4HBHAzBf5oDNPHBZY1j8MJTZ2Ez0zQ3z9M/yjjPcK+kSsrMYDAcgzS+ZbC3+sDgOAYP
+                DHUkFQzmY1B3b8FQW1LBYCqGxPF8tgx1J9WjA20oBi9xzAUM9icVDGXrLdapA0O9SZU7rz8YMuvN
+                YzepuaSKW63J9Q50sxg6TY/a7Nw1qYnRUmCws/xGrfhhcCCpYKDeTjGXOUkFA/V2jENXuiZtGsAA
+                hrvF/LjnPSepYKDeThsGMWrTAAYw3Cs25zt6bkgqGKg3d0oDBuoNDGCg3sAABuoNDGAAAxjAAAYw
+                gAEMYAADGMAABjCAAQxgoBrAAAaqAQwOYOiY9RsxN6rBkaS2DoMjQTVQCwTVQC0QVAO1QFAN1AJB
+                NVALBNVALRBUA7VAUA3UAkE1UAvELbE6Xx1jRSLAQOweRORhRyLAQHivRwyvpAEMxHnTwIYBDMQ5
+                XtkwgIH4il2HDQMYHItB03fuGZBzMJBNqo9skk2qj2ySTaqPbJJNqo9skk2qj2ySTaoPDC3IZngf
+                cfHif71wWuJ241QfGNzDEPyNMBBPdNOoPjCAAQxgAMPVtUL1gcEJDEG/IKARdBPoM4ChDRg0Hejo
+                jlHIg+oDg+sYYo8ksRkAAxhajCHxAAxgaCeGYAcJDGAAQ/Cck25gIJtUHxjIJtUHBrJJ9VF9ZJPq
+                o/rIJtVH9ZFNqo/qI5tUH9VHNnUvxk8nKOfWJD5uT50v/bwD1QcGm7Lpj8++tPHk+Iu4l2uGZ1B9
+                YGgTBmVGqg8MLmC4fMWDAQytzWb4g4VbMNBnAINTGAIJ2g60x5YBDI5nM/hOj2JIzA4GMLQBQ6Q9
+                gwEMbc6m+ssd8YpgiP0umkOrYGgFhsg+lKe+Hk5WZqT6wEA2qT6ySTapPrJJNqk+MJBNqg8MZJPq
+                AwPZpPrAQDapPjC0M5vqNYdj5xDUNytXqBeqDwzOYQj+ivY+DdGL7SVudEX1gcE9DMr4pGwMBS67
+                SvWBwRUMHhjAAIbIXXoSGKLbC6H6wOA8hsCD/qc+Uqx6qD4wuIEhth8UuZNVMEQVDGBwH4NkYEj8
+                pfrA4CSGlEOrXmLPSMAABncxpJx0U6cLGMBANqk+MJBNqg8MZJPqAwPZpPqoPrJJ9VF9ZJPqo/pa
+                Fh1pODrkHAwEAQaCAANBgIEgwEAQYCAIMBAEGAgCDAQBBoIAA0GAgSAMj/8HCf3NZZxcUCQAAAAA
+                SUVORK5CYII=
+                "
+                preserveAspectRatio="none"
+                height="250"
+                width="400" />
+            </svg>
+            Basic Parts of a VNA
+            <!--By Created by Chris Angove from original research and study - From English Wikipedia, CC BY-SA 3.0,     https://commons.wikimedia.org/w/index.php?curid=1703095-->
+        </embedimage>
+    </term>
+
+    <term id="VISA">
+        <name>Virtual Instrument Software Architecture</name>
+        <shortname></shortname>
+        <acronym>(VISA)</acronym>
+        <links>
+            <link type="simple" href="https://en.wikipedia.org/wiki/Virtual_Instrument_Software_Architecture">
+                VISA Wikipedia Page
+            </link>
+        </links>
+        <definition>
+            is a widely used I/O API in the test and measurement (T&amp;M) industry for communicating with instruments from a PC. VISA is an industry standard implemented by several T&amp;M companies, such as, Anritsu, Bustec, Keysight Technologies, Kikusui, National Instruments, Rohde and Schwarz, and Tektronix.
+        </definition>
+    </term>
+
+    <term id="API">
+        <name>Application Programing Interface</name>
+        <shortname></shortname>
+        <acronym>(API)</acronym>
+        <links>
+            <link type="simple" href="https://en.wikipedia.org/wiki/Application_programming_interface">
+                API Wikipedia Page
+            </link>
+        </links>
+        <definition>
+            is a set of routine definitions, protocols, and tools for building software and applications.
+                <br></br>
+            An API expresses a software component in terms of its operations, inputs, outputs, and underlying types, defining functionalities that are independent of their respective implementations, which allows definitions and implementations to vary without compromising the interface. A good API makes it easier to develop a program by providing all the building blocks, which are then put together by the programmer."
+        </definition>
+    </term>
+
+    <term id="I/O">
+        <name>Input/Output</name>
+        <shortname></shortname>
+        <acronym>(I/O)</acronym>
+        <links>
+            <link type="simple" href="https://en.wikipedia.org/wiki/Input/output">
+                Input/Output Wikipedia Page
+            </link>
+        </links>
+        <definition>
+            is the communication between an information processing system, such as a computer, and either a person or another information processing system. Inputs are the signals or data received by the system and outputs are the signals or data sent from it.
+        </definition>
+    </term>
+
+    <term id="Keysight">
+        <name>Keysight Technologies</name>
+        <shortname>(Keysight)</shortname>
+        <acronym></acronym>
+        <links>
+            <link type="simple" href="http://www.keysight.com/main/home.jspx?cc=US&amp;lc=eng">
+                Keysight Technologies Homepage
+            </link>
+        </links>
+        <definition>
+            is a US company that manufactures test and measurement (T&amp;M) equipment and software. Keysight's products include hardware and software for benchtop, modular, and field instruments. Their instruments include oscilloscopes, multimeters, logic analyzers, signal generators, spectrum analyzers, vector network analyzers VNA), atomic force microscopes (AFM), automated optical inspection, automated X-ray inspection (5DX), in-circuit testers, power supplies and handheld tools. It mainly serves the telecommunications, aerospace/defense, industrial, computer, and semiconductor industries.
+        </definition>
+        <image>
+            <img src="./png/Keysight_logo.png"/>
+            Keysight Logo
+        </image>
+    </term>
+
+    <term id="HP">
+        <name>Hewlett-Packard</name>
+        <shortname></shortname>
+        <acronym>(HP)</acronym>
+        <links>
+            <link type="simple" href="http://www.keysight.com/main/home.jspx?cc=US&amp;lc=eng">
+                Keysight Technologies Homepage
+            </link>
+        </links>
+        <definition>
+            was an American multinational information technology company that developed and provided a wide variety of hardware components, software, and related services to consumers ranging from the private individual to large enterprise organizations.  Hewlett-Packard spun-off  its electronic and bio-analytical measurement instruments part of its business as Agilent Technologies in 1999.  Agilent Technologies spu- off its electronic measurement instruments division in 2014, creating Keysight Technologies.
+        </definition>
+        <embedimage>
+            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" enable-background="new 0 0 433.701 433.701" viewBox="0 0 433.701 433.701" height="auto" width="200" y="0px" x="0px" id="Layer_1" version="1.1">
+                <defs id="defs3424" />
+                <path id="path3420" d="M216.85,432.851c-2.147,0-4.285-0.039-6.419-0.101l44.143-121.318h60.75  c10.663,0,22.368-8.197,26.015-18.212l47.892-131.546c7.835-21.537-4.501-39.157-27.418-39.157h-84.279l-70.715,194.316h-0.026  l-40.089,110.153C71.594,404.375,0.85,318.878,0.85,216.851c0-99.086,66.721-182.58,157.683-208.027l-41.365,113.693h-0.012  L48.389,311.432l45.778,0.004l58.481-160.531h34.404l-58.481,160.531l45.761,0.008l54.498-149.77  c7.84-21.537-4.497-39.157-27.393-39.157h-38.481l44.186-121.44c3.221-0.143,6.454-0.227,9.708-0.227  c119.294,0,216,96.706,216,216.001C432.85,336.143,336.144,432.851,216.85,432.851z M347.542,150.79h-34.395l-48.167,132.158h34.396  L347.542,150.79z" fill="#4987CE" />
+            </svg>
+            Hewlett-Packard Logo (2010-2015)
+        </embedimage>
+    </term>
+
+    <term id="multical">
+        <name>MultiCAL</name>
+        <shortname></shortname>
+        <acronym></acronym>
+        <links>
+            <link type="simple" href="http://www.nist.gov/ctl/rf-technology/related-software.cfm">
+                NIST RF Technology Related Software Page
+            </link>
+        </links>
+        <definition>
+            is an on-wafer measurement software implementing the multiline Thru Reflection Line (TRL) calibration, LRM with imperfect standards, off-wafter CPW calibrations, calibrations for lossy lines, and the calibration comparison method for accuracy assesment.  It was developed by the NIST/Industrial Measurement Consortium.
+        </definition>
+        <image>
+            <img src="./other image formats/MultiCal.gif"/>
+            MultiCAL
+        </image>
+        <embedimage>
+
+        </embedimage>
+    </term>
+
+    <term id="">
+        <name></name>
+        <shortname></shortname>
+        <acronym></acronym>
+        <links>
+            <link type="simple" href="">
+
+            </link>
+        </links>
+        <definition></definition>
+        <image>
+            <img src=""/>
+        </image>
+        <embedimage>
+
+        </embedimage>
+    </term>
+
+    <term id="">
+        <name></name>
+        <shortname></shortname>
+        <acronym></acronym>
+        <links>
+            <link type="simple" href="">
+
+            </link>
+        </links>
+        <definition></definition>
+        <image>
+            <img src=""/>
+        </image>
+        <embedimage>
+
+        </embedimage>
+    </term>
+
+    <term id="">
+        <name></name>
+        <shortname></shortname>
+        <acronym></acronym>
+        <links>
+            <link type="simple" href="">
+
+            </link>
+        </links>
+        <definition></definition>
+        <image>
+            <img src=""/>
+        </image>
+        <embedimage>
+
+        </embedimage>
+    </term>
+
+    <term id="">
+        <name></name>
+        <shortname></shortname>
+        <acronym></acronym>
+        <links>
+            <link type="simple" href="">
+
+            </link>
+        </links>
+        <definition></definition>
+        <image>
+            <img src=""/>
+        </image>
+        <embedimage>
+
+        </embedimage>
+    </term>
+
+    <term id="">
+        <name></name>
+        <shortname></shortname>
+        <acronym></acronym>
+        <links>
+            <link type="simple" href="">
+
+            </link>
+        </links>
+        <definition></definition>
+        <image>
+            <img src=""/>
+        </image>
+        <embedimage>
+
+        </embedimage>
+    </term>
+
+
 </glossary>
