@@ -134,48 +134,52 @@
                     </xsl:for-each>
                 </div>
 
-                    <script>
+                <xsl:text disable-output-escaping="yes">
+                    <![CDATA[
+                        <script>
 
-                    $('#input').keypress(function(e) {
-                        if(e.keyCode==13){
-                        console.log("pressed");
-                        $('#buttn').trigger('click');
-                        }
-                    });
+                            $('#input').keypress(function(e) {
+                                if(e.keyCode==13){
+                                console.log("pressed");
+                                $('#buttn').trigger('click');
+                                }
+                            });
 
-                    $("#buttn").click(function(myFunctionResults){
-                    });
+                            $("#buttn").click(function(myFunctionResults){
+                            });
 
 
-                   function myFunctionResults () {
-                        var input=document.getElementById("input").value;
-                        var nameResult = $("span[id='name']:contains("+input+")").parent().parent().parent();
-                        var shortnameResult = $("li[id='shortname']:contains("+input+")").parent();
-                        var acronymResult = $("li[id='acronym']:contains("+input+")").parent();
+                            function myFunctionResults () {
+                                var input=document.getElementById("input").value;
+                                var nameResult = $("span[id='name']:contains("+input+")").parent().parent().parent();
+                                var shortnameResult = $("li[id='shortname']:contains("+input+")").parent();
+                                var acronymResult = $("li[id='acronym']:contains("+input+")").parent();
 
-                        $("div[id='output']").empty();
+                                $("div[id='output']").empty();
 
-                        if (nameResult != null) {
-                        console.log(nameResult);
-                        $("div[id='output']").append(nameResult.html());
-                        };
+                                if (nameResult != null) {
+                                    console.log(nameResult);
+                                    $("div[id='output']").append(nameResult.html());
+                                };
 
-                        if (acronymResult != null) {
-                        console.log(acronymResult);
-                        $("div[id='output']").append(acronymResult.html());
-                        };
+                                if (acronymResult != null) {
+                                    console.log(acronymResult);
+                                    $("div[id='output']").append(acronymResult.html());
+                                };
 
-                        if (shortnameResult != null) {
-                        console.log(shortnameResult);
-                        $("div[id='output']").append(shortnameResult.html());
-                        };
+                                if (shortnameResult != null) {
+                                    console.log(shortnameResult);
+                                    $("div[id='output']").append(shortnameResult.html());
+                                };
 
-                        if (acronymResult == null &amp;&amp; nameResult == null &amp;&amp; shortnameResult == null) {
-                        document.write("Term or acronym not found.");
-                        };
-                    };
+                                if (acronymResult == null && nameResult == null && shortnameResult == null) {
+                                    document.write("Term or acronym not found.");
+                                };
+                            };
 
-                </script>
+                        </script>
+                    ]]>
+                </xsl:text>
 
 
                 <script>
