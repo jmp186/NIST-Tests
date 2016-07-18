@@ -6,14 +6,13 @@
             <head>
                 <meta charset="utf-8"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-                <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
-                <link rel="stylesheet" type="text/css" href="./GlossaryListStyleSheet20160706.css"/>
-                <!--<link rel="stylesheet" href="jquery-ui.min.css"></link>-->
-                <!--<script src="external/jquery/jquery.js"></script>-->
-                <!--<script src="jquery-ui.min.js"></script>-->
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-                <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+                <link rel="stylesheet" href="./CDN/bootstrapcss.css"/>
+                <link rel="stylesheet" type="text/css" href="./GlossaryCSS20160629.css"/>
+
+                <script src="./CDN/jquery2.js"></script>
+                <script src="./CDN/bootstrapjs.js"></script>
             </head>
+
             <body>
                 <div class="row">
                         <nav class="navbar navbar-inverse navbar-static-top" id="navbar">
@@ -47,22 +46,41 @@
                         <div class="row" id="undertopnav">
                             <div class="container-fluid">
                                 <div id="title" class="col-xs-12 col-sm-12 col-md-3 col-lg-3">Glossary Search</div>
-                                <!--<div class="col-xs-11 col-sm-11 col-md-7 col-lg-7">-->
-                                    <!--<input type="text" class="form-control" id="input" placeholder="Search by Term or Acronym"/>-->
-                                <!--</div>-->
-                                <!--<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">-->
-                                    <!--<button class="btn btn-primary" id="buttn">-->
-                                        <!--<span id="glyph" class="glyphicon glyphicon-search"></span>-->
-                                    <!--</button>-->
+                                <div class="col-xs-11 col-sm-11 col-md-7 col-lg-7">
+                                    <input type="text" class="form-control" id="input" placeholder="Search by Term or Acronym"/>
+                                </div>
+                                <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                                    <button class="btn btn-primary" id="buttn">
+                                        <span id="glyph" class="glyphicon glyphicon-search"></span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
 
                         <div id="resize" class="row">
                             <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
                                 <ul id="sidebarnav">
-                                    <li class="side"><button class="sidebutton"><a href="./Glossary20160629.xml"><span class="sidebutton">Glossary Search</span></a></button></li>
-                                    <li class="side"><button class="sidebutton"><a id="textOutput"><span class="sidebutton">HTML</span></a></button></li>
-                                    <li class="side"><button class="sidebutton"><a href=""><span class="sidebutton">List of all Terms</span></a></button></li>
+                                    <li class="side">
+                                        <button class="sidebutton">
+                                            <a href="./Glossary20160629.xml">
+                                                <span class="sidebutton">Glossary Search</span>
+                                            </a>
+                                        </button>
+                                    </li>
+                                    <li class="side">
+                                        <button class="sidebutton">
+                                            <a href="./XML_Example_20160620_001.html">
+                                                <span class="sidebutton">HTML</span>
+                                            </a>
+                                        </button>
+                                    </li>
+                                    <li class="side">
+                                        <button class="sidebutton" id="showAll">
+                                            <a href="#content">
+                                                <span class="sidebutton">List of all Terms</span>
+                                            </a>
+                                        </button>
+                                    </li>
                                     <!--todo: more side nav items-->
                                 </ul>
                             </div>
@@ -116,8 +134,93 @@
                     </xsl:for-each>
                 </div>
 
-            </body>
+                <script>
+                    var nameResult = null;
+                    var acronymResult = null;
+                    //var shortnameResult = null;
+                    var input = null;
 
+                    //search function
+
+                    $('#input').keypress(function(e) {
+                        if(e.keyCode==13){
+                        console.log("pressed");
+                        $('#buttn').trigger('click');
+                        }
+                    });
+
+                    $("#buttn").click(function(){
+                    input=document.getElementById("input").value;
+                    if (input==null | input=="")
+                    console.log("typeof " (input))
+                     $("div[id='output']").empty();
+                    console.log("variable input is " + String(input))
+
+
+                    function myFunctionResults () {
+                        input=document.getElementById("input").value;
+                        var nameResult = $("span[id='name']:contains("+input+")").parent().parent().parent();
+                        var shortnameResult = $("li[id='shortname']:contains("+input+")").parent();
+                        var acronymResult = $("li[id='acronym']:contains("+input+")").parent();
+
+                        if (nameResult != null) {
+                        console.log(nameResult);
+                        $("div[id='output']").append(nameResult.html());
+                        }
+
+                        if (acronymResult != null) {
+                        console.log(acronymResult);
+                        $("div[id='output']").append(acronymResult.html());
+                        }
+
+                        if (shortnameResult != null) {
+                        console.log(shortnameResult);
+                        $("div[id='output']").append(shortnameResult.html());
+                        }
+
+                        if (acronymResult == null && nameResult == null && shortnameResult == null) {
+                        document.write(<b>Term or acronym not found.</b>);
+                        }
+                    }
+
+
+                    //clear function
+                    if (acronymResult!=null) {
+                        $("div[id='output']").empty();
+                    }
+                    if (nameResult!=null) {
+                        $("div[id='output']").empty();
+                    }
+                    //if (shortnameResult!=null) {
+                        //$("div[id='output']").empty();
+
+                    //display results if statements
+                    if (acronymResult){
+                      $("div[id='output']").append(acronymResult.html());
+                    }
+
+                    if (nameResult) {
+                       console.log("appending nameResult");
+                      $("div[id='output']").append(nameResult.html());
+                    }
+
+                    //if (shortnameResult) {
+                        //console.log("appending shortnameResult");
+                        //$("div[id='output']").append(shortnameResult.html());
+                    //}
+
+                    });
+                </script>
+
+                <script>
+                    // Show All Button
+                    $('#showAll').click(function(){
+                    $('#content').toggle();
+                    });
+                </script>
+
+
+            </body>
         </html>
     </xsl:template>
 </xsl:stylesheet>

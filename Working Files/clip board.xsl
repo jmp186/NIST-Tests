@@ -123,3 +123,9 @@
                         downloadTag.dataset.downloadurl = ['text/plain', downloadTag.download, downloadTag.href].join(':');
                         }
                 </script>
+
+                //input=document.getElementById("input").value;
+                    //if (input==null | input=="")
+                    //console.log("typeof " (input))
+                    //$("div[id='output']").empty();
+                    //console.log("variable input is " + String(input))
