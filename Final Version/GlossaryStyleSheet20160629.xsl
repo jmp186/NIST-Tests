@@ -6,7 +6,7 @@
             <head>
                 <meta charset="utf-8"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-                <link rel="stylesheet" href="./CDN/bootstrapcss.css"/>
+                <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
                 <link rel="stylesheet" type="text/css" href="./GlossaryCSS20160629.css"/>
 
                 <script src="./CDN/jquery2.js"></script>
@@ -145,29 +145,35 @@
                                 }
                             });
 
-                            $("#buttn").click(function(myFunctionResults){
-                            });
-
+                            $('#buttn').click(myFunctionResults());
 
                             function myFunctionResults () {
                                 var input=document.getElementById("input").value;
-                                var nameResult = $("span[id='name']:contains("+input+")").parent().parent().parent();
-                                var shortnameResult = $("li[id='shortname']:contains("+input+")").parent();
-                                var acronymResult = $("li[id='acronym']:contains("+input+")").parent();
 
+                                if (input==null | input=="");
+                                console.log("typeof " (input));
                                 $("div[id='output']").empty();
+                                console.log("variable input is " + String(input));
 
-                                if (nameResult != null) {
+                                var nameResult = null
+                                var shortnameResult = null
+                                var acronymResult = null
+
+                                console.log(“Name result is “+nameResult);
+                                console.log(“shortname result is “+shortnameResult);
+                                console.log(“acronym result is “+acronymResult);
+
+                                if (nameResult == $("span[id='name']:contains("+input+")").parent().parent().parent()) {
                                     console.log(nameResult);
                                     $("div[id='output']").append(nameResult.html());
                                 };
 
-                                if (acronymResult != null) {
+                                if (acronymResult == $("li[id='acronym']:contains("+input+")").parent()) {
                                     console.log(acronymResult);
                                     $("div[id='output']").append(acronymResult.html());
                                 };
 
-                                if (shortnameResult != null) {
+                                if (shortnameResult == $("li[id='shortname']:contains("+input+")").parent()) {
                                     console.log(shortnameResult);
                                     $("div[id='output']").append(shortnameResult.html());
                                 };
