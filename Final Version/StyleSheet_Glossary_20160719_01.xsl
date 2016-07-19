@@ -158,24 +158,24 @@
 
                     // 1) search by acronym
                     acronymResult = $("li[id='acronym']:contains("+input+")").parent();
-                    console.log(acronymResult);
+                    console.log("acronymResult");
 
                     // 2) search by term name
-                    //nameResult = $("span[id='name']:contains("+input+")").parent().parent().parent();
-                    //console.log(nameResult);
+                    nameResult = $("span[id='name']:contains("+input+")").parent().parent().parent();
+                    console.log("nameResult");
 
                     // 3) search by shortname
                     shortnameResult = $("li[id='shortname']:contains("+input+")").parent();
-                    console.log(shortnameResult);
+                    console.log("shortnameResult");
 
                     //clear function
                     if (acronymResult!=null) {
                         $("div[id='output']").empty();
                     };
 
-                    //if (nameResult!=null) {
-                        //$("div[id='output']").empty();
-                    //};
+                    if (nameResult!=null) {
+                        $("div[id='output']").empty();
+                    };
 
                     if (shortnameResult!=null) {
                         $("div[id='output']").empty();
@@ -183,13 +183,14 @@
 
                     //display results if statements
                     if (acronymResult){
-                      $("div[id='output']").append(acronymResult.html());
+                        console.log("appending acronymResult");
+                        $("div[id='output']").append(acronymResult.html());
                     };
 
-                    //if (nameResult) {
-                       //console.log("appending nameResult");
-                      //$("div[id='output']").append(nameResult.html());
-                    //};
+                    if (nameResult) {
+                       console.log("appending nameResult");
+                      $("div[id='output']").append(nameResult.html());
+                    };
 
                     if (shortnameResult) {
                         console.log("appending shortnameResult");
