@@ -137,7 +137,7 @@
                 <xsl:text disable-output-escaping="yes">
                     <![CDATA[
                         <script>
-
+                            console.log("here")
                             $('#input').keypress(function(e) {
                                 if(e.keyCode==13){
                                 console.log("pressed");
@@ -145,10 +145,12 @@
                                 }
                             });
 
-                            $('#buttn').click(myFunctionResults());
+                            input=document.getElementById("input");
+                            input.addEventListener('click',myFunctionResults,false);
+
 
                             function myFunctionResults () {
-                                var input=document.getElementById("input").value;
+
 
                                 if (input==null | input=="");
                                 console.log("typeof " (input));
@@ -159,9 +161,9 @@
                                 var shortnameResult = null
                                 var acronymResult = null
 
-                                console.log(“Name result is “+nameResult);
-                                console.log(“shortname result is “+shortnameResult);
-                                console.log(“acronym result is “+acronymResult);
+                                <!--console.log(“Name result is “+nameResult);-->
+                                <!--console.log(“shortname result is “+shortnameResult);-->
+                                <!--console.log(“acronym result is “+acronymResult);-->
 
                                 if (nameResult == $("span[id='name']:contains("+input+")").parent().parent().parent()) {
                                     console.log(nameResult);
