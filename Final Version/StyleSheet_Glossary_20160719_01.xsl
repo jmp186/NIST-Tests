@@ -133,14 +133,67 @@
                         </ul>
                     </xsl:for-each>
                 </div>
+            <xsl:text disable-output-escaping="yes">
+                <![CDATA[
+               <script>
+
+                    function findResult(){
+
+                    var lengthNameList = $("span[id='name']").length;
+                    var input=document.getElementById("input").value;
+
+                    for (i=0; i < lengthNameList; i++) {
+                    if (input==null | input=="") {
+                    break;
+                    };
+
+                    if($("span[id='name']")[i].innerHTML){
+                    var nameIncludes = $("span[id='name']")[i].innerHTML.includes(input);
+                    } else {
+                    nameIncludes = false
+                    }
+
+                    if($("li[id='acronym']")[i].innerHTML){
+                    var acronymIncludes = $("li[id='acronym']")[i].innerHTML.includes(input);
+                    } else {
+                    acronymIncludes = false
+                    }
+
+                    if ($("li[id='shortname']")[i].innerHTML) {
+                    var shortnameIncludes = $("li[id='shortname']")[i].innerHTML.includes(input)
+                    } else {
+                    shortnameIncludes = false
+                    }
+
+                    var outputResults = $("span[id='name']")[i].parentNode.parentNode.parentNode;
+
+                    if (nameIncludes) {
+
+                    console.log(outputResults);
+                    $("div[id='output']").append(outputResults);
+                    continue;
+                    };
+
+                    if (acronymIncludes) {
+
+                    console.log(outputResults);
+                    $("div[id='output']").append(outputResults);
+                    continue;
+                    };
+
+                    if (shortnameIncludes) {
+
+                    console.log(outputResults);
+                    $("div[id='output']").append(outputResults);
+                    continue;
+                    };
+
+                    };};
+
+                </script>
 
                 <script>
-                    var nameResult = null;
-                    var acronymResult = null;
-                    //var shortnameResult = null;
-                    var input = null;
 
-                    //search function
 
                     $('#input').keypress(function(e) {
                         if(e.keyCode==13){
@@ -149,54 +202,12 @@
                         }
                     });
 
-                    $("#buttn").click(function() {
-                    input=document.getElementById("input").value;
-                    if (input==null | input=="")
-                    $("div[id='output']").empty();
-                    console.log("variable input is " + String(input))
-
-                    // 1) search by acronym
-                    acronymResult = $("li[id='acronym']:contains("+input+")").parent();
-                    console.log("acronymResult");
-
-                    // 2) search by term name
-                    nameResult = $("span[id='name']:contains("+input+")").parent().parent().parent();
-                    console.log("nameResult");
-
-                    // 3) search by shortname
-                    shortnameResult = $("li[id='shortname']:contains("+input+")").parent();
-                    console.log("shortnameResult");
-
-                    //clear function
-                    if (acronymResult!=null) {
-                        $("div[id='output']").empty();
-                    };
-
-                    if (nameResult!=null) {
-                        $("div[id='output']").empty();
-                    };
-
-                    if (shortnameResult!=null) {
-                        $("div[id='output']").empty();
-                    };
-
-                    //display results if statements
-                    if (acronymResult){
-                        console.log("appending acronymResult");
-                        $("div[id='output']").append(acronymResult.html());
-                    };
-
-                    if (nameResult) {
-                       console.log("appending nameResult");
-                      $("div[id='output']").append(nameResult.html());
-                    };
-
-                    if (shortnameResult) {
-                        console.log("appending shortnameResult");
-                        $("div[id='output']").append(shortnameResult.html());
-                    };
-
+                    $("#buttn").click(function(){
+                    $("div[id='output']").empty()
+                    findResult()
                     });
+
+
                 </script>
 
                 <script>
@@ -206,6 +217,9 @@
                     });
                 </script>
 
+
+                ]]>
+            </xsl:text>
 
             </body>
         </html>

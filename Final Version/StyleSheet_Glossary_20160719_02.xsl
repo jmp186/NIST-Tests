@@ -148,9 +148,11 @@
 
                     $("#buttn").click(function() {
                     input=document.getElementById("input").value;
-                    if (input==null | input=="")
                     $("div[id='output']").empty();
-                    console.log("variable input is " + String(input))
+                    console.log("variable input is " + String(input));
+
+
+                    console.log($('#name'));
 
                     // 1) search by acronym
                     acronymResult = $(#acronym).filter("+input+");
