@@ -152,8 +152,7 @@
                     $("#buttn").click(function() {
                     input=document.getElementById("input").value;
                     if (input==null | input=="")
-                    console.log("typeof " (input))
-                     $("div[id='output']").empty();
+                    $("div[id='output']").empty();
                     console.log("variable input is " + String(input))
 
                     // 1) search by acronym
