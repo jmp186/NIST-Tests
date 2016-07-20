@@ -1,5 +1,5 @@
 <?xml version='1.0'?>
-<?xml-stylesheet type="text/xsl" href="./StyleSheet_Glossary_20160719_01.xsl"?>
+<?xml-stylesheet type="text/xsl" href="./StyleSheet_Glossary_20160719_02.xsl"?>
 
 
 <glossary>
@@ -370,8 +370,8 @@
             </link>
         </links>
         <definition>
-            is an abnormal connection between two nodes of an electric circuit intended to be at different voltages.
-            In an ideal short, there is no resistance or voltage drop across the short.
+            is an abnormal connection between two nodes of an electric circuit intended to be at                  different voltages.  In an ideal short, there is no resistance or voltage drop across
+            the short.
         </definition>
         <image>
             Short Diagram
@@ -393,7 +393,7 @@
         </definition>
         <image>
             .Net Logo
-            <img scr="./png/Microsoft_.Net_logo.png"/>
+            <img src="./png/Microsoft_.Net_logo.png"/>
         </image>
     </term>
 
