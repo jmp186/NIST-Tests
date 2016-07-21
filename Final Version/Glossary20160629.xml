@@ -232,7 +232,7 @@
             </link>
         </links>
         <definition>
-            Simulating uncertainties using a probability distribution.  NIST usually does about 100 trials.
+            simulates uncertainties using a probability distribution.  NIST usually does about 100 trials.
         </definition>
     </term>
 
@@ -355,8 +355,7 @@
             </link>
         </links>
         <definition>
-            is an abnormal connection between two nodes of an electric circuit intended to be at different voltages.
-            In an ideal short, there is no resistance or voltage drop across the short.
+
         </definition>
     </term>
 
@@ -616,7 +615,7 @@
             </link>
         </links>
         <definition>
-            provides tools for the entire laboratory work flow.  These tools include analytical instruments software, services and consumables.  The electronic measurement division was spun off in 2014 to create Keysight Technologies.
+            provides tools for the entire laboratory work flow.  These tools include analytical instrument software, services and consumables.  The electronic measurement division was spun off in 2014 to create Keysight Technologies.
         </definition>
         <image>
             Agilent Logo
@@ -723,7 +722,7 @@
             </link>
         </links>
         <definition>
-            HTML is a markup language for describing web documents (web pages). HTML stands for Hyper Text Markup Language. A markup language is a set of markup tags. HTML documents are described by HTML tags. Each HTML tag describes different document content.
+            is a markup language for describing web documents (web pages). HTML stands for Hyper Text Markup Language. A markup language is a set of markup tags. HTML documents are described by HTML tags. Each HTML tag describes different document content.
         </definition>
         <image>
             <img src="./png/HTML.png"/>
