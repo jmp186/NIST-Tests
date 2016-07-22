@@ -8,7 +8,7 @@
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
                 <link rel="stylesheet" type="text/css" href="./GlossaryCSS20160629.css"/>
-
+                <script src="./GlossaryJavaScript_20160722_01.js"/>
                 <script src="./CDN/jquery2.js"></script>
                 <script src="./CDN/bootstrapjs.js"></script>
             </head>
@@ -133,94 +133,6 @@
                         </ul>
                     </xsl:for-each>
                 </div>
-            <xsl:text disable-output-escaping="yes">
-                <![CDATA[
-               <script>
-
-                    function findResult(){
-
-                    var lengthNameList = $("span[id='name']").length;
-                    var input=document.getElementById("input").value;
-
-                    for (i=0; i < lengthNameList; i++) {
-                    if (input==null | input=="") {
-                    break;
-                    };
-
-                    if($("span[id='name']")[i].innerHTML){
-                    var nameIncludes = $("span[id='name']")[i].innerHTML.includes(input);
-                    } else {
-                    nameIncludes = false
-                    }
-
-                    if($("li[id='acronym']")[i].innerHTML){
-                    var acronymIncludes = $("li[id='acronym']")[i].innerHTML.includes(input);
-                    } else {
-                    acronymIncludes = false
-                    }
-
-                    if ($("li[id='shortname']")[i].innerHTML) {
-                    var shortnameIncludes = $("li[id='shortname']")[i].innerHTML.includes(input)
-                    } else {
-                    shortnameIncludes = false
-                    }
-
-                    var outputResults = $("span[id='name']")[i].parentNode.parentNode.parentNode;
-
-                    if (nameIncludes) {
-
-                    console.log(outputResults);
-                    $("div[id='output']").append(outputResults);
-                    continue;
-                    };
-
-                    if (acronymIncludes) {
-
-                    console.log(outputResults);
-                    $("div[id='output']").append(outputResults);
-                    continue;
-                    };
-
-                    if (shortnameIncludes) {
-
-                    console.log(outputResults);
-                    $("div[id='output']").append(outputResults);
-                    continue;
-                    };
-
-                    };};
-
-                </script>
-
-                <script>
-
-
-                    $('#input').keypress(function(e) {
-                        if(e.keyCode==13){
-                        console.log("pressed");
-                        $('#buttn').trigger('click');
-                        }
-                    });
-
-                    $("#buttn").click(function(){
-                    $("div[id='output']").empty()
-                    findResult()
-                    });
-
-
-                </script>
-
-                <script>
-                    // Show All Button
-                    $('#showAll').click(function(){
-                    $('#content').toggle();
-                    });
-                </script>
-
-
-                ]]>
-            </xsl:text>
-
             </body>
         </html>
     </xsl:template>
