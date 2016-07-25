@@ -9,9 +9,10 @@
                 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
                 <link rel="stylesheet" type="text/css" href="./GlossaryCSS20160629.css"/>
 
-                <script src="./GlossaryJavaScript_20160722_01.js"/>
+
                 <script src="./CDN/jquery2.js"></script>
                 <script src="./CDN/bootstrapjs.js"></script>
+                <script src="./GlossaryJavaScript_20160722_01.js"></script>
             </head>
 
             <body>

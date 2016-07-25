@@ -51,9 +51,7 @@
 
                     };};
 
-                </script>
 
-                <script>
 
 
                     $('#input').keypress(function(e) {
@@ -69,9 +67,7 @@
                     });
 
 
-                </script>
 
-                <script>
                     // Show All Button
                     $('#showAll').click(function(){
                     $('#content').toggle();
